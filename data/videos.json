@@ -4,5 +4,54 @@
     "title": "Dart - a language for your next project",
     "speakers": "Jana Moudrá",
     "thumbnail": "/images/sessions/001.JPG"
+  },
+  {
+    "youtubeId": "J_lkCn6JvTk",
+    "title": "Optimizing Apps for Better Performance",
+    "speakers": "Elif Boncuk",
+    "thumbnail": "/images/sessions/002.JPG"
+  },
+  {
+    "youtubeId": "e5qf-6rp9HA",
+    "title": "Killing game ideas at hyperspeed",
+    "speakers": "Şahin Yalabık",
+    "thumbnail": "/images/sessions/003.JPG"
+  },
+  {
+    "youtubeId": "fn6HdDk5X-Q",
+    "title": "Design Patterns with Angular 2",
+    "speakers": "Barış Güler",
+    "thumbnail": "/images/sessions/004.JPG"
+  },
+  {
+    "youtubeId": "BM-sun5eZY0",
+    "title": "Libreoffice'e Katkı Süreci ve Deneyimlerimiz",
+    "speakers": "G. Köse, A. Özdemir, Y. Taneroğlu, K. Tarlan",
+    "thumbnail": "/images/sessions/005.JPG"
+  },
+  {
+    "youtubeId": "Inmc63iZq7M",
+    "title": "Animation for Interfaces",
+    "speakers": "Marie Schweiz",
+    "thumbnail": "/images/sessions/006.JPG"
+  },
+   {
+    "youtubeId": "YBYEAnKgdHY",
+    "title": "Life of APK",
+    "speakers": "Orhan Obut",
+    "thumbnail": "/images/sessions/007.JPG"
+  },
+  {
+    "youtubeId": "HWSbVLge0m0",
+    "title": "Building REST API with Go Lang",
+    "speakers": "Burak Aydın",
+    "thumbnail": "/images/sessions/008.JPG"
+  },
+   {
+    "youtubeId": "IVlYz7rxYhg",
+    "title": "Docker Containers in IBM Bluemix",
+    "speakers": "Burak Çakıl",
+    "thumbnail": "/images/sessions/009.JPG"
   }
+  
 ]

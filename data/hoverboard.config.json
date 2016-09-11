@@ -66,7 +66,8 @@
     },
     {
       "route": "cfp",
-      "permalink": "https://docs.google.com/forms/d/e/1FAIpQLSekdRu5K18gWb6FEZs3R9TYLDJh6YvD81k6prh0yQK0gvxhAA/viewform"
+      "permalink": "https://docs.google.com/forms/d/e/1FAIpQLSekdRu5K18gWb6FEZs3R9TYLDJh6YvD81k6prh0yQK0gvxhAA/viewform",
+      "newTab": true
     }
   ],
   "url": "https://hoverboard.firebaseapp.com/",

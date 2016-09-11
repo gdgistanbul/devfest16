@@ -52,6 +52,36 @@
     "title": "Docker Containers in IBM Bluemix",
     "speakers": "Burak Çakıl",
     "thumbnail": "/images/sessions/109.JPG"
+  },
+   {
+    "youtubeId": "ATJFh29ZyI0",
+    "title": "Material Design on Custom Views",
+    "speakers": "Said Tahsin Dane",
+    "thumbnail": "/images/sessions/110.JPG"
+  },
+   {
+    "youtubeId": "JFsNIla_gN4",
+    "title": "UX Metrics - a teamwork",
+    "speakers": "Esin Işık",
+    "thumbnail": "/images/sessions/111.JPG"
+  },
+   {
+    "youtubeId": "LEoQkWiUCQc",
+    "title": "#PERFMATTERS for Android",
+    "speakers": "Hasan Hosgel",
+    "thumbnail": "/images/sessions/112.JPG"
+  },
+   {
+    "youtubeId": "vM_Y8klza4Q",
+    "title": "Event Driven Programming for Android",
+    "speakers": "Enrique López Mañas",
+    "thumbnail": "/images/sessions/113.JPG"
+  },
+   {
+    "youtubeId": "XaSdCGvTSFk",
+    "title": "Infinite Scalable Systems with Docker, Docker Swarm, Docker Machine",
+    "speakers": "Hüseyin Babal",
+    "thumbnail": "/images/sessions/114.JPG"
   }
   
 ]

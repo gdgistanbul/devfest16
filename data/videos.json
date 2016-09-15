@@ -82,6 +82,66 @@
     "title": "Infinite Scalable Systems with Docker, Docker Swarm, Docker Machine",
     "speakers": "Hüseyin Babal",
     "thumbnail": "/images/sessions/114.JPG"
+  },
+   {
+    "youtubeId": "LkuSbY6y0qI",
+    "title": "Google WebRTC on Mobile",
+    "speakers": "Büşra Deniz",
+    "thumbnail": "/images/sessions/115.JPG"
+  },
+   {
+    "youtubeId": "rAHYQIeo8-g",
+    "title": "Piracy on Android",
+    "speakers": "Martin Liersch",
+    "thumbnail": "/images/sessions/116.JPG"
+  },
+   {
+    "youtubeId": "Egal0CaiVQg",
+    "title": "Developing and testing Java applications with the NetBeans IDE",
+    "speakers": "Mark Stephens",
+    "thumbnail": "/images/sessions/117.JPG"
+  },
+   {
+    "youtubeId": "cQ3bSbkL6w",
+    "title": "Secure payments over mixed communication media",
+    "speakers": "Jonathan LeBlanc",
+    "thumbnail": "/images/sessions/118.JPG"
+  },
+   {
+    "youtubeId": "ee-cOVbVjW8",
+    "title": "Surviving Life in the JavaScript Ecosystem",
+    "speakers": "Geertjan Wielenga",
+    "thumbnail": "/images/sessions/119.JPG"
+  },
+   {
+    "youtubeId": "cEBwNxNw9fo",
+    "title": "Android Brillo and Daily Life UX",
+    "speakers": "Resul Caner Yıldırım",
+    "thumbnail": "/images/sessions/120.JPG"
+  },
+   {
+    "youtubeId": "MHXnBijcI1s",
+    "title": "Updating Mobile Webpages! But Why?",
+    "speakers": "Salim Kayabaşı",
+    "thumbnail": "/images/sessions/121.JPG"
+  },
+   {
+    "youtubeId": "Uvlx8akAkzQ",
+    "title": "Working in an effective team",
+    "speakers": "Filip Maelbrancke",
+    "thumbnail": "/images/sessions/122.JPG"
+  },
+   {
+    "youtubeId": "fBDxVhE6j7s",
+    "title": "The revolution of Material Design",
+    "speakers": "Pietro Alberto Rossi",
+    "thumbnail": "/images/sessions/123.JPG"
+  },
+   {
+    "youtubeId": "k5QjZBHfNzs",
+    "title": "Deploying and managing container-based applications",
+    "speakers": "Ihor Dvoretskyi",
+    "thumbnail": "/images/sessions/124.JPG"
   }
   
 ]

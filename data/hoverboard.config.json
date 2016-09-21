@@ -197,7 +197,7 @@
       "url": "https://www.linkedin.com/company/gdg-istanbul"
     }
   ],
-  "tweetsSource": "/data/tweets.json",
+  "tweetsSource": "https://infinite-everglades-50778.herokuapp.com/tweetledee/favoritesjson.php?c=10&cache_interval=8000",
   "gallery": {
     "albumUrl": "https://plus.google.com/events/gallery/cfm0ptim9d2t06h6g3lgho9urqg",
     "photos": {

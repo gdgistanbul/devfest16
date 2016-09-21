@@ -16,6 +16,7 @@
 <link rel="import" href="../elements/speaker-details.html">
 <link rel="import" href="../elements/footer-block.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
+<link rel="import" href="../behaviors/page-behavior.html">
 
 <dom-module id="speakers-page">
 
@@ -171,8 +172,8 @@
     </style>
 
     <app-route route="{{route}}"
-               pattern="/:id"
-               data="{{speakerRouteData}}"></app-route>
+               pattern="/:speakerId"
+               data="{{routeData}}"></app-route>
 
     <div class="container speakers-container">
       <template is="dom-repeat" items="[[_toArray(speakers)]]" as="speaker" on-dom-change="_updateCascadedNodes">
@@ -185,7 +186,7 @@
               <ul class="badges">
                 <template is="dom-repeat" items="[[speaker.badges]]" as="badge">
                   <li class="badge">
-                    <a href$="[[badge.link]]" target="_blank">[[badge.name]]</a>
+                    <a href$="[[badge.link]]" target="_blank" rel="noopener noreferrer">[[badge.name]]</a>
                     <paper-tooltip>[[badge.description]]</paper-tooltip>
                   </li>
                 </template>
@@ -199,7 +200,7 @@
               <iron-image class="company-logo" src="{{speaker.companyLogo}}" sizing="contain"></iron-image>
               <div class="tags">Skills:
                 <template is="dom-repeat" items="[[speaker.tags]]" as="tag">
-                  <span class="tag" style$="{{_getCustomStyleValue(tag)}}" target="_blank">[[tag]]</span>
+                  <span class="tag" style$="{{_getCustomStyleValue(tag)}}" target="_blank" rel="noopener noreferrer">[[tag]]</span>
                 </template>
               </div>
               <marked-element class="details-text" markdown="[[speaker.shortBio]]">
@@ -208,7 +209,7 @@
             </a>
             <div class="card-actions">
               <template is="dom-repeat" items="[[speaker.socials]]" as="social">
-                <a href="[[social.link]]" target="_blank">
+                <a href="[[social.link]]" target="_blank" rel="noopener noreferrer">
                   <paper-icon-button class="social-icon"
                                      icon$="icons:{{social.icon}}"></paper-icon-button>
                 </a>
@@ -240,26 +241,29 @@
 
         behaviors: [
           Polymer.NeonSharedElementAnimatableBehavior,
+          HOVERBOARD.PageBehavior,
           HOVERBOARD.UtilsBehavior
         ],
 
         properties: {
-          app: {
-            type: Object
-          },
+
           route: {
+            type: Object,
+            notify: true
+          },
+
+          routeData: {
             type: Object
           },
+
           speakerRouteData: {
             type: Object
           },
+
           speakers: {
             type: Object
           },
-          speakerId: {
-            type: String,
-            notify: true
-          },
+
           _selectedSpeaker: Object,
 
           animationConfig: {
@@ -285,14 +289,21 @@
         },
 
         observers: [
-          'openSpeakerDetails(speakerRouteData.id)'
+          '_routePageChanged(routeData.speakerId)'
         ],
 
-        openSpeakerDetails: function (speakerId) {
-          if (speakerId && this.speakers) {
-            this._selectedSpeaker = this.speakers[speakerId];
-            if (this._selectedSpeaker) {
-              this.$.speakerDetails.open();
+        listeners: {
+          'iron-overlay-closed': '_resetSpeakerIdParam'
+        },
+
+        _routePageChanged: function (speakerId) {
+          if (speakerId && this.selected) {
+            var tempSpeaker = this.speakers[speakerId];
+            if (tempSpeaker) {
+              Polymer.RenderStatus.afterNextRender(this, function () {
+                this._selectedSpeaker = tempSpeaker;
+                this.$.speakerDetails.open();
+              }.bind(this));
             }
           }
         },
@@ -319,8 +330,11 @@
 
         _getCustomStyleValue: function (value) {
           return 'background-color: ' + this.getComputedStyleValue('--' + this._generateClass(value)) || this.getComputedStyleValue('--general');
-        }
+        },
 
+        _resetSpeakerIdParam: function () {
+          this.set('routeData.speakerId', null);
+        }
       });
 
     }());

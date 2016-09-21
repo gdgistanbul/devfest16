@@ -4,7 +4,7 @@
 
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
 
-<link rel="import" href="../behaviors/app-localize-behavior.html">
+<link rel="import" href="../behaviors/localize-behavior.html">
 <link rel="import" href="social-post.html">
 
 
@@ -51,8 +51,13 @@
       }
     </style>
 
+    <iron-ajax
+      auto
+      url="[[app.data.tweetsSource]]"
+      handle-as="json"
+      last-response="{{_posts}}"
+    ></iron-ajax>
     <div class="container">
-      <iron-ajax auto url="[[app.data.tweetsSource]]" handle-as="json" last-response="{{_posts}}"></iron-ajax>
       <div class="social-section">
         <h4 class="heading">[[localize('before-hashtag')]] <a href$="https://www.google.com/#q=%23[[app.data.hashtag]]">#[[app.data.hashtag]]</a></h4>
         <h5>[[response.response]]</h5>
@@ -65,8 +70,8 @@
         <div>[[localize('social-motto')]]</div>
         <div class="align-pb-block">
           <template is="dom-repeat" items="[[app.data.social]]" as="network">
-            <a class="button-link" href$="[[network.url]]" target="_blank">
-              <paper-icon-button icon="icons:[[network.name]]"></paper-icon-button>
+            <a class="button-link" href$="[[network.url]]" target="_blank" rel="noopener noreferrer">
+              <paper-icon-button icon="[[network.name]]"></paper-icon-button>
             </a>
           </template>
         </div>
@@ -84,7 +89,7 @@
         is: 'social-feed',
 
         behaviors: [
-          HOVERBOARD.AppLocalizeBehavior
+          HOVERBOARD.LocalizeBehavior
         ],
 
         properties: {
@@ -92,10 +97,12 @@
             type: Number,
             value: 10000
           },
+
           _posts: {
             type: Array,
             observer: '_postsChanged'
           },
+
           _selected: {
             type: Number,
             value: -1
@@ -117,13 +124,13 @@
         _linkifyPost: function (value) {
           var replacedText, links1, links2, hashtags, profileLinks;
           links1 = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
-          replacedText = value.replace(links1, '<a class="post-link" href="$1" target="_blank">$1</a>');
+          replacedText = value.replace(links1, '<a class="post-link" href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
           links2 = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
-          replacedText = replacedText.replace(links2, '$1<a class="post-link" href="http://$2" target="_blank">$2</a>');
+          replacedText = replacedText.replace(links2, '$1<a class="post-link" href="http://$2" target="_blank" rel="noopener noreferrer">$2</a>');
           hashtags = /#(\S*)/g;
-          replacedText = replacedText.replace(hashtags, '<a class="post-link" href="https://twitter.com/search?q=%23$1" target="_blank">#$1</a>');
+          replacedText = replacedText.replace(hashtags, '<a class="post-link" href="https://twitter.com/search?q=%23$1" target="_blank" rel="noopener noreferrer">#$1</a>');
           profileLinks = /\B@([\w-]+)/gm;
-          replacedText = replacedText.replace(profileLinks, '<a class="post-link" href="https://twitter.com/$1" target="_blank">@$1</a>');
+          replacedText = replacedText.replace(profileLinks, '<a class="post-link" href="https://twitter.com/$1" target="_blank" rel="noopener noreferrer">@$1</a>');
           return replacedText;
         }
 

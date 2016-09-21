@@ -12,7 +12,9 @@
 
 <link rel="import" href="../elements/schedule-subnav.html">
 <link rel="import" href="../elements/schedule-day.html">
+<link rel="import" href="../elements/session-details.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
+<link rel="import" href="../behaviors/page-behavior.html">
 
 
 <dom-module id="schedule-page">
@@ -24,29 +26,51 @@
         display: block;
       }
 
+      .container[phone] {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
       schedule-day {
         margin-bottom: 64px;
       }
     </style>
 
-    <app-route route="{{route}}"
-               pattern="/:day"
-               data="{{routeData}}"></app-route>
+    <app-route
+      route="{{route}}"
+      pattern="/:day"
+      data="{{routeData}}"
+      query-params="{{queryParams}}"
+    ></app-route>
 
-    <div class="container">
-
+    <div class="container" phone$="{{app.isPhoneSize}}">
       <schedule-subnav
+        app="{{app}}"
         schedule="[[schedule]]"
         selected-day="[[app.selectedDay]]"
+        filters="{{filters}}"
       ></schedule-subnav>
 
       <neon-animated-pages selected="[[app.selectedDay]]" attr-for-selected="name">
         <template is="dom-repeat" items="[[schedule]]" as="day">
-          <schedule-day name$="day[[_addToValue(index, 1)]]" app={{app}} day="[[day]]"></schedule-day>
+          <schedule-day
+            name$="day[[_addToValue(index, 1)]]"
+            app={{app}}
+            day="[[day]]"
+            filters="[[filters]]"
+          ></schedule-day>
         </template>
       </neon-animated-pages>
-
     </div>
+
+    <session-details
+      id="sessionDetails"
+      app="{{app}}"
+      session="[[_selectedSession]]"
+      entry-animation="scale-up-animation"
+      exit-animation="fade-out-animation"
+      with-backdrop
+    ></session-details>
 
   </template>
 
@@ -60,27 +84,30 @@
 
         behaviors: [
           Polymer.NeonSharedElementAnimatableBehavior,
-          HOVERBOARD.UtilsBehavior,
+          HOVERBOARD.PageBehavior,
+          HOVERBOARD.UtilsBehavior
         ],
 
         properties: {
-          app: {
-            type: Object
-          },
-
           route: {
             type: Object,
             notify: true
+          },
+
+          routeData: {
+            type: Object
           },
 
           schedule: {
             type: Array
           },
 
-          selected: {
-            type: Boolean,
-            reflectToAttribute: true,
-            value: false
+          sessions: {
+            type: Object
+          },
+
+          filters: {
+            type: Array
           },
 
           animationConfig: {
@@ -106,8 +133,14 @@
         },
 
         observers: [
-          '_routePageChanged(routeData.day)'
+          '_routePageChanged(routeData.day)',
+          '_queryParamsChanged(queryParams)',
+          '_filtersChanged(filters.splices)'
         ],
+
+        listeners: {
+          'iron-overlay-closed': '_resetSessionIdParam'
+        },
 
         _routePageChanged: function (day) {
           if (this.selected) {
@@ -117,7 +150,38 @@
               this.set('app.selectedDay', day);
             }
           }
+        },
 
+        _queryParamsChanged: function (params) {
+          if (this.selected) {
+            if (params.sessionId) {
+              var session = this.sessions[params.sessionId];
+              if (!session) {
+                this._resetSessionIdParam();
+                return;
+              }
+              Polymer.RenderStatus.afterNextRender(this, function () {
+                this._selectedSession = session;
+                this.$.sessionDetails.open();
+              }.bind(this));
+            }
+            if (params.filters) {
+              this.set('filters', params.filters.split(','));
+            } else {
+              this.set('queryParams.filters', null);
+            }
+          }
+        },
+
+        _filtersChanged: function () {
+          if (this.filters.length)
+            this.set('queryParams.filters', this.filters.join(','));
+          else
+            this.set('queryParams.filters', null);
+        },
+
+        _resetSessionIdParam: function () {
+          !this.$.sessionDetails.opened && this.set('queryParams.sessionId', null);
         }
 
       });

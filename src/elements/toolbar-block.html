@@ -7,10 +7,11 @@
 
 <link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
 <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
 
 <link rel="import" href="../styles/shared-styles.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
-<link rel="import" href="../behaviors/app-localize-behavior.html">
+<link rel="import" href="../behaviors/localize-behavior.html">
 
 
 <dom-module id="toolbar-block">
@@ -62,6 +63,16 @@
         height: 100%;
         text-transform: uppercase;
       }
+
+      .action-button-wrapper {
+        margin-left: 16px;
+      }
+
+      .action-button {
+        color: var(--header-background);
+        background: var(--header-color);
+        font-size: 13px;
+      }
     </style>
 
     <app-toolbar id="mainToolbar">
@@ -70,11 +81,15 @@
       </div>
       <div class="logo-wrapper">
         <a href="/" hidden$="{{hideLogo}}" fade>
-          <iron-image class="logo" src="/images/logo-white.svg" sizing="contain"
-                      alt="{{localize('title')}}"></iron-image>
+          <iron-image
+            class="logo"
+            src="/images/logo-white.svg"
+            sizing="contain"
+            alt="{{localize('title')}}"
+          ></iron-image>
         </a>
       </div>
-      <div class="navItem" self-end>
+      <div class="navItem" layout horizontal self-end>
         <template is="dom-if" if="[[!app.isPhoneSize]]">
           <paper-tabs selected="[[app.page]]" attr-for-selected="name" noink>
             <template is="dom-repeat" items="[[app.data.navigation]]" as="nav">
@@ -83,6 +98,11 @@
               </paper-tab>
             </template>
           </paper-tabs>
+          <div class="action-button-wrapper" layout horizontal center-center>
+            <a href$="[[app.data.tickets.url]]" target="_blank" rel="noopener noreferrer" on-tap="_trackBuyClick">
+              <paper-button class="action-button">[[localize('buy-ticket')]]</paper-button>
+            </a>
+          </div>
         </template>
       </div>
     </app-toolbar>
@@ -98,16 +118,13 @@
         is: 'toolbar-block',
 
         behaviors: [
-          HOVERBOARD.AppLocalizeBehavior,
+          HOVERBOARD.LocalizeBehavior,
           HOVERBOARD.UtilsBehavior
         ],
 
         properties: {
-          routeData: Object,
-          hideLogo: Boolean,
-          loadExternalResources: {
-            type: Boolean,
-            value: false
+          hideLogo: {
+            type: Boolean
           }
         },
 
@@ -120,11 +137,15 @@
         },
 
         _stylesChanged: function (headerSettings) {
-          if(headerSettings) {
+          if (headerSettings) {
             this.customStyle['--header-color'] = headerSettings.fontColor;
             this.hideLogo = headerSettings.hideLogo;
             this.updateStyles();
           }
+        },
+
+        _trackBuyClick: function () {
+          HOVERBOARD.Analytics.trackEvent('ticket', 'buy_click', 'toolbar');
         }
 
       });

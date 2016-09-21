@@ -27,6 +27,8 @@ window.debugLog = function debugLog(var_args) {
 };
 
 HOVERBOARD.Util = HOVERBOARD.Util || (function () {
+
+
     'use strict';
 
     /**
@@ -77,6 +79,17 @@ HOVERBOARD.Util = HOVERBOARD.Util || (function () {
 
     function isTouchScreen() {
       return ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch;
+    }
+
+    /**
+     * Gets the <meta name="theme-color"> value.
+     */
+    function getMetaThemeColor() {
+      var metaTheme = document.documentElement.querySelector('meta[name="theme-color"]');
+      if (metaTheme) {
+        return metaTheme.content;
+      }
+      return null;
     }
 
     /**
@@ -256,25 +269,26 @@ HOVERBOARD.Util = HOVERBOARD.Util || (function () {
     };
 
     return {
-      createDeferred,
-      isFF,
-      isIE,
-      isEdge,
-      isIOS,
-      isAndroid,
-      isSafari,
-      isTouchScreen,
-      setMetaThemeColor,
-      getURLParameter,
-      setSearchParam,
-      removeSearchParam,
+      createDeferred: createDeferred,
+      isFF: isFF,
+      isIE: isIE,
+      isEdge: isEdge,
+      isIOS: isIOS,
+      isAndroid: isAndroid,
+      isSafari: isSafari,
+      isTouchScreen: isTouchScreen,
+      getMetaThemeColor: getMetaThemeColor,
+      setMetaThemeColor: setMetaThemeColor,
+      getURLParameter: getURLParameter,
+      setSearchParam: setSearchParam,
+      removeSearchParam: removeSearchParam,
       supportsHTMLImports: 'import' in document.createElement('link'),
-      getFPIfSupported,
-      getEventSender,
-      reportError,
-      getChromeVersion,
-      getFirefoxVersion,
-      extend,
-      getUserLanguage
+      getFPIfSupported: getFPIfSupported,
+      getEventSender: getEventSender,
+      reportError: reportError,
+      getChromeVersion: getChromeVersion,
+      getFirefoxVersion: getFirefoxVersion,
+      extend: extend,
+      getUserLanguage: getUserLanguage
     };
-  })();
+  }());

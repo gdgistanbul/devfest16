@@ -15,11 +15,11 @@
 <link rel="import" href="../../bower_components/marked-element/marked-element.html">
 
 <link rel="import" href="../styles/dialog-styles.html">
-<!--<link rel="import" href="../behaviors/share-behavior.html">-->
+<link rel="import" href="../behaviors/share-behavior.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
-<link rel="import" href="../behaviors/app-localize-behavior.html">
+<link rel="import" href="../behaviors/localize-behavior.html">
 <link rel="import" href="truncate-marked-text.html">
-<link rel="import" href="video-dialog.html">
+
 
 <dom-module id="session-details">
 
@@ -38,36 +38,34 @@
 
     <paper-scroll-header-panel id="scrollHeaderPanel" no-reveal>
       <paper-toolbar class="tall">
-        <a href="/schedule">
-          <paper-icon-button class="back-button" dialog-dismiss icon="arrow-back"></paper-icon-button>
-        </a>
+        <paper-icon-button class="back-button" dialog-dismiss icon="arrow-back"></paper-icon-button>
         <div class="middle fallback-image-wrapper">
           <iron-image class="fallback-image" src="/images/logo-white.svg"
                       alt="[[app.data.title]]"></iron-image>
         </div>
       </paper-toolbar>
       <div class="content">
-        <!--<paper-menu-button horizontal-align="right" share-menu>-->
-          <!--<paper-fab class="float-button dropdown-trigger" icon="share"></paper-fab>-->
-          <!--<div class="dropdown-content">-->
-            <!--<paper-icon-item on-tap="share" share="gplus">-->
-              <!--<iron-icon icon="gplus" item-icon></iron-icon>-->
-              <!--Google+-->
-            <!--</paper-icon-item>-->
-            <!--<paper-icon-item on-tap="share" share="facebook">-->
-              <!--<iron-icon icon="facebook" item-icon></iron-icon>-->
-              <!--Facebook-->
-            <!--</paper-icon-item>-->
-            <!--<paper-icon-item on-tap="share" share="twitter">-->
-              <!--<iron-icon icon="twitter" item-icon></iron-icon>-->
-              <!--Twitter-->
-            <!--</paper-icon-item>-->
-            <!--<paper-icon-item on-tap="share" share="copy">-->
-              <!--<iron-icon icon="link" item-icon></iron-icon>-->
-              <!--[[localize('copy-link')]]-->
-            <!--</paper-icon-item>-->
-          <!--</div>-->
-        <!--</paper-menu-button>-->
+        <paper-menu-button horizontal-align="right" share-menu>
+          <paper-fab class="float-button dropdown-trigger" icon="share"></paper-fab>
+          <div class="dropdown-content">
+            <paper-icon-item on-tap="share" share="gplus">
+              <iron-icon icon="gplus" item-icon></iron-icon>
+              Google+
+            </paper-icon-item>
+            <paper-icon-item on-tap="share" share="facebook">
+              <iron-icon icon="facebook" item-icon></iron-icon>
+              Facebook
+            </paper-icon-item>
+            <paper-icon-item on-tap="share" share="twitter">
+              <iron-icon icon="twitter" item-icon></iron-icon>
+              Twitter
+            </paper-icon-item>
+            <paper-icon-item on-tap="share" share="copy">
+              <iron-icon icon="link" item-icon></iron-icon>
+              [[localize('copy-link')]]
+            </paper-icon-item>
+          </div>
+        </paper-menu-button>
         <div class="metadata-wrapper">
           <div class="main-info">
             <div class="info">
@@ -92,10 +90,10 @@
 
         <div class="actions">
           <template is="dom-if" if="[[session.presentation]]">
-            <a href$="[[session.presentation]]" target="_blank">
+            <a href$="[[session.presentation]]" target="_blank" rel="noopener noreferrer">
               <paper-button class="action">
                 <iron-icon icon="presentation"></iron-icon>
-                View presentation
+                [[localize('view-presentation')]]
               </paper-button>
             </a>
           </template>
@@ -103,7 +101,7 @@
             <div on-tap="_openVideo">
               <paper-button class="action">
                 <iron-icon icon="video"></iron-icon>
-                View video
+                [[localize('view-video')]]
               </paper-button>
             </div>
           </template>
@@ -123,11 +121,14 @@
                   <span class="section-sub-title">[[speaker.company]], [[speaker.country]]</span>
                   <div class="badges">
                     <template is="dom-repeat" items="[[speaker.badges]]" as="badge">
-                      <a class="badge" href$="[[badge.link]]" target="_blank">[[badge.name]]</a>
+                      <a class="badge" href$="[[badge.link]]" target="_blank" rel="noopener noreferrer">[[badge.name]]</a>
                     </template>
                   </div>
-                  <truncate-marked-text text="[[speaker.bio]]" characters="220"
-                                        break-last-word></truncate-marked-text>
+                  <truncate-marked-text
+                    text="[[speaker.bio]]"
+                    characters="220"
+                    break-last-word
+                  ></truncate-marked-text>
 
                   <a class="read-more" href$="/speakers/[[speaker.id]]" dialog-dismiss>[[localize('read-more')]]</a>
                 </div>
@@ -137,10 +138,6 @@
         </div>
       </template>
     </paper-scroll-header-panel>
-
-    <video-dialog id="videoViewer" video-title="[[session.title]]" youtube-id="[[session.videoId]]"
-                  entry-animation="scale-up-animation"
-                  exit-animation="scale-down-animation" modal></video-dialog>
 
   </template>
 
@@ -155,8 +152,9 @@
         behaviors: [
           Polymer.PaperDialogBehavior,
           Polymer.NeonAnimationRunnerBehavior,
-          HOVERBOARD.AppLocalizeBehavior,
-          HOVERBOARD.UtilsBehavior
+          HOVERBOARD.LocalizeBehavior,
+          HOVERBOARD.UtilsBehavior,
+          HOVERBOARD.ShareBehavior
         ],
 
         properties: {
@@ -171,7 +169,7 @@
         },
 
         _openVideo: function () {
-          this.$.videoViewer.open();
+          HOVERBOARD.Elements.Template.openVideo(this.session.title, this.session.videoId, true);
         },
 
         _concatArray: function (array) {
@@ -181,8 +179,8 @@
         _sessionChanged: function () {
           var generatedClass = this._generateClass(this.session.mainTag);
           this.customStyle['--paper-scroll-header-panel-color'] = 'var(--' + generatedClass + ')';
-          this._previousBrowserColor = document.getElementsByName('theme-color')[0].content;
-          document.getElementsByName('theme-color')[0].content = this.getComputedStyleValue('--' + generatedClass);
+          this._previousBrowserColor = HOVERBOARD.Util.getMetaThemeColor();
+          HOVERBOARD.Util.setMetaThemeColor(this.getComputedStyleValue('--' + generatedClass));
           this.updateStyles();
         },
 
@@ -199,7 +197,7 @@
         },
 
         _renderClosed: function () {
-          document.getElementsByName('theme-color')[0].content = this._previousBrowserColor;
+          HOVERBOARD.Util.setMetaThemeColor(this._previousBrowserColor);
           this.backdropElement.close();
           this.playAnimation('exit');
         },
@@ -216,7 +214,7 @@
 
       });
 
-    })();
+    }());
   </script>
 
 </dom-module>

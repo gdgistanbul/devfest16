@@ -8,6 +8,8 @@
   <template>
     <style>
       :root {
+        /* Generate theme at https://www.materialpalette.com */
+
         /* Primary colors */
         --dark-primary-color:       #F57C00;
         --default-primary-color:    #FF9800;
@@ -27,6 +29,9 @@
 
         /* Other colors */
         --divider-color:            #B6B6B6;
+
+        /* --- End of replace section --- */
+
         --secondary-background-color: #FFFFFF;
 
         /* Footer */
@@ -39,6 +44,7 @@
         --web: #2196f3;
         --cloud: #3f51b5;
         --community: #e91e63;
+        --it: #9E9E9E;
         --angular-js: #e0343d;
         --angular-js2: #e0343d;
         --protractor: #e0343d;
@@ -142,6 +148,18 @@
         left: 0;
       }
 
+      [hidden] {
+        display: none !important;
+      }
+
+      [show] {
+        display: block !important;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
       body,
       .markdown-html {
         font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;

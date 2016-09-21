@@ -11,7 +11,7 @@
 
 <link rel="import" href="../styles/shared-styles.html">
 <link rel="import" href="../js-wrappers/g-plusone.html">
-<link rel="import" href="../behaviors/app-localize-behavior.html">
+<link rel="import" href="../behaviors/localize-behavior.html">
 <link rel="import" href="mailchimp-subscribe.html">
 
 
@@ -29,6 +29,7 @@
         --paper-menu-button: {
           padding: 0;
         };
+        --paper-menu-background-color: #fff;
       }
 
       .container {
@@ -103,12 +104,20 @@
       }
 
       .subscribe {
-        @apply(--layout-flex);
+        @apply(--layout-flex-auto);
       }
 
       .copyright {
         @apply(--layout-flex);
         margin-right: 10px;
+      }
+
+      .language-icon {
+        margin-right: 4px;
+      }
+
+      paper-item {
+        cursor: pointer;
       }
 
       @media (min-width: 601px) {
@@ -143,7 +152,8 @@
       }
 
       @media (min-width: 961px) {
-        .link-block-wrapper {
+        .link-block-wrapper,
+        .subscribe {
           @apply(--layout-flex);
         }
       }
@@ -151,8 +161,12 @@
 
     <div class="container">
       <div class="footer-content">
-        <iron-image class="gdg-logo" src="/images/gdg-logo.svg" sizing="contain"
-                    alt="[[app.data.organizer.name]]"></iron-image>
+        <iron-image
+          class="gdg-logo"
+          src="/images/gdg-logo.svg"
+          sizing="contain"
+          alt="[[app.data.organizer.name]]"
+        ></iron-image>
         <paper-button class="footer-backtotop" on-tap="scrollToTop" noink>
           [[localize('back-to-top')]]
           <iron-icon icon="icons:expand-less"></iron-icon>
@@ -176,12 +190,14 @@
             <div class="link-block-title">[[localize('contact-us')]]</div>
             <ul class="link-block">
               <template is="dom-repeat" items="[[app.data.contactBlock.links]]" as="link">
-                <li><a href$="[[link.url]]" target="_getLinkTarget(link.newTab)">[[link.text]]</a></li>
+                <li>
+                  <a href$="[[link.url]]" target="_getLinkTarget(link.newTab)">[[link.text]]</a>
+                </li>
               </template>
             </ul>
             <div class="icons-wrapper align-pb-block">
               <template is="dom-repeat" items="[[app.data.social]]" as="network">
-                <a class="button-link" href$="[[network.url]]" target="_blank">
+                <a class="button-link" href$="[[network.url]]" target="_blank" rel="noopener noreferrer">
                   <paper-icon-button icon="icons:[[network.name]]"></paper-icon-button>
                 </a>
               </template>
@@ -190,36 +206,54 @@
           <div class="subscribe">
             <div class="link-block-title">[[localize('subscribe')]]</div>
             <span>[[localize('subscribe-note')]]</span>
-            <mailchimp-subscribe url="[[app.data.mailchimp.url]]"
-                                 name="[[app.data.mailchimp.name]]"></mailchimp-subscribe>
+            <mailchimp-subscribe
+              app="[[app]]"
+              url="[[app.data.mailchimp.url]]"
+              name="[[app.data.mailchimp.name]]"
+            ></mailchimp-subscribe>
           </div>
         </nav>
       </div>
       <div class="footer-content footer-bottom">
         <!-- Please do NOT delete next block -->
         <div class="copyright">
-          &copy; 2016 Based on <a href="https://github.com/gdg-x/hoverboard" target="_blank">Project
-          Hoverboard</a>. Designed and created by <a href="http://o.zasadnyy.com/" target="_blank">Oleh
+          &copy; 2016 Based on <a href="https://github.com/gdg-x/hoverboard" target="_blank" rel="noopener noreferrer">Project
+          Hoverboard</a>. Designed and created by <a href="http://o.zasadnyy.com/" target="_blank" rel="noopener noreferrer">Oleh
           Zasadnyy</a> &middot;
-          <a href="http://lviv.gdg.org.ua" target="_blank">GDG Lviv</a>
+          <a href="http://lviv.gdg.org.ua" target="_blank" rel="noopener noreferrer">GDG Lviv</a>
         </div>
         <div class="gplus">
-          <g:plusone size="medium" width="200" annotation="inline" href$="{{app.data.url}}"></g:plusone>
+          <g:plusone
+            size="medium"
+            width="200"
+            annotation="inline"
+            href$="{{app.data.url}}"
+          ></g:plusone>
         </div>
 
-        <!--<paper-menu-button vertical-align="bottom" horizontal-align="left">-->
-          <!--<paper-button class="dropdown-trigger">-->
-            <!--<iron-icon icon="language"></iron-icon>-->
-            <!--[[selectedLanguage.label]]-->
-            <!--<iron-icon icon="arrow-drop-down"></iron-icon>-->
-          <!--</paper-button>-->
-          <!--<paper-menu class="dropdown-content" selected="{{app.lang}}" selected-item="{{selectedLanguage}}"-->
-                      <!--attr-for-selected="value">-->
-            <!--<template is="dom-repeat" items="[[app.data.languages]]" as="lang">-->
-              <!--<paper-item value="[[lang.key]]" label="[[lang.name]]">[[lang.name]]</paper-item>-->
-            <!--</template>-->
-          <!--</paper-menu>-->
-        <!--</paper-menu-button>-->
+        <template is="dom-if" if="[[_showLanguageToggle(app.data.languages)]]">
+          <paper-menu-button vertical-align="bottom" horizontal-align="left">
+            <paper-button class="dropdown-trigger">
+              <iron-icon class="language-icon" icon="language"></iron-icon>
+              [[selectedLanguage.label]]
+              <iron-icon icon="arrow-drop-down"></iron-icon>
+            </paper-button>
+            <paper-menu
+              class="dropdown-content"
+              selected="{{app.lang}}"
+              selected-item="{{selectedLanguage}}"
+              attr-for-selected="value"
+            >
+              <template is="dom-repeat" items="[[app.data.languages]]" as="lang">
+                <paper-item
+                  value="[[lang.key]]"
+                  label="[[lang.name]]"
+                >[[lang.name]]
+                </paper-item>
+              </template>
+            </paper-menu>
+          </paper-menu-button>
+        </template>
       </div>
     </div>
 
@@ -234,15 +268,27 @@
         is: 'footer-block',
 
         behaviors: [
-          HOVERBOARD.AppLocalizeBehavior
+          HOVERBOARD.LocalizeBehavior
+        ],
+
+        observers: [
+          'languageChanged(app.lang)'
         ],
 
         scrollToTop: function (e) {
           HOVERBOARD.Elements.Template.backToTop(e);
         },
 
+        languageChanged: function (lang) {
+          HOVERBOARD.Analytics.trackEvent('language', 'select', lang);
+        },
+
         _getLinkTarget: function (newTab) {
           return newTab ? '_blank' : '';
+        },
+
+        _showLanguageToggle: function (languages) {
+          return languages && (languages.length > 1);
         }
 
       });

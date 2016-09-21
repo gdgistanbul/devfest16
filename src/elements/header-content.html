@@ -7,7 +7,7 @@
 <link rel="import" href="../../bower_components/neon-animation/neon-animated-pages.html">
 
 <link rel="import" href="../styles/shared-styles.html">
-<link rel="import" href="../behaviors/app-localize-behavior.html">
+<link rel="import" href="../behaviors/localize-behavior.html">
 <link rel="import" href="animatable-content.html">
 
 
@@ -184,14 +184,13 @@
         is: 'header-content',
 
         behaviors: [
-          HOVERBOARD.AppLocalizeBehavior
+          HOVERBOARD.LocalizeBehavior
         ],
 
         properties: {
           app: {
             type: Object
           },
-          routeData: Object,
           schedule: Array,
           selectedDay: {
             type: Number,
@@ -201,8 +200,9 @@
         },
 
         _openVideo: function () {
-          HOVERBOARD.Elements.Template.openVideo('GDG DevFest Ukraine 2015', 'DfMnJAzOFng', true);
-          HOVERBOARD.Analytics.trackEvent('video', 'watch', 'GDG DevFest Ukraine 2015');
+          HOVERBOARD.Elements.Template.openVideo(this.app.data.pages.home.headerSettings.video.title,
+            this.app.data.pages.home.headerSettings.video.youtubeId, true);
+          HOVERBOARD.Analytics.trackEvent('video', 'watch', this.app.data.pages.home.headerSettings.video.title);
         },
 
         _scrollToTickets: function () {

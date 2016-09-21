@@ -15,7 +15,7 @@
 
 <link rel="import" href="../styles/dialog-styles.html">
 <link rel="import" href="../styles/shared-styles.html">
-<link rel="import" href="../behaviors/app-localize-behavior.html">
+<link rel="import" href="../behaviors/localize-behavior.html">
 <link rel="import" href="../behaviors/utils-behavior.html">
 <link rel="import" href="truncate-marked-text.html">
 
@@ -40,14 +40,13 @@
       <div class="content">
         <div class="metadata-wrapper">
           <div class="main-info">
-            <iron-image></iron-image>
             <div class="photo" style$="background-image: url([[speaker.photoUrl]])" hidden$="{{app.isPhoneSize}}"></div>
             <div class="info">
               <h1 class="main-title" hidden$="{{app.isPhoneSize}}">[[speaker.name]]</h1>
               <div class="meta highlight">[[speaker.company]], [[speaker.country]]</div>
               <div class="meta">
                 <template is="dom-repeat" items="[[speaker.badges]]" as="badge">
-                  <a class="badge" href$="[[badge.link]]" target="_blank">[[badge.description]]</a>
+                  <a class="badge" href$="[[badge.link]]" target="_blank" rel="noopener noreferrer">[[badge.description]]</a>
                 </template>
               </div>
             </div>
@@ -60,7 +59,7 @@
 
         <div class="actions">
           <template is="dom-repeat" items="[[speaker.socials]]" as="social">
-            <a href$="[[social.link]]" target="_blank">
+            <a href$="[[social.link]]" target="_blank" rel="noopener noreferrer">
               <paper-icon-button class="action" icon$="icons:{{social.icon}}"></paper-icon-button>
             </a>
           </template>
@@ -70,7 +69,7 @@
 
       <template is="dom-if" if="{{speaker.sessions.length}}">
         <div class="sections-wrapper content">
-        <h4 class="block-title">[[localize('sessions')]]</h4>
+          <h4 class="block-title">[[localize('sessions')]]</h4>
           <div class="sections">
             <template is="dom-repeat" items="[[speaker.sessions]]" as="session">
               <div class="section">
@@ -78,12 +77,15 @@
                   <h3 class="section-title">[[session.title]]</h3>
                   <div class="badges">
                     <template is="dom-repeat" items="[[session.tags]]" as="tag">
-                      <span class="badge" target="_blank">[[tag]]</span>
+                      <span class="badge" target="_blank" rel="noopener noreferrer">[[tag]]</span>
                     </template>
                   </div>
-                  <truncate-marked-text text="[[session.description]]" characters="220"
-                                        break-last-word></truncate-marked-text>
-                  <a class="read-more" href="/schedule" dialog-dismiss>[[localize('read-more')]]</a>
+                  <truncate-marked-text
+                    text="[[session.description]]"
+                    characters="220"
+                    break-last-word
+                  ></truncate-marked-text>
+                  <a class="read-more" href$="/schedule/day[[session.day]]?sessionId=[[session.id]]" dialog-dismiss>[[localize('read-more')]]</a>
 
                 </div>
               </div>
@@ -106,7 +108,7 @@
         behaviors: [
           Polymer.PaperDialogBehavior,
           Polymer.NeonAnimationRunnerBehavior,
-          HOVERBOARD.AppLocalizeBehavior,
+          HOVERBOARD.LocalizeBehavior,
           HOVERBOARD.UtilsBehavior
         ],
 
@@ -135,8 +137,8 @@
         _speakerChanged: function () {
           var generatedClass = this._generateClass(this.speaker.tags[0]);
           this.customStyle['--paper-scroll-header-panel-color'] = 'var(--' + generatedClass + ')';
-          this._previousBrowserColor = document.getElementsByName('theme-color')[0].content;
-          document.getElementsByName('theme-color')[0].content = this.getComputedStyleValue('--' + generatedClass);
+          this._previousBrowserColor = HOVERBOARD.Util.getMetaThemeColor();
+          HOVERBOARD.Util.setMetaThemeColor(this.getComputedStyleValue('--' + generatedClass));
 
           if (this.app.isPhoneSize) {
             this.$.scrollHeaderPanel.$.headerBg.style.background = 'linear-gradient(to top, rgba(0, 0, 0, 0.4) -10%, rgba(0, 0, 0, 0.1) 50%), url(' + this.speaker.photoUrl + ') 0 / cover no-repeat';
@@ -157,7 +159,7 @@
         },
 
         _renderClosed: function () {
-          document.getElementsByName('theme-color')[0].content = this._previousBrowserColor;
+          HOVERBOARD.Util.setMetaThemeColor(this._previousBrowserColor);
           this.backdropElement.close();
           this.playAnimation('exit');
         },
@@ -175,7 +177,7 @@
 
       });
 
-    })();
+    }());
   </script>
 
 </dom-module>

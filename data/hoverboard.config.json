@@ -206,20 +206,19 @@
   },
   "location": {
     "apiKey": "TODO maps api key",
-    "link": "TODO event location link",
+    "link": "https://www.google.com.tr/maps/place/Bah%C3%A7e%C5%9Fehir+%C3%9Cniversitesi/@41.041994,29.006855,17z/data=!3m1!4b1!4m5!3m4!1s0x14cab7a2a2c3b963:0x7671d1b9817b8519!8m2!3d41.041994!4d29.009049?hl=en",
     "pointer": {
-      "latitude": 49.809841,
-      "longitude": 23.972805,
+      "latitude": 41.042237,
+      "longitude": 29.009038,
       "zoom": 15
     },
     "mapCenter": {
-      "latitude": 49.809841,
-      "longitude": 23.982805
+      "latitude": 41.042237,
+      "longitude": 29.009038
     },
     "images": [
       "/images/backgrounds/location_1.jpg",
-      "/images/backgrounds/location_2.jpg",
-      "/images/backgrounds/location_3.jpg"
+      "/images/backgrounds/location_2.jpg"
     ]
   },
   "videosSessionsUrl": "https://www.youtube.com/playlist?list=PLSV3VvYZSJP3gGrrK7Oj7Koz8QUrNBhEZ",

@@ -75,7 +75,7 @@
     "url": "TODO mail link",
     "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
   },
-  "partnershipProposition": "TODO sponsor link",
+  "partnershipProposition": "public/sponsorship.pdf",
   "disqusShortName": "dfist16",
   "languages": [
     {
@@ -137,11 +137,11 @@
     ]
   },
   "tickets": {
-    "url": "TODO ticket URL",
+    "url": "https://www.biletino.com/event/eventdetail/2907",
     "elements": [
       {
         "name": "ticket",
-        "price": 500,
+        "price": 15,
         "currency": "TL",
         "starts": "ticket-starts",
         "ends": "ticket-ends",

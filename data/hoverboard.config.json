@@ -63,11 +63,6 @@
     {
       "route": "home",
       "permalink": "/"
-    },
-    {
-      "route": "cfp",
-      "permalink": "https://gdg.ist/gdgist-devfest16",
-      "newTab": true
     }
   ],
   "url": "https://2016.devfest.istanbul/",

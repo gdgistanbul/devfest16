@@ -5,11 +5,11 @@
 
 <!-- TODO pages in main page -->
 <link rel="import" href="../behaviors/page-behavior.html">
-<link rel="import" href="../elements/statistics-block.html">
+<link rel="import" href="../elements/statistics-block.html"> 
 <!-- <link rel="import" href="../elements/featured-people.html"> -->
 <link rel="import" href="../elements/featured-videos.html">
 <!-- <link rel="import" href="../elements/call-to-action.html"> -->
-<link rel="import" href="../elements/about-block.html">
+<link rel="import" href="../elements/about-block.html"> 
 <link rel="import" href="../elements/tickets-block.html">
 <!-- <link rel="import" href="../elements/latest-posts.html"> -->
 <link rel="import" href="../elements/footer-block.html">
@@ -22,18 +22,18 @@
 
   <template>
 
-    <statistics-block app="{{app}}" cascaded></statistics-block>
-    <featured-people app="{{app}}" people="{{people}}" cascaded></featured-people>
-    <featured-videos app="{{app}}" cascaded></featured-videos>
-    <call-to-action app="{{app}}" cascaded></call-to-action>
-    <about-block app="{{app}}" cascaded></about-block>
-    <photo-block app="{{app}}" cascaded></photo-block>
-    <tickets-block app="{{app}}" cascaded></tickets-block>
-    <latest-posts app="{{app}}" posts="{{posts}}" cascaded></latest-posts>
-    <social-feed app="{{app}}" cascaded></social-feed>
-    <map-block app="{{app}}" selected="{{selected}}" cascaded></map-block>
-    <logos-block app="{{app}}" cascaded></logos-block>
-    <footer-block app="{{app}}" cascaded></footer-block>
+    <statistics-block app="{{app}}" cascaded></statistics-block> <!-- dark -->
+    <!-- <featured-people app="{{app}}" people="{{people}}" cascaded></featured-people> -->
+    <about-block app="{{app}}" cascaded></about-block> <!-- light -->
+    <featured-videos app="{{app}}" cascaded></featured-videos> <!-- dark -->
+    <!-- <call-to-action app="{{app}}" cascaded></call-to-action> -->
+    <photo-block app="{{app}}" cascaded></photo-block> <!-- neutral -->
+    <tickets-block app="{{app}}" cascaded></tickets-block> <!-- dark -->
+    <map-block app="{{app}}" selected="{{selected}}" cascaded></map-block> <!-- neutral -->
+    <!-- <latest-posts app="{{app}}" posts="{{posts}}" cascaded></latest-posts> -->
+    <social-feed app="{{app}}" cascaded></social-feed> <!-- dark -->
+    <logos-block app="{{app}}" cascaded></logos-block> <!-- light -->
+    <footer-block app="{{app}}" cascaded></footer-block> <!-- light -->
 
   </template>
 

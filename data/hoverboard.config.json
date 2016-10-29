@@ -66,11 +66,11 @@
     },
     {
       "route": "cfp",
-      "permalink": "https://docs.google.com/forms/d/e/1FAIpQLSekdRu5K18gWb6FEZs3R9TYLDJh6YvD81k6prh0yQK0gvxhAA/viewform",
+      "permalink": "https://gdg.ist/gdgist-devfest16",
       "newTab": true
     }
   ],
-  "url": "https://devfest.istanbul/",
+  "url": "https://2016.devfest.istanbul/",
   "mailchimp": {
     "url": "TODO mail link",
     "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
@@ -81,10 +81,6 @@
     {
       "name": "English",
       "key": "en"
-    },
-    {
-      "name": "Türkçe",
-      "key": "tr"
     }
   ],
   "footerBlocks": [
@@ -102,17 +98,17 @@
         },
         {
           "text": "df-13",
-          "url": "http://2013.devfesttr.com",
+          "url": "http://2013.devfest.istanbul",
           "newTab": true
         },
         {
           "text": "df-14",
-          "url": "http://2014.devfesttr.com",
+          "url": "http://2014.devfest.istanbul",
           "newTab": true
         },
         {
           "text": "df-15",
-          "url": "http://2015.devfesttr.com",
+          "url": "http://2015.devfest.istanbul",
           "newTab": true
         }
       ]
@@ -205,16 +201,16 @@
     }
   },
   "location": {
-    "apiKey": "TODO maps api key",
-    "link": "https://www.google.com.tr/maps/place/Bah%C3%A7e%C5%9Fehir+%C3%9Cniversitesi/@41.041994,29.006855,17z/data=!3m1!4b1!4m5!3m4!1s0x14cab7a2a2c3b963:0x7671d1b9817b8519!8m2!3d41.041994!4d29.009049?hl=en",
+    "apiKey": "AIzaSyAHUeiUOXMsT8ITKa_XW1PmMYGzgynU87Y",
+    "link": "https://goo.gl/maps/N3KsHQNTTU12",
     "pointer": {
       "latitude": 41.042237,
       "longitude": 29.009038,
       "zoom": 15
     },
     "mapCenter": {
-      "latitude": 41.042237,
-      "longitude": 29.009038
+      "latitude": 41.0419318,
+      "longitude": 29.0090718
     },
     "images": [
       "/images/backgrounds/location_1.jpg",

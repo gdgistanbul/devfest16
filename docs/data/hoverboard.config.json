@@ -1,0 +1,220 @@
+{
+  "pages": {
+    "home": {
+      "headerSettings": {
+        "backgroundColor": "#FF9800",
+        "backgroundImage": "/images/backgrounds/home.png",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff",
+        "video": {
+          "title": "GDG DevFest Ukraine 2016",
+          "youtubeId": "DfMnJAzOFng",
+          "text": "See how it was in 2015"
+        },
+        "hideLogo": true,
+        "minHeight": "360px"
+      }
+    },
+    "blog": {
+      "headerSettings": {
+        "backgroundColor": "#03a9f4",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "speakers": {
+      "headerSettings": {
+        "backgroundColor": "#3f51b5",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "schedule": {
+      "headerSettings": {
+        "backgroundColor": "#673ab7",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "team": {
+      "headerSettings": {
+        "backgroundColor": "#009688",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "cod": {
+      "headerSettings": {
+        "backgroundColor": "#673ab7",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    },
+    "hub": {
+      "headerSettings": {
+        "backgroundImage": "images/backgrounds/hub.jpg",
+        "backgroundColor": "#4caf50",
+        "fontColor": "#fff",
+        "tabBarColor": "#fff"
+      }
+    }
+  },
+  "navigation": [
+    {
+      "route": "home",
+      "permalink": "/"
+    }
+  ],
+  "url": "https://2016.devfest.istanbul/",
+  "mailchimp": {
+    "url": "TODO mail link",
+    "name": "b_b7e853a79164ddfdbda3ed77b_7993e39fbe"
+  },
+  "partnershipProposition": "https://firebasestorage.googleapis.com/v0/b/devfest-istanbul-2016.appspot.com/o/sponsorship.pdf?alt=media&token=4536a909-07e1-4bd9-9ef2-c2ff5afc5ae8",
+  "disqusShortName": "dfist16",
+  "languages": [
+    {
+      "name": "English",
+      "key": "en"
+    }
+  ],
+  "footerBlocks": [
+    {
+      "title": "for-visitors",
+      "links": [
+        {
+          "text": "cod",
+          "url": "/cod/"
+        },
+        {
+          "text": "google-developers",
+          "url": "https://developers.google.com/",
+          "newTab": true
+        },
+        {
+          "text": "df-13",
+          "url": "http://2013.devfest.istanbul",
+          "newTab": true
+        },
+        {
+          "text": "df-14",
+          "url": "http://2014.devfest.istanbul",
+          "newTab": true
+        },
+        {
+          "text": "df-15",
+          "url": "http://2015.devfest.istanbul",
+          "newTab": true
+        }
+      ]
+    },
+    {
+      "title": "for-partners",
+      "links": [
+        {
+          "text": "partnership-proposition",
+          "url": "https://firebasestorage.googleapis.com/v0/b/devfest-istanbul-2016.appspot.com/o/sponsorship.pdf?alt=media&token=4536a909-07e1-4bd9-9ef2-c2ff5afc5ae8",
+          "newTab": true
+        }
+      ]
+    }
+  ],
+  "contactBlock": {
+    "links": [
+      {
+        "text": "devfest@gdgistanbul.com",
+        "url": "mailto:devfest@gdgistanbul.com"
+      }
+    ]
+  },
+  "tickets": {
+    "url": "https://www.biletino.com/event/eventdetail/2907",
+    "elements": [
+      {
+        "name": "ticket",
+        "price": 15,
+        "currency": "TL",
+        "starts": "ticket-starts",
+        "ends": "ticket-ends",
+        "info": "ticket-info",
+        "soldOut": false
+      }
+    ]
+  },
+  "teamPageTitle": "team-page-title",
+  "teamPageText": "team-page-text",
+  "statistics": [
+    {
+      "counter": 900,
+      "caption": "attendees"
+    },
+    {
+      "counter": 1,
+      "caption": "days"
+    },
+    {
+      "counter": 40,
+      "caption": "sessions"
+    },
+    {
+      "counter": 4,
+      "caption": "tracks"
+    }
+  ],
+  "hashtag": "dfist",
+  "social": [
+    {
+      "name": "twitter",
+      "nickname": "GDGIstanbul",
+      "url": "https://twitter.com/gdgistanbul"
+    },
+    {
+      "name": "gplus",
+      "nickname": "100514812580249787371",
+      "url": "https://plus.google.com/100514812580249787371"
+    },
+    {
+      "name": "facebook",
+      "nickname": "GDGIstanbul",
+      "url": "https://www.facebook.com/GDGIstanbul"
+    },
+    {
+      "name": "linkedin",
+      "nickname": "gdg-istanbul",
+      "url": "https://www.linkedin.com/company/gdg-istanbul"
+    }
+  ],
+  "tweetsSource": "https://infinite-everglades-50778.herokuapp.com/tweetledee/favoritesjson.php?c=10&cache_interval=8000",
+  "gallery": {
+    "albumUrl": "https://plus.google.com/events/gallery/cfm0ptim9d2t06h6g3lgho9urqg",
+    "photos": {
+      "big": "/images/backgrounds/2015_1.jpg",
+      "small": [
+        "/images/backgrounds/2015_2.jpg",
+        "/images/backgrounds/2015_3.jpg"
+      ]
+    }
+  },
+  "location": {
+    "apiKey": "AIzaSyAHUeiUOXMsT8ITKa_XW1PmMYGzgynU87Y",
+    "link": "https://goo.gl/maps/N3KsHQNTTU12",
+    "pointer": {
+      "latitude": 41.042237,
+      "longitude": 29.009038,
+      "zoom": 15
+    },
+    "mapCenter": {
+      "latitude": 41.0419318,
+      "longitude": 29.0090718
+    },
+    "images": [
+      "/images/backgrounds/location_1.jpg",
+      "/images/backgrounds/location_2.jpg"
+    ]
+  },
+  "videosSessionsUrl": "https://www.youtube.com/playlist?list=PLSV3VvYZSJP3gGrrK7Oj7Koz8QUrNBhEZ",
+  "callToAction": {
+    "videoTitle": "action-title",
+    "videoId": "dfist 2015 video id"
+  }
+}

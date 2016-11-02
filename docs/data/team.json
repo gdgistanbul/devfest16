@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Core Team",
+    "members": [
+      {
+        "name": "R.Caner Yıldırım",
+        "photoUrl": "/images/people/resul_caner_yildirim.jpg",
+        "socials": [
+          {
+            "icon": "gplus",
+            "link": "https://plus.google.com/u/0/collection/MvVc9",
+            "name": "Google+"
+          },
+          {
+            "icon": "facebook",
+            "link": "https://www.facebook.com/protechman",
+            "name": "Facebook"
+          },
+          {
+            "icon": "twitter",
+            "link": "https://twitter.com/protechman",
+            "name": "Twitter"
+          },
+          {
+            "icon": "website",
+            "link": "www.rcaneryildirim.com",
+            "name": "Blog"
+          }
+        ]
+      },
+      {
+        "name": "Elif Boncuk",
+        "photoUrl": "/images/people/elifboncuk.png",
+        "socials": [
+          {
+            "icon": "gplus",
+            "link": "https://plus.google.com/+ElifBoncuk",
+            "name": "Google+"
+          },
+          {
+            "icon": "linkedin",
+            "link": "https://tr.linkedin.com/in/elif-boncuk-mba-855a8728",
+            "name": "Linkedin"
+          },
+          {
+            "icon": "twitter",
+            "link": "https://twitter.com/elifbon_",
+            "name": "Twitter"
+          },
+          {
+            "icon": "website",
+            "link": "www.elifboncuk.com",
+            "name": "Blog"
+          }
+        ]
+      },
+      {
+        "name": "Erol Kaftanoğlu",
+        "photoUrl": "/images/people/erolkaftanoglu.jpg",
+        "socials": [
+          {
+            "icon": "gplus",
+            "link": "https://plus.google.com/u/0/+erolkaftanoglu1",
+            "name": "Google+"
+          },
+          {
+            "icon": "facebook",
+            "link": "https://www.facebook.com/Ori10",
+            "name": "Facebook"
+          },
+          {
+            "icon": "twitter",
+            "link": "https://twitter.com/birdylan",
+            "name": "Twitter"
+          },
+          {
+            "icon": "website",
+            "link": "www.erolkaftanoglu.com",
+            "name": "Blog"
+          }
+        ]
+      },
+      {
+        "name": "Oğuz Çelik",
+        "photoUrl": "/images/people/oguzcelik.jpg",
+        "socials": [
+          {
+            "icon": "gplus",
+            "link": "https://plus.google.com/u/0/+oguzcelik96",
+            "name": "Google+"
+          },
+          {
+            "icon": "facebook",
+            "link": "https://www.facebook.com/oguzcelikk",
+            "name": "Facebook"
+          },
+          {
+            "icon": "twitter",
+            "link": "https://twitter.com/oguzcelikkk",
+            "name": "Twitter"
+          }
+        ]
+      }
+    ]
+  }
+]

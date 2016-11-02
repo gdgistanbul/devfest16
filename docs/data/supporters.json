@@ -1,0 +1,16 @@
+[
+  {
+    "logos": [
+      {
+        "name": "BAU TTO",
+        "url": "http://tto.bahcesehir.edu.tr/",
+        "logoUrl": "../images/logos/bautto.jpg"
+      },
+      {
+        "name": "GDG[x]",
+        "url": "https://github.com/gdg-x",
+        "logoUrl": "../images/logos/gdg-x.svg"
+      }
+    ]
+  }
+]

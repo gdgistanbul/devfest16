@@ -13,5 +13,30 @@
         "logoUrl": "../images/logos/gdg-x.svg"
       }
     ]
+  }, 
+  {
+    "title": "supporters",
+    "logos": [
+      {
+        "name": "BAU TTO",
+        "url": "https://tto.bahcesehir.edu.tr/",
+        "logoUrl": "../images/logos/bautto.jpg"
+      },
+      {
+        "name": "BAU Incubation",
+        "url": "https://twitter.com/bauincubation",
+        "logoUrl": "../images/logos/BAUINCUBATION.jpg"
+      },
+      {
+        "name": "BAU Yazılım Bilişim Klubü",
+        "url": "https://www.bahcesehir.edu.tr/icerik/8457-yazilim-ve-bilisim-kulubu",
+        "logoUrl": "../images/logos/BUYABİ.jpg"
+      },
+      {
+        "name": "Etkinnlik",
+        "url": "http://etkinnlik.com/",
+        "logoUrl": "../images/logos/etkinnlik.jpg"
+      }
+    ]
   }
 ]

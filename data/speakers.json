@@ -45,6 +45,7 @@
                 "icon": "linkedin",
                 "name": "Linkedin",
                 "link": "https://www.linkedin.com/in/bhdrkn"
+<<<<<<< HEAD
             },
             {
                 "icon": "twitter",
@@ -122,10 +123,13 @@
                 "icon": "linkedin",
                 "name": "LinkedIn",
                 "link": "https://www.linkedin.com/in/jozefvodicka"
+=======
+>>>>>>> develop
             },
             {
                 "icon": "twitter",
                 "name": "Twitter",
+<<<<<<< HEAD
                 "link": "https://twitter.com/jozefvodicka"
             },
             {
@@ -189,36 +193,76 @@
                 "icon": "github",
                 "name": "GitHub",
                 "link": "https://github.com/Janamou"
+=======
+                "link": "https://twitter.com/bhdrkn/"
+            },
+             {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://plus.google.com/108608544372956107370"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://github.com/bhdrkn"
+            }
+        ]
+    },
+    "3": {
+        "id": 3,
+        "featured": true,
+        "name": "Hüseyin Babal",
+        "title": "SFull-Stack Software Engineer",
+        "company": "eBay Turkey",
+        "companyLogo": "/images/logos/ebay.png",
+        "photoUrl": "/images/people/huseyinbabal.jpeg",
+        "shortBio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer...",
+        "bio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer, Building Highly Available and Scalable Systems, GDG Conference Speaker, Docker Istanbul and NodeSchool Istanbul Organizer.",
+        "tags": [
+            "Nodejs",
+            "Docker",
+            "Java"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://www.twitter.com/huseyinbabal"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://www.github.com/huseyinbabal"
+>>>>>>> develop
             }
         ]
     },
     "18": {
         "id": 18,
         "featured": false,
-        "name": "Jakub \u0160kv\u00e1ra",
-        "title": "Frontend engineer",
-        "company": "Shipito",
-        "companyLogo": "/images/logos/gdg-lviv.svg",
-        "country": "Prague, Czech Republic",
-        "photoUrl": "/images/people/jakub_\u0161kv\u00e1ra.jpg",
-        "shortBio": "Jakub is a front-end engineer at Shipito interested in modern web frameworks, libraries and tools...",
-        "bio": "Jakub is a front-end engineer at Shipito interested in modern web frameworks, libraries and tools. Jakub is also a member of GDG Prague and GDG \u010cVUT in the Czech republic.",
+        "name": "AMahdy Abdelaziz",
+        "title": "Trainer & Developer Advocate",
+        "company": "Vaadin",
+        "companyLogo": "/images/logos/vaadin.png",
+        "country": "",
+        "photoUrl": "/images/people/amahdyabdelaziz.png",
+        "shortBio": "International technical speaker, Google developer expert (GDE), trainer and developer advocate...",
+        "bio": "International technical speaker, Google developer expert (GDE), trainer and developer advocate. Passionate about Web and Mobile apps development, including PWA, offline-first design, in-browser database, and cross platform tools. Also interested in Android internals such as building custom ROMs and customize AOSP for embedded devices.",
         "tags": [
             "Web",
-            "AngularJS",
-            "ReactJS",
-            "NodeJS",
-            "Progressive Web Apps",
-            "RAIL"
+            "Vaadin"
         ],
         "badges": [
             {
-                "name": "GDG",
-                "description": "Google Developers Group Prague",
-                "link": "https://developers.google.com/groups/chapter/111919016509847766513/"
+             
             }
         ],
         "socials": [
+<<<<<<< HEAD
             {
                 "icon": "twitter",
                 "name": "Twitter",
@@ -285,6 +329,28 @@
                 "icon": "linkedin",
                 "name": "LinkedIn",
                 "link": "https://linkedin.com/in/protechman"
+=======
+           
+             {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://linkedin.com/in/amahdyabdelaziz"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/amahdy7"
+            },
+             {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://google.com/+AMahdyAbdElAziz"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://github.com/amahdy"
+>>>>>>> develop
             }
         ]
     }

@@ -67,19 +67,6 @@
             "Android"
         ]
     },
-    "130": {
-        "id": 130,
-        "title": "Designing an Android Wear Application",
-        "description": "Wearable devices are one of the most popular things nowadays. Specially, after the Apple Watch, we finally get the whole picture of the entire list of products and their features. Now, we can talk about how we can design a user experience for this type of devices.\nEvery platform has it's own design principles and approaches. But, in the core, they all need to follow same core rules. So, how we combine this core requirements with Google's Material Design and use them on an Android Wear device? Let's learn!",
-        "speakers": [
-            26
-        ],
-        "language": "English",
-        "complexity": "Intermediate",
-        "tags": [
-            "Android"
-        ]
-    },
     "129": {
         "id": 129,
         "title": "Accessibility on Android",
@@ -210,17 +197,17 @@
             "Web"
         ]
     },
-    "119": {
+        "119": {
         "id": 119,
-        "title": "Hands-on with UI testing for Android developers",
-        "description": "Writing Android apps is usually fun because you are actually building something. But what about writing tests? Boring stuff. Errr, UI tests? I am a developer!\n\nIn this talk we will take a look at options for UI tests on Android, why you should write them and how they help you with your app development workflow. No more untested apps!",
+        "title": "Progressive web apps - prepare your web for 2017",
+        "description": "\"Remember back when AJAX completely changed what was possible in the desktop web? Progressive web apps are that same fundamental shift for the mobile web.\" said Rahul Row-Chowdhury (Google\u2019s product lead for chrome and the web platform) on stage at Google I/O 2016. - Progressive web apps use service workers, app shell, push notifications, RAIL and other capabilities to deliver an app-like user experience.",
         "speakers": [
-            17
+            3
         ],
         "language": "English",
         "complexity": "Beginner",
         "tags": [
-            "Android"
+            "Web"
         ]
     },
     "118": {
@@ -338,45 +325,6 @@
         "complexity": "Intermediate",
         "tags": [
             "Android"
-        ]
-    },
-    "109": {
-        "id": 109,
-        "title": "How much money Firebase can save you",
-        "description": "TBD",
-        "speakers": [
-            7
-        ],
-        "language": "English",
-        "complexity": "Beginner",
-        "tags": [
-            "Cloud"
-        ]
-    },
-    "108": {
-        "id": 108,
-        "title": "New Data Architecture in Angular 2",
-        "description": "Angular 2 introduces a new Data Architecture based on Reactive Programming using RxJS 5. We are really excited to see the new approach using Observable sequences aka Observables. We will cover a basic introduction of Angular 2 followed by RxJS 5 and the new HTTP API covering some basic use cases.",
-        "speakers": [
-            6
-        ],
-        "language": "English",
-        "complexity": "Intermediate",
-        "tags": [
-            "Web"
-        ]
-    },
-    "107": {
-        "id": 107,
-        "title": "Introduction to Progressive Web Apps in Angular 2",
-        "description": "There's been much discussion about Progressive Web Apps. They're still a relatively new model. In this talk, I'll summarise few options and techniques for getting started with your own Progressive Web App",
-        "speakers": [
-            6
-        ],
-        "language": "English",
-        "complexity": "Beginner",
-        "tags": [
-            "Web"
         ]
     },
     "106": {

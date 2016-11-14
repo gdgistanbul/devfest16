@@ -63,6 +63,10 @@
     {
       "route": "home",
       "permalink": "/"
+    },
+        {
+      "route": "speakers",
+      "permalink": "/speakers"
     }
   ],
   "url": "https://2016.devfest.istanbul/",

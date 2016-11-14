@@ -45,155 +45,10 @@
                 "icon": "linkedin",
                 "name": "Linkedin",
                 "link": "https://www.linkedin.com/in/bhdrkn"
-<<<<<<< HEAD
             },
             {
                 "icon": "twitter",
                 "name": "Twitter",
-                "link": "https://twitter.com/cagataycivici/"
-            },
-             {
-                "icon": "gplus",
-                "name": "Google+",
-                "link": "https://plus.google.com/108608544372956107370"
-            },
-            {
-                "icon": "github",
-                "name": "Github",
-                "link": "https://github.com/bhdrkn"
-            }
-        ]
-    },
-    "6": {
-        "id": 6,
-        "featured": true,
-        "name": "Gerard Sans",
-        "title": "Technical Evangelist",
-        "company": "AngularZone",
-        "companyLogo": "/images/logos/gdg-lviv.svg",
-        "country": "London, United Kingdom",
-        "photoUrl": "/images/people/gerard_sans.jpg",
-        "shortBio": "Angular Google Developer Expert. International speaker and trainer.  Enjoy running AngularLabs London.",
-        "bio": "Angular Google Developer Expert. I am a Computer Science Engineer specialised in Web. International speaker and trainer. I am an Angular fanboy and a community activist fighting for the JavaScript revolution. I have lived and worked for all sorts of companies in Germany, Brazil, UK and Spain. I am always up for a good challenge. I enjoy running AngularLabs London, mentoring students, participating in the community, giving talks and writing technical articles at Medium.",
-        "tags": [
-            "Web",
-            "Angular",
-            "Progressive Web Apps"
-        ],
-        "badges": [
-            {
-                "name": "GDE",
-                "description": "Angular Google Developer Expert",
-                "link": "https://developers.google.com/experts/people/gerard-sans.html"
-            }
-        ],
-        "socials": [
-            {
-                "icon": "twitter",
-                "name": "Twitter",
-                "link": "https://twitter.com/gerardsans"
-            },
-            {
-                "icon": "website",
-                "name": "Website",
-                "link": "https://medium.com/@gerard.sans"
-            }
-        ]
-    },
-    "7": {
-        "id": 7,
-        "featured": true,
-        "name": "Jozef Vodicka",
-        "title": "Developer Relations Program Manager",
-        "company": "Google",
-        "companyLogo": "/images/logos/gdg-lviv.svg",
-        "country": "Prague, Czech Republic",
-        "photoUrl": "/images/people/jozef_vodicka.jpg",
-        "shortBio": "TEDx speaker, Slovak Forbes 30-under-30, IT auditor for AIESEC International & TOP 5 Student Entrepreneurs in Slovakia.",
-        "bio": "Right now he is a passionate Googler helping developers and companies in South CEE to be more successful and profitable.\n\nHe co-founded and lead several StartUPs such as Venzeo.com, TrashOut.ngo, Matura.sk and Stuzkova.EU.\n\nHe is TEDx speaker, Slovak Forbes 30-under-30, IT auditor for AIESEC International & TOP 5 Student Entrepreneurs in Slovakia. He gets things done.",
-        "tags": [
-            "Cloud",
-            "Firebase"
-        ],
-        "badges": [
-
-        ],
-        "socials": [
-            {
-                "icon": "linkedin",
-                "name": "LinkedIn",
-                "link": "https://www.linkedin.com/in/jozefvodicka"
-=======
->>>>>>> develop
-            },
-            {
-                "icon": "twitter",
-                "name": "Twitter",
-<<<<<<< HEAD
-                "link": "https://twitter.com/jozefvodicka"
-            },
-            {
-                "icon": "gplus",
-                "name": "Google+",
-                "link": "https://plus.google.com/+JozefVodicka"
-            },
-            {
-                "icon": "facebook",
-                "name": "Facebook",
-                "link": "https://www.facebook.com/jozef.vodicka"
-            }
-        ]
-    },
-    "17": {
-        "id": 17,
-        "featured": false,
-        "name": "Jana Moudra",
-        "title": "Co-Founder",
-        "company": "Juicymo",
-        "companyLogo": "/images/logos/gdg-lviv.svg",
-        "country": "Prague, Czech Republic",
-        "photoUrl": "/images/people/jana_moudra.jpg",
-        "shortBio": "GDG Prague organizer. Android and Dart enthusiast. Co-founder of a company called Juicymo.",
-        "bio": "GDE (Google Developer Expert) for Dart. Jana is a passionate developer and modern web and mobile technology evangelist. She is an event organiser for GDG Prague, where she arranges events for developers including public lectures, code labs and hackathons \u2013 covering a wide range of subjects including technologies Dart or Android. She loves to help other developers and spread the knowledge about these technologies. \n\nJana co-founded a company called Juicymo, where she works on juicy apps and products and teaches at Unicorn College.",
-        "tags": [
-            "Android",
-            "Testing",
-            "UiAutomator",
-            "Dart"
-        ],
-        "badges": [
-            {
-                "name": "GDE",
-                "description": "Dart Google Developer Expert",
-                "link": "https://developers.google.com/experts/people/jana-moudr.html"
-            },
-            {
-                "name": "GDG",
-                "description": "Google Developers Group Prague",
-                "link": "https://developers.google.com/groups/chapter/111919016509847766513/"
-            }
-        ],
-        "socials": [
-            {
-                "icon": "gplus",
-                "name": "Google+",
-                "link": "https://plus.google.com/+JanaMoudr\u00e1/posts"
-            },
-            {
-                "icon": "twitter",
-                "name": "Twitter",
-                "link": "https://twitter.com/Janamou"
-            },
-            {
-                "icon": "linkedin",
-                "name": "LinkedIn",
-                "link": "https://cz.linkedin.com/in/janamoudra"
-            },
-            {
-                "icon": "github",
-                "name": "GitHub",
-                "link": "https://github.com/Janamou"
-=======
                 "link": "https://twitter.com/bhdrkn/"
             },
              {
@@ -237,7 +92,6 @@
                 "icon": "github",
                 "name": "Github",
                 "link": "https://www.github.com/huseyinbabal"
->>>>>>> develop
             }
         ]
     },
@@ -262,74 +116,6 @@
             }
         ],
         "socials": [
-<<<<<<< HEAD
-            {
-                "icon": "twitter",
-                "name": "Twitter",
-                "link": "https://twitter.com/@skvaros"
-            },
-            {
-                "icon": "gplus",
-                "name": "Google+",
-                "link": "https://plus.google.com/+JakubSkvara/"
-            }
-        ]
-    },
-    "26": {
-        "id": 26,
-        "featured": false,
-        "name": "Resul Caner  Yildirim",
-        "title": "User Experience Expert",
-        "company": "InnovationBox",
-        "companyLogo": "/images/logos/gdg-lviv.svg",
-        "country": "Istanbul, Turkey",
-        "photoUrl": "/images/people/resul caner_yildirim.jpg",
-        "shortBio": "Caner is a GDE on UX/UI who is also a technology geek. Mainly focused on the design and marketing...",
-        "bio": "Caner is a GDE on UX/UI who is also a technology geek. Mainly focused on the design and marketing of mobile applications. Passionate about good UX, IoT and Android. He works at InnovationBox, a design agency in Istanbul making and creating apps that users love. Caner has been an organiser of GDG Istanbul since 2013, organising, participating, and speaking at events.",
-        "tags": [
-            "Android",
-            "UX/UI",
-            "Android Wear",
-            "IoT"
-        ],
-        "badges": [
-            {
-                "name": "GDE",
-                "description": "UI/UX Google Developer Expert",
-                "link": "https://developers.google.com/experts/people/resul-caner-y-ld-r-m.html"
-            },
-            {
-                "name": "GDG",
-                "description": "Google Developers Group Istanbul",
-                "link": "https://developers.google.com/groups/chapter/100514812580249787371/"
-            }
-        ],
-        "socials": [
-            {
-                "icon": "twitter",
-                "name": "Twitter",
-                "link": "https://twitter.com/protechman"
-            },
-            {
-                "icon": "gplus",
-                "name": "Google+",
-                "link": "https://plus.google.com/+rcaneryildirim"
-            },
-            {
-                "icon": "facebook",
-                "name": "Facebook",
-                "link": "https://facebook.com/r.caner.yildirim"
-            },
-            {
-                "icon": "website",
-                "name": "Website",
-                "link": "https://dribbble.com/protechman"
-            },
-            {
-                "icon": "linkedin",
-                "name": "LinkedIn",
-                "link": "https://linkedin.com/in/protechman"
-=======
            
              {
                 "icon": "linkedin",
@@ -350,7 +136,6 @@
                 "icon": "github",
                 "name": "Github",
                 "link": "https://github.com/amahdy"
->>>>>>> develop
             }
         ]
     }

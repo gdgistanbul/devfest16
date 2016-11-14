@@ -383,10 +383,6 @@
         "description": "With the dawn of DevOps, the responsibility of engineers is increased. \nNow, We need to care much more about the systems and our perspectives than before. We cannot develop and leave operations to another team. This makes maintenance not only software maintenance but also maintenance of the whole system. Even with the help of the current tools that automates most of the part, we need to change our way of development. In this presentation, I want to share my 6-tips for better maintenance that I learned by the experience last year in Amazon where the DevOps culture was born.",
         "language": "English",
         "complexity": "Intermediate",
-<<<<<<< HEAD
-        
-=======
->>>>>>> develop
         "tags": [
             "Cloud"
         ]

@@ -176,7 +176,7 @@
         "title": "Offline-first progressive web apps",
         "description": "Using service workers and other modern progressive web apps capabilities we can update our web applications to be offline-fires. In this session we'll show how to easily convert your applications be usable without the internet connection.",
         "speakers": [
-            18
+            
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -189,7 +189,7 @@
         "title": "Progressive web apps - prepare your web for 2017",
         "description": "\"Remember back when AJAX completely changed what was possible in the desktop web? Progressive web apps are that same fundamental shift for the mobile web.\" said Rahul Row-Chowdhury (Google\u2019s product lead for chrome and the web platform) on stage at Google I/O 2016. - Progressive web apps use service workers, app shell, push notifications, RAIL and other capabilities to deliver an app-like user experience.",
         "speakers": [
-            18
+            
         ],
         "language": "English",
         "complexity": "Beginner",
@@ -202,7 +202,7 @@
         "title": "Progressive web apps - prepare your web for 2017",
         "description": "\"Remember back when AJAX completely changed what was possible in the desktop web? Progressive web apps are that same fundamental shift for the mobile web.\" said Rahul Row-Chowdhury (Google\u2019s product lead for chrome and the web platform) on stage at Google I/O 2016. - Progressive web apps use service workers, app shell, push notifications, RAIL and other capabilities to deliver an app-like user experience.",
         "speakers": [
-            3
+            
         ],
         "language": "English",
         "complexity": "Beginner",
@@ -358,7 +358,7 @@
         "title": "The Physical Web: Context is King!",
         "description": "It's no longer just about digitizing our environment. It\u2019s rather about pervasive and ubiquitous computing. Almost all everyday things will turn into connected devices soon. This \u201cInternet of Things\u201d will allow the Web to be physically tangible. But what is the value, and how can one prevent IoT applications which just seem to be only more expensive and complicated than conventional solutions. Sascha will discuss the purpose and guide you through this complex topic showing inspiring solutions, tips from practice, and code samples in a variety of technologies from simple Bluetooth Eddystone Beacons to more sophisticated IoT platforms like Eclipse SmartHome.",
         "speakers": [
-            3
+            
         ],
         "language": "English",
         "complexity": "Beginner",

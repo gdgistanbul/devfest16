@@ -67,19 +67,6 @@
             "Android"
         ]
     },
-    "130": {
-        "id": 130,
-        "title": "Designing an Android Wear Application",
-        "description": "Wearable devices are one of the most popular things nowadays. Specially, after the Apple Watch, we finally get the whole picture of the entire list of products and their features. Now, we can talk about how we can design a user experience for this type of devices.\nEvery platform has it's own design principles and approaches. But, in the core, they all need to follow same core rules. So, how we combine this core requirements with Google's Material Design and use them on an Android Wear device? Let's learn!",
-        "speakers": [
-            26
-        ],
-        "language": "English",
-        "complexity": "Intermediate",
-        "tags": [
-            "Android"
-        ]
-    },
     "129": {
         "id": 129,
         "title": "Accessibility on Android",
@@ -189,7 +176,7 @@
         "title": "Offline-first progressive web apps",
         "description": "Using service workers and other modern progressive web apps capabilities we can update our web applications to be offline-fires. In this session we'll show how to easily convert your applications be usable without the internet connection.",
         "speakers": [
-            18
+            
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -202,7 +189,7 @@
         "title": "Progressive web apps - prepare your web for 2017",
         "description": "\"Remember back when AJAX completely changed what was possible in the desktop web? Progressive web apps are that same fundamental shift for the mobile web.\" said Rahul Row-Chowdhury (Google\u2019s product lead for chrome and the web platform) on stage at Google I/O 2016. - Progressive web apps use service workers, app shell, push notifications, RAIL and other capabilities to deliver an app-like user experience.",
         "speakers": [
-            18
+            
         ],
         "language": "English",
         "complexity": "Beginner",
@@ -210,17 +197,17 @@
             "Web"
         ]
     },
-    "119": {
+        "119": {
         "id": 119,
-        "title": "Hands-on with UI testing for Android developers",
-        "description": "Writing Android apps is usually fun because you are actually building something. But what about writing tests? Boring stuff. Errr, UI tests? I am a developer!\n\nIn this talk we will take a look at options for UI tests on Android, why you should write them and how they help you with your app development workflow. No more untested apps!",
+        "title": "Progressive web apps - prepare your web for 2017",
+        "description": "\"Remember back when AJAX completely changed what was possible in the desktop web? Progressive web apps are that same fundamental shift for the mobile web.\" said Rahul Row-Chowdhury (Google\u2019s product lead for chrome and the web platform) on stage at Google I/O 2016. - Progressive web apps use service workers, app shell, push notifications, RAIL and other capabilities to deliver an app-like user experience.",
         "speakers": [
-            17
+            
         ],
         "language": "English",
         "complexity": "Beginner",
         "tags": [
-            "Android"
+            "Web"
         ]
     },
     "118": {
@@ -340,45 +327,6 @@
             "Android"
         ]
     },
-    "109": {
-        "id": 109,
-        "title": "How much money Firebase can save you",
-        "description": "TBD",
-        "speakers": [
-            7
-        ],
-        "language": "English",
-        "complexity": "Beginner",
-        "tags": [
-            "Cloud"
-        ]
-    },
-    "108": {
-        "id": 108,
-        "title": "New Data Architecture in Angular 2",
-        "description": "Angular 2 introduces a new Data Architecture based on Reactive Programming using RxJS 5. We are really excited to see the new approach using Observable sequences aka Observables. We will cover a basic introduction of Angular 2 followed by RxJS 5 and the new HTTP API covering some basic use cases.",
-        "speakers": [
-            6
-        ],
-        "language": "English",
-        "complexity": "Intermediate",
-        "tags": [
-            "Web"
-        ]
-    },
-    "107": {
-        "id": 107,
-        "title": "Introduction to Progressive Web Apps in Angular 2",
-        "description": "There's been much discussion about Progressive Web Apps. They're still a relatively new model. In this talk, I'll summarise few options and techniques for getting started with your own Progressive Web App",
-        "speakers": [
-            6
-        ],
-        "language": "English",
-        "complexity": "Beginner",
-        "tags": [
-            "Web"
-        ]
-    },
     "106": {
         "id": 106,
         "title": "Fuelio. Success story",
@@ -410,7 +358,7 @@
         "title": "The Physical Web: Context is King!",
         "description": "It's no longer just about digitizing our environment. It\u2019s rather about pervasive and ubiquitous computing. Almost all everyday things will turn into connected devices soon. This \u201cInternet of Things\u201d will allow the Web to be physically tangible. But what is the value, and how can one prevent IoT applications which just seem to be only more expensive and complicated than conventional solutions. Sascha will discuss the purpose and guide you through this complex topic showing inspiring solutions, tips from practice, and code samples in a variety of technologies from simple Bluetooth Eddystone Beacons to more sophisticated IoT platforms like Eclipse SmartHome.",
         "speakers": [
-            3
+            
         ],
         "language": "English",
         "complexity": "Beginner",
@@ -422,9 +370,7 @@
         "id": 103,
         "title": "Knock knock! Who's there? Doze.",
         "description": "Doze mode is just around the corner. \nIntroduced in Marshmallow, as the shy guy that was allowed to step in only when your device went to sleep. ZzzZzzzz\nWith the new N release, Doze mode becomes the rockstar. He rushes into the room with a big shabang by shooting all background services and network requests that forgot to get away. \nHe should no longer be shy. He just shoots and dances on bones of your scheduled alarms, while you wonder why this particular task is no longer running.\nWith the new Doze mode, you require to adapt your app architecture to the new reality.\nOn this talk, we will learn how to survive Doze mode using Job Scheduler, Content Provider and stay in one piece.",
-        "speakers": [
-            2
-        ],
+        
         "language": "English",
         "complexity": "Intermediate",
         "tags": [
@@ -433,28 +379,23 @@
     },
     "102": {
         "id": 102,
-        "title": "Hands-on gRPC experience building your own multiplayer game client",
-        "description": "Do you remember the game Simon says from the 80s? I don\u2019t know about you, but I know many that spent hours trying to press those specific sequences of red, green, blue and yellow buttons in the correct order. But why play on your own? We\u2019ve implemented a gRPC server that allows you to play Simon with other players over the internet!\n\nIn this workshop we will dive into the toolset and libraries to build your very own Simon Says client for this server. We will have a message description in Protocol Buffers format and some stub code in several languages ready for you to play with. The goal for this workshop is for you to have a working client that you can use to play (and beat!) other attendees of the workshop.",
-        "speakers": [
-            1
-        ],
+        "title": "6 Tips for Better Maintenance in DevOps Culture",
+        "description": "With the dawn of DevOps, the responsibility of engineers is increased. \nNow, We need to care much more about the systems and our perspectives than before. We cannot develop and leave operations to another team. This makes maintenance not only software maintenance but also maintenance of the whole system. Even with the help of the current tools that automates most of the part, we need to change our way of development. In this presentation, I want to share my 6-tips for better maintenance that I learned by the experience last year in Amazon where the DevOps culture was born.",
         "language": "English",
-        "complexity": "Beginner",
+        "complexity": "Intermediate",
         "tags": [
             "Cloud"
         ]
     },
     "101": {
         "id": 101,
-        "title": "Windows and .NET on Google Cloud Platform ",
-        "description": "In this session, we will take a look at Windows and .NET support on Google Cloud Platform. We will build a simple ASP.NET app, deploy to Google Compute Engine and take a look at some of the tools and APIs available to .NET developers on Google Cloud Platform. ",
-        "speakers": [
-            1
-        ],
-        "language": "English",
-        "complexity": "Beginner",
+        "title": "Angular 2 is here, let's get started",
+        "description": "Angular 2 is the next generation web framework from Google. This session gives an in-depth introduction to Angular 2 and covers various aspects of the framework. ",
+       
+        "language": "English/Turkish",
+        "complexity": "Intermediate",
         "tags": [
-            "Cloud"
+            "Web"
         ]
     }
 }

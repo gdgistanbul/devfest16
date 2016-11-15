@@ -7,28 +7,7 @@
 
 </head><body><dom-module id="neon-animated-pages">
   <template>
-    <style>
-      :host {
-        display: block;
-        position: relative;
-      }
-
-      :host > ::content > * {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-      }
-
-      :host > ::content > :not(.iron-selected):not(.neon-animating) {
-        display: none !important;
-      }
-
-      :host > ::content > .neon-animating {
-        pointer-events: none;
-      }
-    </style>
+    <style>:host{display:block;position:relative;}:host > ::content > *{position:absolute;top:0;left:0;bottom:0;right:0;}:host > ::content > :not(.iron-selected):not(.neon-animating){display:none !important;}:host > ::content > .neon-animating{pointer-events:none;}</style>
     
     <content id="content"></content>
   </template>

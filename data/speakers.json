@@ -2,6 +2,31 @@
     "1": {
         "id": 1,
         "featured": true,
+        "name": "Barış Yesugey",
+        "title": "Founder",
+        "company": "Google",
+        "country": "Turkey",
+        "companyLogo": "/images/logos/google.png",
+        "photoUrl": "/images/people/baris_yesugey.jpg",
+        "shortBio": "As an engineer who is in love with the coolest new technology, I thrive by connecting to other developers who...",
+        "bio": "As an engineer who is in love with the coolest new technology, I thrive by connecting to other developers who share similar passions. My team is behind all the rich, technical content on developers.google.com <br/><br/>I act as an advocate for third party developers’ needs within Google and passionate evangelists for Google technologies in the outside world. I love connecting with other developers and partners; people who enjoy teaching, speaking or writing about cutting-edge technologies.<br/><br/>By working closely with third party developers who are building applications and businesses that showcase Google’s developer platforms, I grow and support the developer community, teaching and supporting developers around MENA region.",
+        "tags": [
+            "Googler"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/barisyesugey"
+            }
+        ]
+    },
+    "2": {
+        "id": 2,
+        "featured": true,
         "name": "Çağatay Çivici",
         "title": "Founder",
         "company": "PrimeTek",
@@ -24,8 +49,8 @@
             }
         ]
     },
-    "2": {
-        "id": 2,
+    "3": {
+        "id": 3,
         "featured": true,
         "name": "Eliza Camberogiannis",
         "title": "Android Developer",
@@ -66,8 +91,8 @@
             }
         ]
     },
-    "3": {
-        "id": 3,
+    "4": {
+        "id": 4,
         "featured": true,
         "name": "Hüseyin Babal",
         "title": "SFull-Stack Software Engineer",
@@ -100,8 +125,8 @@
             }
         ]
     },
-    "4": {
-        "id": 4,
+    "5": {
+        "id": 5,
         "featured": false,
         "name": "AMahdy Abdelaziz",
         "title": "Trainer & Developer Advocate",

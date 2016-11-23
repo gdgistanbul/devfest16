@@ -267,7 +267,7 @@
         "title": "I\u2019ve been doing some syncing\u2026",
         "description": "Storing account information is a common challenge many app developers face, and is often tackled in tailored solutions. Isn't there some strategy to store account credentials in a centralized place?\n\nWhat about considerations for multiple accounts? Security concerns? And when should or could I synchronize data?\n\nAndroid offers a powerful\u2014and underrated\u2014account manager. Let's explore the possibilities together and lay out an architecture for engineering an Android app based on accounts.",
         "speakers": [
-            12
+            
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -280,7 +280,7 @@
         "title": "Microservices in Google App Engine",
         "description": "Microservices is coming with a certain workload and constraints. Let's try to see how Google Cloud Platform and App Engine can help the overall microservices implementation.",
         "speakers": [
-            11
+            
         ],
         "language": "English",
         "complexity": "Intermediate",

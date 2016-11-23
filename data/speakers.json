@@ -371,5 +371,59 @@
                 "link": "https://github.com/lemiorhan/"
             }
         ]
+    },
+     "11": {
+        "id": 11,
+        "featured": true,
+        "name": "Elif Boncuk",
+        "title": "Senior Software Specialist",
+        "company": "Garanti Teknoloji",
+        "companyLogo": "/images/logos/garantiteknoloji.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/elifboncuk.png",
+        "shortBio": "Elif Boncuk has been working on mobile technologies especially on Android (since Eclair) and also IOS as a full...",
+        "bio": "Elif Boncuk has been working on mobile technologies especially on Android (since Eclair) and also IOS as a full-stack developer more than 5 years, since the team formation in her current company. She is a Senior Software Specialist at Garanti Technology. Her passionate about Android is making apps more performant.<br/><br/>Elif is engaged with GDG and WTM Istanbul as organizer. She loves to speak at tech events and also organize and attend to them. She blogs in her native language at her blog(elifboncuk.com) about everything but mostly tech and also at Medium in English and only tech. <br/><br/>In addition, she loves to travel and she is a professional photographer but her favourite photography object is Android sculpture. You can find her taking photos with Androids at any time.",
+        "tags": [
+            "Android",
+            "GDG",
+            "WTM",
+            "GDE"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           
+            {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/elif-boncuk-855a8728"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/elifbon_"
+            },
+            {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://plus.google.com/+ElifBoncuk"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://github.com/ElifBon/"
+            },
+            {
+                "icon": "website",
+                "name": "Website",
+                "link": "http://medium.com/@elifbon"
+            },
+            {
+                "icon": "website",
+                "name": "Website",
+                "link": "https://elifboncuk.com/"
+            }
+        ]
     }
 }

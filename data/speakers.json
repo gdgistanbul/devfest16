@@ -27,16 +27,17 @@
     "2": {
         "id": 2,
         "featured": true,
-        "name": "Çağatay Çivici",
-        "title": "Founder",
-        "company": "PrimeTek",
-        "country": "Turkey",
-        "companyLogo": "/images/logos/primefaces.png",
-        "photoUrl": "/images/people/cagatay_civici.jpg",
-        "shortBio": "Cagatay Civici is a member of JavaServer Faces Expert Group in JCP, the founder of popular open source...",
-        "bio": "Cagatay Civici is a member of JavaServer Faces Expert Group in JCP, the founder of popular open source PrimeFaces and PrimeNG projects. He’s a recognized speaker in international conferences such as JavaOne, Devoxx.",
+        "name": "Mustafa Kurtuldu",
+        "title": "Desing Advocate",
+        "company": "Google",
+        "country": "United Kingdom",
+        "companyLogo": "/images/logos/google.png",
+        "photoUrl": "/images/people/mustafa_kurtuldu.png",
+        "shortBio": "Mustafa is a Design Advocate at Google, which involves supporting designers worldwide create wonderful user...",
+        "bio": "Mustafa is a Design Advocate at Google, which involves supporting designers worldwide create wonderful user experiences with Google's design language, Material Design, Progressive Web Apps and Google Design Sprints.<br/><br/>He has over sixteen years experience working as a UX Designer across many sectors including publishing, charities, Central Government, education and finance, with a variety of organisations including News International, Middlesex University, The Metro Newspaper, BBC/Arts Council of England & Macmillan Publishing.",
         "tags": [
-            "Web"
+            "Design",
+            "Googler"
         ],
         "badges": [
 
@@ -45,7 +46,7 @@
            {
                 "icon": "twitter",
                 "name": "Twitter",
-                "link": "https://twitter.com/cagataycivici/"
+                "link": "https://twitter.com/Mustafa_x"
             }
         ]
     },
@@ -295,34 +296,25 @@
     "9": {
         "id": 9,
         "featured": true,
-        "name": "Hüseyin Babal",
-        "title": "SFull-Stack Software Engineer",
-        "company": "eBay Turkey",
-        "companyLogo": "/images/logos/ebay.png",
+        "name": "Çağatay Çivici",
+        "title": "Founder",
+        "company": "PrimeTek",
         "country": "Turkey",
-        "photoUrl": "/images/people/huseyinbabal.jpeg",
-        "shortBio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer...",
-        "bio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer, Building Highly Available and Scalable Systems, GDG Conference Speaker, Docker Istanbul and NodeSchool Istanbul Organizer.",
+        "companyLogo": "/images/logos/primefaces.png",
+        "photoUrl": "/images/people/cagatay_civici.jpg",
+        "shortBio": "Cagatay Civici is a member of JavaServer Faces Expert Group in JCP, the founder of popular open source...",
+        "bio": "Cagatay Civici is a member of JavaServer Faces Expert Group in JCP, the founder of popular open source PrimeFaces and PrimeNG projects. He’s a recognized speaker in international conferences such as JavaOne, Devoxx.",
         "tags": [
-            "Nodejs",
-            "Docker",
-            "Java",
-            "GDE"
+            "Web"
         ],
         "badges": [
 
         ],
         "socials": [
-           
-            {
+           {
                 "icon": "twitter",
                 "name": "Twitter",
-                "link": "https://www.twitter.com/huseyinbabal"
-            },
-            {
-                "icon": "github",
-                "name": "Github",
-                "link": "https://www.github.com/huseyinbabal"
+                "link": "https://twitter.com/cagataycivici/"
             }
         ]
     },
@@ -426,8 +418,42 @@
             }
         ]
     },
-     "12": {
+    "12": {
         "id": 12,
+        "featured": true,
+        "name": "Hüseyin Babal",
+        "title": "SFull-Stack Software Engineer",
+        "company": "eBay Turkey",
+        "companyLogo": "/images/logos/ebay.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/huseyinbabal.jpeg",
+        "shortBio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer...",
+        "bio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer, Building Highly Available and Scalable Systems, GDG Conference Speaker, Docker Istanbul and NodeSchool Istanbul Organizer.",
+        "tags": [
+            "Nodejs",
+            "Docker",
+            "Java",
+            "GDE"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://www.twitter.com/huseyinbabal"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://www.github.com/huseyinbabal"
+            }
+        ]
+    },
+     "13": {
+        "id": 13,
         "featured": true,
         "name": "R. Caner Yıldırım",
         "title": "UX Designer",

@@ -128,51 +128,6 @@
     "5": {
         "id": 5,
         "featured": false,
-        "name": "AMahdy Abdelaziz",
-        "title": "Trainer & Developer Advocate",
-        "company": "Vaadin",
-        "companyLogo": "/images/logos/vaadin.png",
-        "country": "",
-        "photoUrl": "/images/people/amahdyabdelaziz.png",
-        "shortBio": "International technical speaker, Google developer expert (GDE), trainer and developer advocate...",
-        "bio": "International technical speaker, Google developer expert (GDE), trainer and developer advocate. Passionate about Web and Mobile apps development, including PWA, offline-first design, in-browser database, and cross platform tools. Also interested in Android internals such as building custom ROMs and customize AOSP for embedded devices.",
-        "tags": [
-            "Web",
-            "Vaadin",
-            "GDE"
-        ],
-        "badges": [
-            {
-             
-            }
-        ],
-        "socials": [
-           
-             {
-                "icon": "linkedin",
-                "name": "Linkedin",
-                "link": "https://linkedin.com/in/amahdyabdelaziz"
-            },
-            {
-                "icon": "twitter",
-                "name": "Twitter",
-                "link": "https://twitter.com/amahdy7"
-            },
-             {
-                "icon": "gplus",
-                "name": "Google+",
-                "link": "https://google.com/+AMahdyAbdElAziz"
-            },
-            {
-                "icon": "github",
-                "name": "Github",
-                "link": "https://github.com/amahdy"
-            }
-        ]
-    },
-    "6": {
-        "id": 6,
-        "featured": false,
         "name": "Buşra Deniz Akın",
         "title": "Mobile Testing Challenges",
         "company": "Flora Soft ",
@@ -228,6 +183,51 @@
             }
         ]
     },
+    "6": {
+        "id": 6,
+        "featured": false,
+        "name": "AMahdy Abdelaziz",
+        "title": "Trainer & Developer Advocate",
+        "company": "Vaadin",
+        "companyLogo": "/images/logos/vaadin.png",
+        "country": "",
+        "photoUrl": "/images/people/amahdyabdelaziz.png",
+        "shortBio": "International technical speaker, Google developer expert (GDE), trainer and developer advocate...",
+        "bio": "International technical speaker, Google developer expert (GDE), trainer and developer advocate. Passionate about Web and Mobile apps development, including PWA, offline-first design, in-browser database, and cross platform tools. Also interested in Android internals such as building custom ROMs and customize AOSP for embedded devices.",
+        "tags": [
+            "Web",
+            "Vaadin",
+            "GDE"
+        ],
+        "badges": [
+            {
+             
+            }
+        ],
+        "socials": [
+           
+             {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://linkedin.com/in/amahdyabdelaziz"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/amahdy7"
+            },
+             {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://google.com/+AMahdyAbdElAziz"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://github.com/amahdy"
+            }
+        ]
+    },
     "7": {
         "id": 7,
         "featured": false,
@@ -240,7 +240,8 @@
         "bio": "<ul><li>Independent experience designer and strategy consultant with 5 years experience in banking IT, startups and innovation, user research, emotional design, interaction design, service design </li><li>Google Design Expert, IDEO U Alumni Coach</li><li>Current focus is innovation and disruption through design in startups</li><li>Nowadays in Istanbul, supporting incubation houses, designing fintech services and interactions, creating Gen Y and Z human resources management, and mentoring various young innovative teams on topics like VR</li><li>Passionate about spreading the inspiration, public speaking, running design sprints, mentoring and facilitation on the role of UX, UX methods and techniques and Design Strategy. Recent talks and workshops: UXAlive (From Vision to Experience); Google Design Sprint Ankara, Women Techmakers Istanbul Conference 2016 (UX Critique), Google Developers Group Istanbul Conference (UX metrics a matter of teamwork) </li><li>You can see the social side of my work on Twitter and Instagram via #UXwithEsin</li></ul>",
         "tags": [
             "Design",
-            "UX/UI"
+            "UX/UI",
+            "GDE"
         ],
         "badges": [
             {

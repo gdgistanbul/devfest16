@@ -293,7 +293,7 @@
         "title": "Building web apps in 2016",
         "description": "Last year brought a lot of new capabilities to browsers, fundamentally changing the way we will build web apps in 2016. 60FPS, push messages, offline support and background sync became a reality marking the birth of Progressive Web Apps.",
         "speakers": [
-            10
+            
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -306,7 +306,7 @@
         "title": "Dagger 2: dependency Injection Android way",
         "description": "It's beauty, it's handy, it's fast, it's easy - all about Dagger 2",
         "speakers": [
-            9
+            
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -319,7 +319,7 @@
         "title": "The ultimate guide to MVP pattern on Android",
         "description": "There's a lot of hype around MVP pattern in the Android world. Now it's time for concretes. During his presentation Mateusz will tell you how IG divided responsibilities between pattern's different components, how they tied Presenters' and Views' lifecycles and what they did to make it all testable. If you'd love to make your Fragments' and Activities' code simpler and increase your coverage, but you're confused how to glue it all together - don't miss Mateusz's talk.",
         "speakers": [
-            8
+            
         ],
         "language": "English",
         "complexity": "Intermediate",

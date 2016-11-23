@@ -325,5 +325,51 @@
                 "link": "https://www.github.com/huseyinbabal"
             }
         ]
+    },
+     "10": {
+        "id": 10,
+        "featured": true,
+        "name": "Lemi Orhan Ergin",
+        "title": "Agile Software Craftsman",
+        "company": "ACM",
+        "companyLogo": "/images/logos/acm_logo.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/lemi_orhan_ergin.jpg",
+        "shortBio": "Lemi Orhan Ergin is the managing partner and master software craftsman at ACM. He is a software craftsman, technical leader...",
+        "bio": "Lemi Orhan Ergin is the managing partner and master software craftsman at ACM. He is a software craftsman, technical leader, development warrior, agile coach and trainer. Prior to his role, Lemi has worked at Sony Europe and eBay Turkey as developer, lead developer, team leader, technical coordinator, team manager, technical architect, solution architect, agile practice lead, principal developer and technical leader for 15 years.<br/><br/>He has a lot of hands-on experience in agile methodologies (like Scrum, eXtreme Programming and Kanban), agile transformation, software craftsmanship, lean software development, building agile ALM processes, agile software engineering practices and building a sustainable agile development culture in organizations. He has been working in Scrum teams as Scrum Master, Scrum Team Member and Agile Coach since 2008.<br/><br/>He is an active member of Agile Turkey community. He is the community lead of Agile Turkey community and the product owner of the biggest agile conference in Turkey and in the region: Agile Turkey Summit. He is also the founder of Software Craftsmanship Turkey community, i.e. the only Turkish community about Software Craftsmanship.<br/><br/>He writes blog posts and shares his knowledge in many different sites. He shares the slides that he presented during the talks on http://www.slideshare.net/lemiorhan. His slides are already viewed more than 1 million times. He was in the team for translating Agile Manifesto into Turkish. He is the official Turkish translator for Software Craftsmanship Manifesto, SOA Manifesto and Disciplined Agile Manifesto.",
+        "tags": [
+            "TDD"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           
+            {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/lemiorhan"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/lemiorhan"
+            },
+             {
+                "icon": "facebook",
+                "name": "Facebook",
+                "link": "https://www.facebook.com/lemiorhan"
+            },
+            {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://plus.google.com/+lemiorhanergin"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://github.com/lemiorhan/"
+            }
+        ]
     }
 }

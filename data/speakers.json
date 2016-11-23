@@ -24,6 +24,48 @@
             }
         ]
     },
+    "2": {
+        "id": 2,
+        "featured": true,
+        "name": "Eliza Camberogiannis",
+        "title": "Android Developer",
+        "company": "Pixplicity",
+        "country": "Greece",
+        "companyLogo": "/images/logos/Pixplicity.png",
+        "photoUrl": "/images/people/eliza_camberogiannis.png",
+        "shortBio": "Eliza is an Android developer at Pixplicity and a student at the Faculty of Automation and Robotics Engineering...",
+        "bio": "Eliza is an Android developer at Pixplicity and a student at the Faculty of Automation and Robotics Engineering in Thessaloniki. Her big passion is to explore and play with new technologies while she enjoys travelling, and attending conferences and meetups.",
+        "tags": [
+            "Mobile",
+            "GDG",
+            "WTM"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/elizacamber"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/ElizaCamber"
+            },
+             {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://plus.google.com/u/0/+ElizaCamber"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://github.com/elizacamber"
+            }
+        ]
+    },
     "3": {
         "id": 3,
         "featured": true,
@@ -114,7 +156,8 @@
         "shortBio": "Buşra Deniz started her mobile development career by developing Android application using Donut in...",
         "bio": "Buşra Deniz started her mobile development career by developing Android application using Donut in university. After getting taste of mobile development, she added iOS to her toolbox. And now, she is a Mobile Software Consultant who has a keen interest in developing high-quality mobile applications by applying agile principles and methodologies.",
         "tags": [
-            "Mobile"
+            "Mobile",
+            "WTM"
         ],
         "badges": [
             {

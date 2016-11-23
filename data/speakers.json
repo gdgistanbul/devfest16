@@ -2,9 +2,35 @@
     "1": {
         "id": 1,
         "featured": true,
+        "name": "Barış Yesugey",
+        "title": "Founder",
+        "company": "Google",
+        "country": "Turkey",
+        "companyLogo": "/images/logos/google.png",
+        "photoUrl": "/images/people/baris_yesugey.jpg",
+        "shortBio": "As an engineer who is in love with the coolest new technology, I thrive by connecting to other developers who...",
+        "bio": "As an engineer who is in love with the coolest new technology, I thrive by connecting to other developers who share similar passions. My team is behind all the rich, technical content on developers.google.com <br/><br/>I act as an advocate for third party developers’ needs within Google and passionate evangelists for Google technologies in the outside world. I love connecting with other developers and partners; people who enjoy teaching, speaking or writing about cutting-edge technologies.<br/><br/>By working closely with third party developers who are building applications and businesses that showcase Google’s developer platforms, I grow and support the developer community, teaching and supporting developers around MENA region.",
+        "tags": [
+            "Googler"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/barisyesugey"
+            }
+        ]
+    },
+    "2": {
+        "id": 2,
+        "featured": true,
         "name": "Çağatay Çivici",
         "title": "Founder",
         "company": "PrimeTek",
+        "country": "Turkey",
         "companyLogo": "/images/logos/primefaces.png",
         "photoUrl": "/images/people/cagatay_civici.jpg",
         "shortBio": "Cagatay Civici is a member of JavaServer Faces Expert Group in JCP, the founder of popular open source...",
@@ -23,80 +49,144 @@
             }
         ]
     },
-    "2": {
-        "id": 2,
+    "3": {
+        "id": 3,
         "featured": true,
-        "name": "Bahadır Akın",
-        "title": "Software Development Engineer",
-        "company": "Amazon",
-        "companyLogo": "/images/logos/amazon.jpg",
-        "photoUrl": "/images/people/bahadirakin.jpg",
-        "shortBio": "Bahadır AKIN is an enthusiastic software developer who concerns about how to develop products with high...",
-        "bio": "Bahadır AKIN is an enthusiastic software developer who concerns about how to develop products with high quality. He had worked for companies with various sizes which includes both startups and international companies, and worked in several different titles. Although, through his professional life, he usually worked on the server side, he has always been curious on the client side, too. So do not get surprised if you heard his blabbering about both Java and JavaScript throughout his blogs. He is currently working as a Software Development Engineer at Amazon.",
+        "name": "Eliza Camberogiannis",
+        "title": "Android Developer",
+        "company": "Pixplicity",
+        "country": "Greece",
+        "companyLogo": "/images/logos/Pixplicity.png",
+        "photoUrl": "/images/people/eliza_camberogiannis.png",
+        "shortBio": "Eliza is an Android developer at Pixplicity and a student at the Faculty of Automation and Robotics Engineering...",
+        "bio": "Eliza is an Android developer at Pixplicity and a student at the Faculty of Automation and Robotics Engineering in Thessaloniki. Her big passion is to explore and play with new technologies while she enjoys travelling, and attending conferences and meetups.",
         "tags": [
-            "Cloud"
+            "Mobile",
+            "GDG",
+            "WTM"
         ],
         "badges": [
 
+        ],
+        "socials": [
+           {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/elizacamber"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/ElizaCamber"
+            },
+             {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://plus.google.com/u/0/+ElizaCamber"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://github.com/elizacamber"
+            }
+        ]
+    },
+    "4": {
+        "id": 4,
+        "featured": true,
+        "name": "İbrahim Kıvanç",
+        "title": "Senior Technical Evangelist",
+        "company": "Microsoft",
+        "country": "Turkey",
+        "companyLogo": "/images/logos/microsoft.png",
+        "photoUrl": "/images/people/ibrahim_kivanc.jpg",
+        "shortBio": "Ibrahim KIVANC is Senior Technical Evangelist at Microsoft Turkey DX, DX (Developer Experience) delivers programs...",
+        "bio": "Ibrahim KIVANC is Senior Technical Evangelist at Microsoft Turkey DX, DX (Developer Experience) delivers programs targeting Software developers and IT Professionals in  ISVs, Startups, Academia, customers and communities ensuring latest Microsoft technologies and platforms are accessible. Prior to this role he was responsible for Middle East and Africa HQ over 4 years. He worked with more than 350 partners during this time. He is responsible with the latest mobile development technologies.<br/><br/>Ibrahim received his bachelor' degree in Computer Engineering and holds a master's degree in Management and Infromation System with his thesis on \"Cross Platform Development Strategies for Enterprise Companies\" . He's also a former Microsoft Student Partner and winner of Imagine Cup in Turkey, represented Turkey in World Wide Finals in Poland 2010.<br/><br/>His major skills are based on Cross Platform Development tools for Android, iOS and Windows, Xbox One Development, IoT, Office Apps, Chat Bots, Cognitive Services and Unity. ",
+        "tags": [
+            "Mobile",
+            "DevOps"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/ibrahimkivanc"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/ikivanc"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "http://github.com/ikivanc"
+            }
+        ]
+    },
+    "5": {
+        "id": 5,
+        "featured": false,
+        "name": "Buşra Deniz Akın",
+        "title": "Mobile Testing Challenges",
+        "company": "Flora Soft ",
+        "country": "United Kingdom",
+        "photoUrl": "/images/people/busradeniz.jpg",
+        "shortBio": "Buşra Deniz started her mobile development career by developing Android application using Donut in...",
+        "bio": "Buşra Deniz started her mobile development career by developing Android application using Donut in university. After getting taste of mobile development, she added iOS to her toolbox. And now, she is a Mobile Software Consultant who has a keen interest in developing high-quality mobile applications by applying agile principles and methodologies.",
+        "tags": [
+            "Mobile",
+            "WTM"
+        ],
+        "badges": [
+            {
+             
+            }
         ],
         "socials": [
            
              {
                 "icon": "linkedin",
                 "name": "Linkedin",
-                "link": "https://www.linkedin.com/in/bhdrkn"
+                "link": "https://www.linkedin.com/in/busradeniz"
             },
             {
                 "icon": "twitter",
                 "name": "Twitter",
-                "link": "https://twitter.com/bhdrkn/"
+                "link": "https://twitter.com/busradeniz"
+            },
+            {
+                "icon": "facebook",
+                "name": "Facebook",
+                "link": "https://www.facebook.com/busdeniz"
             },
              {
                 "icon": "gplus",
                 "name": "Google+",
-                "link": "https://plus.google.com/108608544372956107370"
+                "link": "https://plus.google.com/u/1/107161766252148547668"
             },
             {
                 "icon": "github",
                 "name": "Github",
-                "link": "https://github.com/bhdrkn"
-            }
-        ]
-    },
-    "3": {
-        "id": 3,
-        "featured": true,
-        "name": "Hüseyin Babal",
-        "title": "SFull-Stack Software Engineer",
-        "company": "eBay Turkey",
-        "companyLogo": "/images/logos/ebay.png",
-        "photoUrl": "/images/people/huseyinbabal.jpeg",
-        "shortBio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer...",
-        "bio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer, Building Highly Available and Scalable Systems, GDG Conference Speaker, Docker Istanbul and NodeSchool Istanbul Organizer.",
-        "tags": [
-            "Nodejs",
-            "Docker",
-            "Java"
-        ],
-        "badges": [
-
-        ],
-        "socials": [
-           
-            {
-                "icon": "twitter",
-                "name": "Twitter",
-                "link": "https://www.twitter.com/huseyinbabal"
+                "link": "https://github.com/amahdy"
             },
             {
-                "icon": "github",
-                "name": "Github",
-                "link": "https://www.github.com/huseyinbabal"
+                "icon": "website",
+                "name": "Website",
+                "link": "https://medium.com/@busradeniz"
+            },
+            {
+                "icon": "website",
+                "name": "Website",
+                "link": "http://busradeniz.com/"
             }
         ]
     },
-    "18": {
-        "id": 18,
+    "6": {
+        "id": 6,
         "featured": false,
         "name": "AMahdy Abdelaziz",
         "title": "Trainer & Developer Advocate",
@@ -108,7 +198,8 @@
         "bio": "International technical speaker, Google developer expert (GDE), trainer and developer advocate. Passionate about Web and Mobile apps development, including PWA, offline-first design, in-browser database, and cross platform tools. Also interested in Android internals such as building custom ROMs and customize AOSP for embedded devices.",
         "tags": [
             "Web",
-            "Vaadin"
+            "Vaadin",
+            "GDE"
         ],
         "badges": [
             {
@@ -136,6 +227,202 @@
                 "icon": "github",
                 "name": "Github",
                 "link": "https://github.com/amahdy"
+            }
+        ]
+    },
+    "7": {
+        "id": 7,
+        "featured": false,
+        "name": "Esin Işık",
+        "title": "Independent UX & Service Designer",
+        "company": "esindesign",
+        "country": "Turkey",
+        "photoUrl": "/images/people/esin_isik.png",
+        "shortBio": "Independent experience designer and strategy consultant with 5 years experience in banking IT, startups...",
+        "bio": "<ul><li>Independent experience designer and strategy consultant with 5 years experience in banking IT, startups and innovation, user research, emotional design, interaction design, service design </li><li>Google Design Expert, IDEO U Alumni Coach</li><li>Current focus is innovation and disruption through design in startups</li><li>Nowadays in Istanbul, supporting incubation houses, designing fintech services and interactions, creating Gen Y and Z human resources management, and mentoring various young innovative teams on topics like VR</li><li>Passionate about spreading the inspiration, public speaking, running design sprints, mentoring and facilitation on the role of UX, UX methods and techniques and Design Strategy. Recent talks and workshops: UXAlive (From Vision to Experience); Google Design Sprint Ankara, Women Techmakers Istanbul Conference 2016 (UX Critique), Google Developers Group Istanbul Conference (UX metrics a matter of teamwork) </li><li>You can see the social side of my work on Twitter and Instagram via #UXwithEsin</li></ul>",
+        "tags": [
+            "Design",
+            "UX/UI",
+            "GDE"
+        ],
+        "badges": [
+            {
+             
+            }
+        ],
+        "socials": [
+           
+             {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://tr.linkedin.com/in/esinis"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/esinishi"
+            }
+        ]
+    },
+    "8": {
+        "id": 8,
+        "featured": false,
+        "name": "Florian Mierzejewski",
+        "title": "Android Developer",
+        "company": "Novoda",
+        "country": "Germany",
+        "photoUrl": "/images/people/florian.jpg",
+        "companyLogo": "/images/logos/novoda.png",
+        "shortBio": "Android developer, Photographer, and well… French. Converting caffeine (und jetzt Club Mate) into great stuff...",
+        "bio": "Android developer, Photographer, and well… French. Converting caffeine (und jetzt Club Mate) into great stuff @ Novoda.",
+        "tags": [
+            "Mobile"
+        ],
+        "badges": [
+            {
+             
+            }
+        ],
+        "socials": [
+           
+             {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/florianmski"
+            }
+        ]
+    },
+    "9": {
+        "id": 9,
+        "featured": true,
+        "name": "Hüseyin Babal",
+        "title": "SFull-Stack Software Engineer",
+        "company": "eBay Turkey",
+        "companyLogo": "/images/logos/ebay.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/huseyinbabal.jpeg",
+        "shortBio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer...",
+        "bio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer, Building Highly Available and Scalable Systems, GDG Conference Speaker, Docker Istanbul and NodeSchool Istanbul Organizer.",
+        "tags": [
+            "Nodejs",
+            "Docker",
+            "Java",
+            "GDE"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://www.twitter.com/huseyinbabal"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://www.github.com/huseyinbabal"
+            }
+        ]
+    },
+     "10": {
+        "id": 10,
+        "featured": true,
+        "name": "Lemi Orhan Ergin",
+        "title": "Agile Software Craftsman",
+        "company": "ACM",
+        "companyLogo": "/images/logos/acm_logo.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/lemi_orhan_ergin.jpg",
+        "shortBio": "Lemi Orhan Ergin is the managing partner and master software craftsman at ACM. He is a software craftsman, technical leader...",
+        "bio": "Lemi Orhan Ergin is the managing partner and master software craftsman at ACM. He is a software craftsman, technical leader, development warrior, agile coach and trainer. Prior to his role, Lemi has worked at Sony Europe and eBay Turkey as developer, lead developer, team leader, technical coordinator, team manager, technical architect, solution architect, agile practice lead, principal developer and technical leader for 15 years.<br/><br/>He has a lot of hands-on experience in agile methodologies (like Scrum, eXtreme Programming and Kanban), agile transformation, software craftsmanship, lean software development, building agile ALM processes, agile software engineering practices and building a sustainable agile development culture in organizations. He has been working in Scrum teams as Scrum Master, Scrum Team Member and Agile Coach since 2008.<br/><br/>He is an active member of Agile Turkey community. He is the community lead of Agile Turkey community and the product owner of the biggest agile conference in Turkey and in the region: Agile Turkey Summit. He is also the founder of Software Craftsmanship Turkey community, i.e. the only Turkish community about Software Craftsmanship.<br/><br/>He writes blog posts and shares his knowledge in many different sites. He shares the slides that he presented during the talks on http://www.slideshare.net/lemiorhan. His slides are already viewed more than 1 million times. He was in the team for translating Agile Manifesto into Turkish. He is the official Turkish translator for Software Craftsmanship Manifesto, SOA Manifesto and Disciplined Agile Manifesto.",
+        "tags": [
+            "TDD"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           
+            {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/lemiorhan"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/lemiorhan"
+            },
+             {
+                "icon": "facebook",
+                "name": "Facebook",
+                "link": "https://www.facebook.com/lemiorhan"
+            },
+            {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://plus.google.com/+lemiorhanergin"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://github.com/lemiorhan/"
+            }
+        ]
+    },
+     "11": {
+        "id": 11,
+        "featured": true,
+        "name": "Elif Boncuk",
+        "title": "Senior Software Specialist",
+        "company": "Garanti Teknoloji",
+        "companyLogo": "/images/logos/garantiteknoloji.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/elifboncuk.png",
+        "shortBio": "Elif Boncuk has been working on mobile technologies especially on Android (since Eclair) and also IOS as a full...",
+        "bio": "Elif Boncuk has been working on mobile technologies especially on Android (since Eclair) and also IOS as a full-stack developer more than 5 years, since the team formation in her current company. She is a Senior Software Specialist at Garanti Technology. Her passionate about Android is making apps more performant.<br/><br/>Elif is engaged with GDG and WTM Istanbul as organizer. She loves to speak at tech events and also organize and attend to them. She blogs in her native language at her blog(elifboncuk.com) about everything but mostly tech and also at Medium in English and only tech. <br/><br/>In addition, she loves to travel and she is a professional photographer but her favourite photography object is Android sculpture. You can find her taking photos with Androids at any time.",
+        "tags": [
+            "Android",
+            "GDG",
+            "WTM",
+            "GDE"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           
+            {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/elif-boncuk-855a8728"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/elifbon_"
+            },
+            {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://plus.google.com/+ElifBoncuk"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://github.com/ElifBon/"
+            },
+            {
+                "icon": "website",
+                "name": "Website",
+                "link": "http://medium.com/@elifbon"
+            },
+            {
+                "icon": "website",
+                "name": "Website",
+                "link": "https://elifboncuk.com/"
             }
         ]
     }

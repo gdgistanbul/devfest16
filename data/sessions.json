@@ -267,7 +267,7 @@
         "title": "Continuous Integration on Android",
         "description": "Sunumda sizlere Gitlab CI kullanılarak, Android projeleriniz için basit bir continuous integration yapısı oluşturma ve Google play'e auto deploy konuları anlatılacaktır.",
         "speakers": [
-          1
+
         ],
         "language": "Turkish",
         "complexity": "Intermediate",

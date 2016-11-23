@@ -94,34 +94,36 @@
     "4": {
         "id": 4,
         "featured": true,
-        "name": "Hüseyin Babal",
-        "title": "SFull-Stack Software Engineer",
-        "company": "eBay Turkey",
-        "companyLogo": "/images/logos/ebay.png",
+        "name": "İbrahim Kıvanç",
+        "title": "Senior Technical Evangelist",
+        "company": "Microsoft",
         "country": "Turkey",
-        "photoUrl": "/images/people/huseyinbabal.jpeg",
-        "shortBio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer...",
-        "bio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer, Building Highly Available and Scalable Systems, GDG Conference Speaker, Docker Istanbul and NodeSchool Istanbul Organizer.",
+        "companyLogo": "/images/logos/microsoft.png",
+        "photoUrl": "/images/people/ibrahim_kivanc.jpg",
+        "shortBio": "Ibrahim KIVANC is Senior Technical Evangelist at Microsoft Turkey DX, DX (Developer Experience) delivers programs...",
+        "bio": "Ibrahim KIVANC is Senior Technical Evangelist at Microsoft Turkey DX, DX (Developer Experience) delivers programs targeting Software developers and IT Professionals in  ISVs, Startups, Academia, customers and communities ensuring latest Microsoft technologies and platforms are accessible. Prior to this role he was responsible for Middle East and Africa HQ over 4 years. He worked with more than 350 partners during this time. He is responsible with the latest mobile development technologies.<br/><br/>Ibrahim received his bachelor' degree in Computer Engineering and holds a master's degree in Management and Infromation System with his thesis on \"Cross Platform Development Strategies for Enterprise Companies\" . He's also a former Microsoft Student Partner and winner of Imagine Cup in Turkey, represented Turkey in World Wide Finals in Poland 2010.<br/><br/>His major skills are based on Cross Platform Development tools for Android, iOS and Windows, Xbox One Development, IoT, Office Apps, Chat Bots, Cognitive Services and Unity. ",
         "tags": [
-            "Nodejs",
-            "Docker",
-            "Java",
-            "GDE"
+            "Mobile",
+            "DevOps"
         ],
         "badges": [
 
         ],
         "socials": [
-           
+           {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/ibrahimkivanc"
+            },
             {
                 "icon": "twitter",
                 "name": "Twitter",
-                "link": "https://www.twitter.com/huseyinbabal"
+                "link": "https://twitter.com/ikivanc"
             },
             {
                 "icon": "github",
                 "name": "Github",
-                "link": "https://www.github.com/huseyinbabal"
+                "link": "http://github.com/ikivanc"
             }
         ]
     },
@@ -287,6 +289,40 @@
                 "icon": "twitter",
                 "name": "Twitter",
                 "link": "https://twitter.com/florianmski"
+            }
+        ]
+    },
+    "9": {
+        "id": 9,
+        "featured": true,
+        "name": "Hüseyin Babal",
+        "title": "SFull-Stack Software Engineer",
+        "company": "eBay Turkey",
+        "companyLogo": "/images/logos/ebay.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/huseyinbabal.jpeg",
+        "shortBio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer...",
+        "bio": "Google Developer Expert on Web Technologies, Tuts+ and Java Code Geeks Author, Java, Node.js Developer, Docker performer, Building Highly Available and Scalable Systems, GDG Conference Speaker, Docker Istanbul and NodeSchool Istanbul Organizer.",
+        "tags": [
+            "Nodejs",
+            "Docker",
+            "Java",
+            "GDE"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://www.twitter.com/huseyinbabal"
+            },
+            {
+                "icon": "github",
+                "name": "Github",
+                "link": "https://www.github.com/huseyinbabal"
             }
         ]
     }

@@ -425,5 +425,48 @@
                 "link": "https://elifboncuk.com/"
             }
         ]
+    },
+     "12": {
+        "id": 12,
+        "featured": true,
+        "name": "R. Caner Yıldırım",
+        "title": "UX Designer",
+        "company": "InnovationBox",
+        "companyLogo": "/images/logos/innovationbox.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/caneryildirim.jpg",
+        "shortBio": "Caner is a GDE on UX/UI who is also a technology geek. Mainly focused on the design and marketing of mobile applications...",
+        "bio": "Caner is a GDE on UX/UI who is also a technology geek. Mainly focused on the design and marketing of mobile applications. Passionate about good UX, IoT and Android. He works at InnovationBox, a design agency in Istanbul making and creating apps that users love. Caner has been an organiser of GDG Istanbul since 2013, organising, participating, and speaking at events.",
+        "tags": [
+            "Mobile",
+            "GDG",
+            "GDE"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+           
+            {
+                "icon": "linkedin",
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/protechman"
+            },
+            {
+                "icon": "twitter",
+                "name": "Twitter",
+                "link": "https://twitter.com/protechman"
+            },
+            {
+                "icon": "facebook",
+                "name": "Facebook",
+                "link": "http://fcebook.com/protechman"
+            },
+            {
+                "icon": "gplus",
+                "name": "Google+",
+                "link": "https://plus.google.com/+rcaneryildirim"
+            }
+        ]
     }
 }

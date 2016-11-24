@@ -498,16 +498,17 @@
     "14": {
        "id": 14,
        "featured": true,
-       "name": "Furkan İkiz",
-       "title": "Software Developer",
-       "company": "Anadolu Üniversitesi",
-       "companyLogo": "/images/logos/anadolu_uni.png",
-       "country": "Turkey",
-       "photoUrl": "/images/people/furkan_ikiz.jpg",
-       "shortBio": "Anadolu Üniversitesi Bilgisayar ve Öğretim Teknolojileri bölümünden mezun oldum.Anadolu Üniversitesi Bilgisayar araştırma ve uygulama merkezinde...",
-       "bio": "Anadolu Üniversitesi Bilgisayar ve Öğretim Teknolojileri bölümünden mezun oldum.Anadolu Üniversitesi Bilgisayar araştırma ve uygulama merkezinde Yazılım Geliştirici olarak çalışmaktayım. Sınav ekibinde, sınav otomasyonu ve başvuru projelerinde görev almaktayım. Çeşitli dil ve platformda yazılım geliştirdim. Fakat genellikle Laravel Framework'le geliştirme yapmaktayım.",
+       "name": "Oleh Zasadnyy",
+       "title":"Software engineer / Leader",
+       "company": "N-iX / GDG Lviv",
+       "companyLogo":"/images/logos/nix_website_logo.svg",
+       "country": "Ukraine",
+       "photoUrl": "/images/people/oleh_zasadnyy.jpg",
+       "shortBio": "Oleh is a front-end developer who is passionate by new technologies and design. He also is a GDG Lviv organizer...",
+       "bio": "Oleh is a front-end developer who is passionate by new technologies and design. He also is a GDG Lviv organizer last 5 years, which is famous for their high-level organized conferences. Besides that, he participates in GDG design competitions and always in the top three. Oleh has created several front-end Open Source projects. The most popular are event website templates, one of them you are looking at.",
        "tags": [
-           "Devops"
+           "Web",
+           "GDG"
        ],
        "badges": [
 
@@ -515,27 +516,27 @@
        "socials": [
 
            {
-               "icon": "linkedin",
-               "name": "Linkedin",
-               "link": "https://www.linkedin.com/in/frknikiz"
+               "icon": "website",
+               "name": "Website",
+               "link": "http://o.zasadnyy.com/"
            },
            {
-               "icon": "twitter",
-               "name": "Twitter",
-               "link": "https://twitter.com/frknikiz"
+               "icon": "facebook",
+               "name": "Facebook",
+               "link": "https://www.facebook.com/ozasadnyy"
            },
            {
              "icon": "github",
              "name": "Github",
-             "link": "https://github.com/frknikiz"
+             "link": "https://github.com/ozasadnyy"
            },
            {
-               "icon": "gplus",
-               "name": "Google+",
-               "link": "https://plus.google.com/+furkanikiz"
+               "icon": "twitter",
+               "name": "Twitter",
+               "link": "https://twitter.com/ozasadnyy"
            }
        ]
-   },
+     },
    "15": {
       "id": 15,
       "featured": true,
@@ -663,5 +664,46 @@
              "link": "https://twitter.com/muratcanbur"
          }
      ]
-     }
+   },
+   "19": {
+      "id": 19,
+      "featured": true,
+      "name": "Furkan İkiz",
+      "title": "Software Developer",
+      "company": "Anadolu Üniversitesi",
+      "companyLogo": "/images/logos/anadolu_uni.png",
+      "country": "Turkey",
+      "photoUrl": "/images/people/furkan_ikiz.jpg",
+      "shortBio": "Anadolu Üniversitesi Bilgisayar ve Öğretim Teknolojileri bölümünden mezun oldum.Anadolu Üniversitesi Bilgisayar araştırma ve uygulama merkezinde...",
+      "bio": "Anadolu Üniversitesi Bilgisayar ve Öğretim Teknolojileri bölümünden mezun oldum.Anadolu Üniversitesi Bilgisayar araştırma ve uygulama merkezinde Yazılım Geliştirici olarak çalışmaktayım. Sınav ekibinde, sınav otomasyonu ve başvuru projelerinde görev almaktayım. Çeşitli dil ve platformda yazılım geliştirdim. Fakat genellikle Laravel Framework'le geliştirme yapmaktayım.",
+      "tags": [
+          "Devops"
+      ],
+      "badges": [
+
+      ],
+      "socials": [
+
+          {
+              "icon": "linkedin",
+              "name": "Linkedin",
+              "link": "https://www.linkedin.com/in/frknikiz"
+          },
+          {
+              "icon": "twitter",
+              "name": "Twitter",
+              "link": "https://twitter.com/frknikiz"
+          },
+          {
+            "icon": "github",
+            "name": "Github",
+            "link": "https://github.com/frknikiz"
+          },
+          {
+              "icon": "gplus",
+              "name": "Google+",
+              "link": "https://plus.google.com/+furkanikiz"
+          }
+      ]
+   }
 }

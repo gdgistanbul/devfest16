@@ -817,5 +817,30 @@
            "link": "https://github.com/sembozdemir"
          }
        ]
-     }
+     },
+     "23": {
+        "id": 23,
+        "featured": true,
+        "name": "Tankut Koray",
+        "title":"Lead Software Engineer",
+        "company": "Aselsan",
+        "companyLogo":"/images/logos/aselsan_logo.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/tankut_koray.JPG",
+        "shortBio": "Tankut Koray is a software developer for over 15 years. He has experience on Java, Eclipse RCP, OSGI, Web development...",
+        "bio": "Tankut Koray is a software developer for over 15 years. He has experience on Java, Eclipse RCP, OSGI, Web development and software architectures. Currently leading a team for evolving monolithic command control applications to microservices based applications.\n\nTeam Leader – Aselsan Common Operating Environment (ASCORE) Team:\n\nAs ASCORE team, we are responsible for defining the reference architecture of Command Control Software developed in our department. We are also responsible for the development of the reusable components and services defined in the reference architecture. We are keeping track of current trends in software development and trying to apply them to our domain and department. Currently we are researching microservice architecture and converting our monolithic applications to microservices. These microservices are defined to be used by both desktop and web applications. Because microservices cannot be without DevOps, we are also defining our department’s DevOps strategies. We are improving the methodologies used for software development in our department.\n\nA part from these, we are managing a software product line for surveillance and reconnaissance applications. This product line includes integrations with different types of sensors and actuators. As a part of these applications I developed Android applications which includes collobration and location based services.\n\nAselsan Unmanned Systems:\n\nLead developer for developing Joint Architecture for Unmanned Systems (JAUS) compliant software for Aselsan’s unmanned systems like KAPLAN Explosive Ordnance Disposal Robot, izci and gezgin. I developed operator control unit software which is based on Eclipse and OSGI. This software is capable of controlling multiple unmanned systems concurrently. Also I developed JAUS components that are working on vehicles. I took part in UGV Interoperability Program (IOP) and attended with operator unit software to NATO Limited Objective Experiment in Atlanta, 2013 and Germany 2014. In this program, I developed the IOP compliant operator unit software.\n\nMulti Autonomous Ground-robotic International Challenge (MAGIC) 2010\n\nIn November 2010, as an international team, we have attended Magic 2010 which is held in Adelaide, Australia. I was team leader of the software team that is building command control application for controlling 6 unmanned systems. This application is build with Java on top of Eclipse Rich Client Platform. Also I have coordinated software development with our partners including METU and Bilkent Universities in Turkey and Ohio State University in USA.\n\nAselsan Geographic Information Systems Component:\n\nI have coordinated the development of a reusable GIS component by a sub contractor. This component is designed to be used in command control projects developed at Aselsan. This software includes major features of commercially available GIS software and designed to working with both Java and .Net projects. I was involved in all stages of the process, starting from gathering requirements from each development team to final tests and documentation.\nTALOS – EU Border Protection System(http://talos-border.eu/):\n\nAs an international team from 11 countries, we have developed a border surveillance system that is working with unmanned systems. I worked on overall system development and specific implementation phases. I managed several tasks in work packages that involve system engineering and software development. I was concentrated on geographic information system and JAUS related issues. Also I provided consultancy on mission planning for unmanned systems, software architecture mainly based on Eclipse and OSGI.",
+        "tags": [
+            "Microservices"
+        ],
+        "badges": [
+
+        ],
+        "socials": [
+          {
+              "icon": "twitter",
+              "name": "Twitter",
+              "link": "https://twitter.com/tankutkoray"
+          }
+        ]
+      }
 }

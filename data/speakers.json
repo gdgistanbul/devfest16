@@ -535,5 +535,46 @@
                "link": "https://plus.google.com/+furkanikiz"
            }
        ]
-   }
+   },
+   "15": {
+      "id": 15,
+      "featured": true,
+      "name": "George Kortsaridis",
+      "title": "GDG Thessaloniki Coordinator",
+      "company": "GDG Thessaloniki",
+      "country": "United States",
+      "photoUrl": "/images/people/george_kortsaridis.png",
+      "shortBio": "I am a passionate mobile developer. I love the Android platform. I have been a co organizer of GDG Thessaloniki Greece chapter...",
+      "bio": "I am a passionate mobile developer. I love the Android platform. I have been a co organizer of GDG Thessaloniki Greece chapter and part of droidconGR core team for 2 years. \nSince July of 2016, i have been a mobile developer intern and a temp software engineer on Glidewell Dental Laboratories on USA, California",
+      "tags": [
+          "Mobile",
+          "GDG"
+      ],
+      "badges": [
+
+      ],
+      "socials": [
+
+          {
+              "icon": "linkedin",
+              "name": "Linkedin",
+              "link": "https://gr.linkedin.com/in/georgekortsaridis"
+          },
+          {
+              "icon": "facebook",
+              "name": "Facebook",
+              "link": "https://www.facebook.com/gkortsaridis"
+          },
+          {
+            "icon": "github",
+            "name": "Github",
+            "link": "https://github.com/gkortsaridis"
+          },
+          {
+              "icon": "gplus",
+              "name": "Google+",
+              "link": "https://plus.google.com/u/0/107086455609937555457"
+          }
+      ]
+  }
 }

@@ -920,13 +920,13 @@
          "shortBio": "Passionate Android Developer. Interested in advanced architectures, clean coding and testing to ensure high preforming...",
          "bio": "Passionate Android Developer. Interested in advanced architectures, clean coding and testing to ensure high preforming software.",
          "tags": [
-             "Mobile",
-             "GDG"
+             "Mobile"
          ],
          "badges": [
 
          ],
          "socials": [
+
              {
                  "icon": "linkedin",
                  "name": "Linkedin",
@@ -941,6 +941,32 @@
                "icon": "github",
                "name": "Github",
                "link": "https://www.github.com/nomisRev"
+             }
+         ]
+      },
+      "27": {
+         "id": 27,
+         "featured": true,
+         "name": "Filip Maelbrancke",
+         "title": "Android Developer",
+         "company": "AppFoundry",
+         "companyLogo":"/images/logos/appfoundry_logo.png",
+         "country": "Belgium",
+         "photoUrl": "/images/people/filip_maelbrancke.jpg",
+         "shortBio": "Filip Maelbrancke is an Android developer at AppFoundry in Belgium. Likes clean code...",
+         "bio": "Filip Maelbrancke is an Android developer at AppFoundry in Belgium. Likes clean code, tests and finding out how to apply good practices to Android.",
+         "tags": [
+             "Mobile",
+             "GDG"
+         ],
+         "badges": [
+
+         ],
+         "socials": [
+             {
+                 "icon": "twitter",
+                 "name": "Twitter",
+                 "link": "https://twitter.com/fmaelbrancke"
              }
          ]
       }

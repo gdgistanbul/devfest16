@@ -782,5 +782,40 @@
               "link": "https://twitter.com/muratcanbur"
           }
       ]
-    }
+    },
+    "22": {
+       "id": 22,
+       "featured": true,
+       "name": "Semih Bozdemir",
+       "title":"Android Developer",
+       "company": "Monitise MEA",
+       "companyLogo":"/images/logos/monitise_logo.svg",
+       "country": "Turkey",
+       "photoUrl": "/images/people/semih_bozdemir.jpg",
+       "shortBio": "",
+       "bio": "",
+       "tags": [
+           "Mobile"
+       ],
+       "badges": [
+
+       ],
+       "socials": [
+         {
+             "icon": "linkedin",
+             "name": "Linkedin",
+             "link": "https://www.linkedin.com/in/sembozdemir"
+         },
+         {
+             "icon": "website",
+             "name": "Website",
+             "link": "https://www.sembozdemir.com"
+         },
+         {
+           "icon": "github",
+           "name": "Github",
+           "link": "https://github.com/sembozdemir"
+         }
+       ]
+     }
 }

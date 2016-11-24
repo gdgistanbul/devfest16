@@ -583,7 +583,7 @@
      "name": "Görkem Çetin",
      "title": "Director",
      "company": "Countly",
-     "companyLogo":"/images/logos/countly_logo_vector.svg", 
+     "companyLogo":"/images/logos/countly_logo_vector.svg",
      "country": "Turkey",
      "photoUrl": "/images/people/gorkem_cetin.jpg",
      "shortBio": "As a Linux user and open source advocate since 1993, Dr. Görkem Çetin worked as a director and consultant for Gelecek AS - a software and services company...",
@@ -607,5 +607,35 @@
              "link": "http://twitter.com/gorkemcetin"
          }
      ]
- }
+ },
+ "17": {
+    "id": 17,
+    "featured": true,
+    "name": "Martin Splitt",
+    "company": "Archilogic",
+    "companyLogo":"/images/logos/Archilogic_logo.png",
+    "country": "Switzerland",
+    "photoUrl": "/images/people/martin_splitt.jpg",
+    "shortBio": "Martin is pretty decent at humaning and pretty good at computering,so he decided to use his computering...",
+    "bio": "Martin is pretty decent at humaning and pretty good at computering,so he decided to use his computering to improve his and other's humaning.\nHe loves the open web and open source and helps to make things better with, but not limited to, software. ",
+    "tags": [
+        "Web"
+    ],
+    "badges": [
+
+    ],
+    "socials": [
+
+        {
+            "icon": "twitter",
+            "name": "Twitter",
+            "link": "https://twitter.com/g33konaut"
+        },
+        {
+            "icon": "github",
+            "name": "Github",
+            "link": "https://github.com/AVGP"
+        }
+    ]
+    }
 }

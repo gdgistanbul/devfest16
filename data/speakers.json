@@ -907,5 +907,41 @@
                "link": "https://github.com/srcnysf"
              }
          ]
+      },
+      "26": {
+         "id": 26,
+         "featured": true,
+         "name": "Simon Vergauwen",
+         "title": "Android Developer",
+         "company": "AppFoundry",
+         "companyLogo":"/images/logos/appfoundry_logo.png",
+         "country": "Belgium",
+         "photoUrl": "/images/people/simon_vergauwen.jpg",
+         "shortBio": "Passionate Android Developer. Interested in advanced architectures, clean coding and testing to ensure high preforming...",
+         "bio": "Passionate Android Developer. Interested in advanced architectures, clean coding and testing to ensure high preforming software.",
+         "tags": [
+             "Mobile",
+             "GDG"
+         ],
+         "badges": [
+
+         ],
+         "socials": [
+             {
+                 "icon": "linkedin",
+                 "name": "Linkedin",
+                 "link": "https://be.linkedin.com/in/vergauwensimon"
+             },
+             {
+                 "icon": "website",
+                 "name": "Website",
+                 "link": "https://speakerdeck.com/nomisrev"
+             },
+             {
+               "icon": "github",
+               "name": "Github",
+               "link": "https://www.github.com/nomisRev"
+             }
+         ]
       }
 }

@@ -144,11 +144,11 @@
         ],
         "badges": [
             {
-             
+
             }
         ],
         "socials": [
-           
+
              {
                 "icon": "linkedin",
                 "name": "Linkedin",
@@ -204,11 +204,11 @@
         ],
         "badges": [
             {
-             
+
             }
         ],
         "socials": [
-           
+
              {
                 "icon": "linkedin",
                 "name": "Linkedin",
@@ -248,11 +248,11 @@
         ],
         "badges": [
             {
-             
+
             }
         ],
         "socials": [
-           
+
              {
                 "icon": "linkedin",
                 "name": "Linkedin",
@@ -281,11 +281,11 @@
         ],
         "badges": [
             {
-             
+
             }
         ],
         "socials": [
-           
+
              {
                 "icon": "twitter",
                 "name": "Twitter",
@@ -336,7 +336,7 @@
 
         ],
         "socials": [
-           
+
             {
                 "icon": "linkedin",
                 "name": "Linkedin",
@@ -385,7 +385,7 @@
 
         ],
         "socials": [
-           
+
             {
                 "icon": "linkedin",
                 "name": "Linkedin",
@@ -439,7 +439,7 @@
 
         ],
         "socials": [
-           
+
             {
                 "icon": "twitter",
                 "name": "Twitter",
@@ -472,7 +472,7 @@
 
         ],
         "socials": [
-           
+
             {
                 "icon": "linkedin",
                 "name": "Linkedin",
@@ -494,5 +494,46 @@
                 "link": "https://plus.google.com/+rcaneryildirim"
             }
         ]
-    }
+    },
+    "14": {
+       "id": 14,
+       "featured": true,
+       "name": "Furkan İkiz",
+       "title": "Software Developer",
+       "company": "Anadolu Üniversitesi",
+       "companyLogo": "/images/logos/anadolu_uni.png",
+       "country": "Turkey",
+       "photoUrl": "/images/people/furkan_ikiz.jpg",
+       "shortBio": "Anadolu Üniversitesi Bilgisayar ve Öğretim Teknolojileri bölümünden mezun oldum.Anadolu Üniversitesi Bilgisayar araştırma ve uygulama merkezinde...",
+       "bio": "Anadolu Üniversitesi Bilgisayar ve Öğretim Teknolojileri bölümünden mezun oldum.Anadolu Üniversitesi Bilgisayar araştırma ve uygulama merkezinde Yazılım Geliştirici olarak çalışmaktayım. Sınav ekibinde, sınav otomasyonu ve başvuru projelerinde görev almaktayım. Çeşitli dil ve platformda yazılım geliştirdim. Fakat genellikle Laravel Framework'le geliştirme yapmaktayım.",
+       "tags": [
+           "Devops"
+       ],
+       "badges": [
+
+       ],
+       "socials": [
+
+           {
+               "icon": "linkedin",
+               "name": "Linkedin",
+               "link": "https://www.linkedin.com/in/frknikiz"
+           },
+           {
+               "icon": "twitter",
+               "name": "Twitter",
+               "link": "https://twitter.com/frknikiz"
+           },
+           {
+             "icon": "github",
+             "name": "Github",
+             "link": "https://github.com/frknikiz"
+           },
+           {
+               "icon": "gplus",
+               "name": "Google+",
+               "link": "https://plus.google.com/+furkanikiz"
+           }
+       ]
+   }
 }

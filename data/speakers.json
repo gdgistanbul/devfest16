@@ -642,29 +642,45 @@
   "18": {
      "id": 18,
      "featured": true,
-     "name": "Murat Can Bur",
-     "title":"Android Developer",
-     "company": "Dolap.com",
-     "companyLogo":"/images/logos/dolap_logo.png",
+     "name": "Salim Kayabaşı",
+     "title": "GDE on Web",
+     "companyLogo": "/images/logos/kodcu_logo.png",
      "country": "Turkey",
-     "photoUrl": "/images/people/muratcan_bur.jpg",
-     "shortBio": "I am an experienced Android Developer and want to get better at it each day, always try to write clean, clear...",
-     "bio": "I am an experienced Android Developer and want to get better at it each day, always try to write clean, clear, efficient, and maintainable code.\nI am dedicated to continuously discovering, evaluating, and implementing new technologies to maximize development efficiency and always try to speak at conferences about mobile development.",
+     "photoUrl": "/images/people/salim_kayabasi.png",
+     "shortBio": "Salim is a passionate developer and modern web and mobile technology evangelist.He is also an active member and organizer at GDG...",
+     "bio": "Salim is a passionate developer and modern web and mobile technology evangelist.\nHe is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons. In addition, he is co-founder of Nodejs Turkey - a local nodejs community which is generating Turkish content.",
      "tags": [
-         "Mobile"
+         "Web",
+         "PWA",
+         "GDE",
+         "GDG"
      ],
      "badges": [
 
      ],
      "socials": [
-
+       {
+           "icon": "website",
+           "name": "Website",
+           "link": "http://www.salimkayabasi.com/"
+       },
+         {
+             "icon": "linkedin",
+             "name": "Linkedin",
+             "link": "https://www.linkedin.com/in/salimkayabasi"
+         },
          {
              "icon": "twitter",
              "name": "Twitter",
-             "link": "https://twitter.com/muratcanbur"
+             "link": "https://twitter.com/salimkayabasi"
+         },
+         {
+           "icon": "gplus",
+           "name": "Google+",
+           "link": "https://plus.google.com/+SalimKAYABA%C5%9EI"
          }
      ]
-   },
+  },
    "19": {
       "id": 19,
       "featured": true,
@@ -741,5 +757,31 @@
             "link": "https://github.com/rahmanusta"
           }
       ]
-   }
+   },
+   "21": {
+      "id": 21,
+      "featured": true,
+      "name": "Murat Can Bur",
+      "title":"Android Developer",
+      "company": "Dolap.com",
+      "companyLogo":"/images/logos/dolap_logo.png",
+      "country": "Turkey",
+      "photoUrl": "/images/people/muratcan_bur.jpg",
+      "shortBio": "I am an experienced Android Developer and want to get better at it each day, always try to write clean, clear...",
+      "bio": "I am an experienced Android Developer and want to get better at it each day, always try to write clean, clear, efficient, and maintainable code.\nI am dedicated to continuously discovering, evaluating, and implementing new technologies to maximize development efficiency and always try to speak at conferences about mobile development.",
+      "tags": [
+          "Mobile"
+      ],
+      "badges": [
+
+      ],
+      "socials": [
+
+          {
+              "icon": "twitter",
+              "name": "Twitter",
+              "link": "https://twitter.com/muratcanbur"
+          }
+      ]
+    }
 }

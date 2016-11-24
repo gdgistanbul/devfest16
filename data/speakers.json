@@ -576,5 +576,36 @@
               "link": "https://plus.google.com/u/0/107086455609937555457"
           }
       ]
-  }
+  },
+  "16": {
+     "id": 16,
+     "featured": true,
+     "name": "Görkem Çetin",
+     "title": "Director",
+     "company": "Countly",
+     "companyLogo":"/images/logos/countly_logo_vector.svg", 
+     "country": "Turkey",
+     "photoUrl": "/images/people/gorkem_cetin.jpg",
+     "shortBio": "As a Linux user and open source advocate since 1993, Dr. Görkem Çetin worked as a director and consultant for Gelecek AS - a software and services company...",
+     "bio": "As a Linux user and open source advocate since 1993, Dr. Görkem Çetin worked as a director and consultant for Gelecek AS - a software and services company, Turkish National Institute of Electronics and Cryptology (TUBITAK), Vestel R&D Group (Europe’s biggest TV, set-top-box and IPTV manufacturer), Pepsi Turkey, Turkcell and Countly. Taking part in 2 European FP6 projects, 1 EUREKA project and 2 national TEYDEB projects (with a total of 27M Euro budget), he published more than 15 papers, written 5 books and contributed to 3 book chapters related to IPTV, trusted computing, open source systems, Linux and human computer interaction. He has expertise with UAVs, F/OSS, smartphone technologies, product management, project management, software development, mobile development, mobile services, trusted computing, embedded linux, human computer interaction and speech recognition.",
+     "tags": [
+         "Mobile"
+     ],
+     "badges": [
+
+     ],
+     "socials": [
+
+         {
+             "icon": "linkedin",
+             "name": "Linkedin",
+             "link": "https://tr.linkedin.com/in/gorkemcetin"
+         },
+         {
+             "icon": "twitter",
+             "name": "Twitter",
+             "link": "http://twitter.com/gorkemcetin"
+         }
+     ]
+ }
 }

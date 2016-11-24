@@ -952,7 +952,7 @@
          "title": "Android Developer",
          "company": "AppFoundry",
          "companyLogo":"/images/logos/appfoundry_logo.png",
-         "country": "Belgium",
+         "country": "Turkey",
          "photoUrl": "/images/people/filip_maelbrancke.jpg",
          "shortBio": "Filip Maelbrancke is an Android developer at AppFoundry in Belgium. Likes clean code...",
          "bio": "Filip Maelbrancke is an Android developer at AppFoundry in Belgium. Likes clean code, tests and finding out how to apply good practices to Android.",
@@ -967,6 +967,47 @@
                  "icon": "twitter",
                  "name": "Twitter",
                  "link": "https://twitter.com/fmaelbrancke"
+             }
+         ]
+      },
+      "28": {
+         "id": 28,
+         "featured": true,
+         "name": "Yusuf Eren Utku",
+         "title": "Android Developer",
+         "company": "ING Bank",
+         "companyLogo":"/images/logos/ing_bank_logo.png",
+         "country": "Turkey",
+         "photoUrl": "/images/people/utku_eren.jpg",
+         "shortBio": "Eren has been working as a Software Engineer at ING Bank for a year. Fan of Android and mobile technologies...",
+         "bio": "Eren has been working as a Software Engineer at ING Bank for a year. Fan of Android and mobile technologies. He also has an interest in developing his apps and games. Part of GDG family. He is proud of the degrees he got at the competitions and hackathons. Currently living in Istanbul Turkey.",
+         "tags": [
+             "Mobile",
+             "GDG"
+         ],
+         "badges": [
+
+         ],
+         "socials": [
+             {
+                 "icon": "website",
+                 "name": "Website",
+                 "link": "http://erenutku.com"
+             },
+             {
+                 "icon": "github",
+                 "name": "Github",
+                 "link": "https://github.com/yerenutku"
+             },
+             {
+                 "icon": "linkedin",
+                 "name": "Linkedin",
+                 "link": "https://www.linkedin.com/in/yerenutku"
+             },
+             {
+                 "icon": "twitter",
+                 "name": "Twitter",
+                 "link": "https://twitter.com/yerenutku"
              }
          ]
       }

@@ -537,47 +537,36 @@
            }
        ]
      },
-   "15": {
-      "id": 15,
-      "featured": true,
-      "name": "George Kortsaridis",
-      "title": "GDG Thessaloniki Coordinator",
-      "company": "GDG Thessaloniki",
-      "country": "United States",
-      "photoUrl": "/images/people/george_kortsaridis.png",
-      "shortBio": "I am a passionate mobile developer. I love the Android platform. I have been a co organizer of GDG Thessaloniki Greece chapter...",
-      "bio": "I am a passionate mobile developer. I love the Android platform. I have been a co organizer of GDG Thessaloniki Greece chapter and part of droidconGR core team for 2 years. \nSince July of 2016, i have been a mobile developer intern and a temp software engineer on Glidewell Dental Laboratories on USA, California",
-      "tags": [
-          "Mobile",
-          "GDG"
-      ],
-      "badges": [
+     "15": {
+        "id": 15,
+        "featured": true,
+        "name": "Esma Meral",
+        "title":"Dr.",
+        "company": "Eteration",
+        "companyLogo":"/images/logos/eteration_logo.png",
+        "country": "Turkey",
+        "photoUrl": "/images/people/esma_meral.jpg",
+        "shortBio": "Esma got her BS from the Mathematical Engineering Program of Science and Letters Faculty of Istanbul Technical University...",
+        "bio": "Esma got her BS from the Mathematical Engineering Program of Science and Letters Faculty of Istanbul Technical University. Her MS degree is in System Analysis Program of the Science and Technology Institute of the same university. Her PhD is in Computational Science and Engineering Program of the Informatics Institute of the same university.\n\nEsma has 10 years professional educator in various platforms and applications, 13 years overall software development experience in various domains of industrial, scientific and business applications including diverse programming languages and tools. She has been involved enterprise software development using Java, JavaEE and SOA technologies for over 9 years. She has experience in analysis, development, project management processes of re-engineering and migration projects. She has sharp experience in finance industry especially in credit card projects in analysis, development aspect from user interfaces to backend.",
+        "tags": [
+            "Web"
+        ],
+        "badges": [
 
-      ],
-      "socials": [
-
+        ],
+        "socials": [
+          {
+              "icon": "twitter",
+              "name": "Twitter",
+              "link": "https://twitter.com/esma_mrl"
+          },
           {
               "icon": "linkedin",
               "name": "Linkedin",
-              "link": "https://gr.linkedin.com/in/georgekortsaridis"
-          },
-          {
-              "icon": "facebook",
-              "name": "Facebook",
-              "link": "https://www.facebook.com/gkortsaridis"
-          },
-          {
-            "icon": "github",
-            "name": "Github",
-            "link": "https://github.com/gkortsaridis"
-          },
-          {
-              "icon": "gplus",
-              "name": "Google+",
-              "link": "https://plus.google.com/u/0/107086455609937555457"
+              "link": "https://www.linkedin.com/in/esmameral"
           }
-      ]
-  },
+        ]
+      },
   "16": {
      "id": 16,
      "featured": true,
@@ -842,5 +831,46 @@
               "link": "https://twitter.com/tankutkoray"
           }
         ]
+      },
+      "24": {
+         "id": 24,
+         "featured": true,
+         "name": "George Kortsaridis",
+         "title": "GDG Thessaloniki Coordinator",
+         "company": "GDG Thessaloniki",
+         "country": "United States",
+         "photoUrl": "/images/people/george_kortsaridis.png",
+         "shortBio": "I am a passionate mobile developer. I love the Android platform. I have been a co organizer of GDG Thessaloniki Greece chapter...",
+         "bio": "I am a passionate mobile developer. I love the Android platform. I have been a co organizer of GDG Thessaloniki Greece chapter and part of droidconGR core team for 2 years. \nSince July of 2016, i have been a mobile developer intern and a temp software engineer on Glidewell Dental Laboratories on USA, California",
+         "tags": [
+             "Mobile",
+             "GDG"
+         ],
+         "badges": [
+
+         ],
+         "socials": [
+
+             {
+                 "icon": "linkedin",
+                 "name": "Linkedin",
+                 "link": "https://gr.linkedin.com/in/georgekortsaridis"
+             },
+             {
+                 "icon": "facebook",
+                 "name": "Facebook",
+                 "link": "https://www.facebook.com/gkortsaridis"
+             },
+             {
+               "icon": "github",
+               "name": "Github",
+               "link": "https://github.com/gkortsaridis"
+             },
+             {
+                 "icon": "gplus",
+                 "name": "Google+",
+                 "link": "https://plus.google.com/u/0/107086455609937555457"
+             }
+         ]
       }
 }

@@ -705,5 +705,41 @@
               "link": "https://plus.google.com/+furkanikiz"
           }
       ]
+   },
+   "20": {
+      "id": 20,
+      "featured": true,
+      "name": "Rahman Usta",
+      "title": "Java* Trainer, Author, JCP Expert",
+      "company": "Kodcu.com",
+      "companyLogo": "/images/logos/kodcu_logo.png",
+      "country": "Turkey",
+      "photoUrl": "/images/people/rahman_usta.jpg",
+      "shortBio": "I have been working as a Java* Developer and Trainer for 5 years. I have given a wide range of software training...",
+      "bio": "I have been working as a Java* Developer and Trainer for 5 years. I have given a wide range of software training classes in Java and JavaScript to the largest companies and institutions in Turkey. I'm a part of the Istanbul JUG which is doing community organizations such as meetups, conferences and trainings. I'm the author of two popular books; Enterprise Java and Java 8 Ebook and I'm also a blogger at kodcu.com.\nI have become a JCP (the Java Community Process) Expert and I now try to spread the word about the future of Java. Developing software is a passion of mine, so I try to actively contribute to open-source projects on Github. My open-source project AsciidocFX was awarded one of the Duke's Choice Award Winners in 2015 by the Oracle company.\n\nReach some of my public slides at http://www.slideshare.net/rahmanusta/presentations",
+      "tags": [
+          "Java"
+      ],
+      "badges": [
+
+      ],
+      "socials": [
+
+          {
+              "icon": "linkedin",
+              "name": "Linkedin",
+              "link": "https://tr.linkedin.com/in/rahmanusta"
+          },
+          {
+              "icon": "twitter",
+              "name": "Twitter",
+              "link": "https://twitter.com/ustarahman"
+          },
+          {
+            "icon": "github",
+            "name": "Github",
+            "link": "https://github.com/rahmanusta"
+          }
+      ]
    }
 }

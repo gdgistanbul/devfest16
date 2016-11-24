@@ -872,5 +872,40 @@
                  "link": "https://plus.google.com/u/0/107086455609937555457"
              }
          ]
+      },
+      "25": {
+         "id": 25,
+         "featured": true,
+         "name": "Sercan Yusuf",
+         "title": "GDG Thessaloniki Coordinator",
+         "company": "GDG Tekirdağ",
+         "country": "Turkey",
+         "photoUrl": "/images/people/sercan_yusuf.jpg",
+         "shortBio": "He is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons...",
+         "bio": "He is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons. In addition, he is co-founder of Nodejs Turkey - a local nodejs community which is generating Turkish content.",
+         "tags": [
+             "Mobile",
+             "GDG"
+         ],
+         "badges": [
+
+         ],
+         "socials": [
+             {
+                 "icon": "linkedin",
+                 "name": "Linkedin",
+                 "link": "https://tr.linkedin.com/in/sercanyusuf"
+             },
+             {
+                 "icon": "twitter",
+                 "name": "Twitter",
+                 "link": "https://twitter.com/Srcn_ysf"
+             },
+             {
+               "icon": "github",
+               "name": "Github",
+               "link": "https://github.com/srcnysf"
+             }
+         ]
       }
 }

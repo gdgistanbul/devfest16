@@ -781,10 +781,11 @@
        "companyLogo":"/images/logos/monitise_logo.svg",
        "country": "Turkey",
        "photoUrl": "/images/people/semih_bozdemir.jpg",
-       "shortBio": "",
-       "bio": "",
+       "shortBio": "I am an organizer at GDG İzmir. My major is Android Development and work for Monitise MEA as an Android Developer...",
+       "bio": "I am an organizer at GDG İzmir. My major is Android Development and work for Monitise MEA as an Android Developer. In Monitise MEA, I am working on a project which is a mobile banking Android application. I am also doing some internal POCs such as Google Fit, Kotlin Programming language for Android. Moreover, I have an app on Google Play that has >100k downloads. You can see it on http://bit.ly/renstapp",
        "tags": [
-           "Mobile"
+           "Mobile",
+           "GDG"
        ],
        "badges": [
 

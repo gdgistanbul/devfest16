@@ -8,8 +8,12 @@
     "139": {
         "id": 139,
         "title": "Keynote",
-        "description": "",
-        "language": "English"
+        "description": "Official start of the conference.",
+        "language": "English",
+        "image": "/images/backgrounds/opening.jpg",
+        "speakers":[
+
+        ]
     },
     "138": {
         "id": 138,
@@ -173,15 +177,15 @@
     },
     "121": {
         "id": 121,
-        "title": "Offline-first progressive web apps",
-        "description": "Using service workers and other modern progressive web apps capabilities we can update our web applications to be offline-fires. In this session we'll show how to easily convert your applications be usable without the internet connection.",
+        "title": "Using Google Design Sprints to create a collaborative environment",
+        "description": "As demand for designers continues to grow we must ask ourselves: how do we maintain creative innovation if we reach a point where there aren't enough designers in our industries? Is the answer to share the creative responsibility and if so how do we educate multiple disciplines to be more design literate in order to prepare them for this new obligation? In this presentation we will look at how Google’s Design Sprint methodology helps create a collaborative environment where everyone is responsible for great user experiences.",
         "speakers": [
 
         ],
         "language": "English",
         "complexity": "Intermediate",
         "tags": [
-            "Web"
+            "Design UX/UI"
         ]
     },
     "120": {

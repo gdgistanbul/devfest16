@@ -1,0 +1,28 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../google-signin/google-signin.html">
+<link rel="import" href="../google-apis/google-client-loader.html">
+
+</head><body><dom-module id="google-youtube-upload">
+  <link rel="import" type="css" href="google-youtube-upload.css">
+  <template>
+    <script src="../cors-upload-sample/upload.js"></script>
+    <google-client-loader on-js-api-load="_clientLoaded"></google-client-loader>
+    <div id="login-logout">
+      <img id="channel-image" src="{{_channel.thumbnail}}" style$="{{_computeChannelImageStyle(_channel.thumbnail)}}">
+      <span id="channel-name">{{_channel.name}}</span>
+
+      <google-signin client-id="{{clientId}}" scopes="https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly">
+      </google-signin>
+    </div>
+
+    <div style="_computeUploadDivStyle(authenticated)}}">
+      <input type="file" id="file" class="button" accept="video/*" on-change="_handleFileChanged">
+
+      <button on-click="_handleUploadClicked" style$="{{_computeUploadButtonStyle(auto}}" disabled="{{!_selectedFile}}">Upload Video</button>
+
+      <p id="disclaimer">By uploading a video, you certify that you own all rights to the content or that you are authorized by the owner to make the content publicly available on YouTube, and that it otherwise complies with the YouTube Terms of Service located at <a href="http://www.youtube.com/t/terms" target="_blank">http://www.youtube.com/t/terms</a></p>
+    </div>
+  </template>
+</dom-module>
+<script>!function(){var e=6e4;Polymer({is:"google-youtube-upload",properties:{clientId:{type:String,value:""},auto:{type:Boolean,value:!1},authenticated:{type:Boolean,value:!1,readOnly:!0},videoTitle:{type:String,value:"Untitled Video"},description:{type:String,value:"Uploaded via a web component! Check out https://github.com/GoogleWebComponents/google-youtube-upload"},tags:{type:Array,value:function(){return["google-youtube-upload"]}},categoryId:{type:Number,value:22},privacyStatus:{type:String,value:"public"},videoId:{type:String,value:"",readOnly:!0,notify:!0},_channel:{type:Object,value:function(){return{name:"Not Logged In",thumbnail:""}}},_selectedFile:{type:Object,value:null}},_uploadStartTime:0,ready:function(){document.addEventListener("google-signin-success",function(e){this.accessToken=gapi.auth2.getAuthInstance().currentUser.get().getAuthResponse().access_token,this._setAuthenticated(!0),this._loadChannels()}.bind(this)),document.addEventListener("google-signed-out",function(e){this._setAuthenticated(!1),this._loadChannelRequested=!1,this.set("_channel.name","Not Logged In"),this.set("_channel.thumbnail","")}.bind(this))},_clientLoaded:function(){this._loadChannels()},_loadChannels:function(){gapi&&gapi.client&&this.authenticated&&!this._loadChannelRequested&&(this._loadChannelRequested=!0,gapi.client.request({path:"/youtube/v3/channels",params:{part:"snippet",mine:!0},callback:function(e){e.error?this.fire("youtube-upload-fail",e.error.message):(this.set("_channel.name",e.items[0].snippet.title),this.set("_channel.thumbnail",e.items[0].snippet.thumbnails.default.url))}.bind(this)}))},_computeChannelImageStyle:function(e){return"display:"+(e?"inline":"none")},_computeUploadDivStyle:function(e){return"display:"+(e?"block":"none")},_computeUploadButtonStyle:function(e){return"display:"+(e?"none":"block")},uploadFile:function(e){var t={snippet:{title:this.videoTitle,description:this.description,tags:this.tags,categoryId:this.categoryId},status:{privacyStatus:this.privacyStatus}},i=new MediaUploader({baseUrl:"https://www.googleapis.com/upload/youtube/v3/videos",file:e,token:this.accessToken,metadata:t,params:{part:Object.keys(t).join(",")},onError:function(e){var t=e;try{var i=JSON.parse(e);t=i.error.message}finally{this.fire("youtube-upload-fail",t)}}.bind(this),onProgress:function(e){var t=Date.now(),i=e.loaded,o=e.total,a=i/((t-this._uploadStartTime)/1e3),n=(o-i)/a,s=i/o;this.fire("youtube-upload-progress",{progressEvent:e,bytesPerSecond:a,estimatedSecondsRemaining:n,fractionComplete:s})}.bind(this),onComplete:function(e){var t=JSON.parse(e);this.fire("youtube-upload-complete",t.id),this._setVideoId(t.id),this._pollForVideoStatus()}.bind(this)});this.fire("youtube-upload-start",e),this._uploadStartTime=Date.now(),i.upload()},_handleFileChanged:function(){this._selectedFile=this.$.file.files[0],this.auto&&this.uploadFile(this._selectedFile)},_handleUploadClicked:function(){this.uploadFile(this._selectedFile)},_pollForVideoStatus:function(){gapi.client.request({path:"/youtube/v3/videos",params:{part:"status",id:this.videoId},callback:function(t){if(t.error)setTimeout(this._pollForVideoStatus.bind(this),e);else{var i=t.items[0].status;switch(i.uploadStatus){case"uploaded":this.fire("youtube-processing-poll",i),setTimeout(this._pollForVideoStatus.bind(this),e);break;case"processed":this.fire("youtube-processing-complete",this.videoId);break;default:this.fire("youtube-processing-fail",i)}}}.bind(this)})}})}();</script>
+</body></html>

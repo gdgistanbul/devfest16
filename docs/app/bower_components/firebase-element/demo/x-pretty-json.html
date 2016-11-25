@@ -1,0 +1,9 @@
+<html><head><link rel="import" href="../../polymer/polymer.html">
+
+</head><body><dom-module id="x-pretty-json">
+  <template>
+    <pre>[[prettify(object)]]</pre>
+  </template>
+  <script>Polymer({is:"x-pretty-json",properties:{object:{type:Object}},prettify:function(t){return t?JSON.stringify(t,null,"  "):""}});</script>
+</dom-module>
+</body></html>

@@ -1,0 +1,16 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../google-signin/google-signin-aware.html">
+
+
+
+</head><body><dom-module id="google-analytics-dashboard">
+
+  <template>
+    <google-signin-aware on-google-signin-aware-success="_signedIn" on-google-signin-aware-signed-out="_signedOut"></google-signin-aware>
+    <content id="content"></content>
+  </template>
+
+</dom-module>
+
+<script>!function(){"use strict";Polymer({is:"google-analytics-dashboard",properties:{query:{type:Object,value:function(){return{}}},authorized:{type:Boolean,value:!1,reflectToAttribute:!0}},listeners:{"analytics-dashboard-control-change":"queryUpdated"},ready:function(){this.updateChildren()},queryUpdated:function(t){this.query||(this.query={}),Object.keys(t.detail).forEach(function(e){this.query[e]=t.detail[e]}.bind(this)),this.updateChildren()},updateChildren:function(){if(this.authorized)for(var t,e=Polymer.dom(this).querySelectorAll("google-analytics-chart"),i=0;t=e[i];i++)Object.keys(this.query).forEach(function(e){t[e]=this.query[e]}.bind(this))},_signedIn:function(){this.authorized=!0,this.updateChildren()},_signedOut:function(){this.authorized=!1}})}();</script>
+</body></html>

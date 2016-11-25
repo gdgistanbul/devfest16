@@ -1,0 +1,16 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-ajax/iron-request.html">
+<link rel="import" href="../promise-polyfill/promise-polyfill-lite.html">
+<link rel="import" href="google-chart-loader.html">
+
+
+</head><body><dom-module id="google-chart">
+  <link rel="import" type="css" href="google-chart.css">
+  <template>
+    <google-chart-loader id="loader" type="[[type]]"></google-chart-loader>
+    <div id="chartdiv"></div>
+  </template>
+</dom-module>
+
+<script>!function(){"use strict";Polymer({is:"google-chart",properties:{type:{type:String,value:"column",observer:"_typeChanged"},options:{type:Object,observer:"redraw"},cols:{type:Array,observer:"_rowsOrColumnsChanged"},rows:{type:Array,observer:"_rowsOrColumnsChanged"},data:{type:Object,observer:"_dataChanged"},view:{type:Object,observer:"_viewChanged"},selection:{type:Array,notify:!0,observer:"_setSelection"},drawn:{type:Boolean,readOnly:!0,value:!1}},observers:["_draw(_chart, _dataView)"],listeners:{"google-chart-select":"_updateSelection","google-chart-ready":"_onChartReady"},_chart:null,_dataView:null,_selection:null,_typeChanged:function(){this.$.loader.create(this.type,this.$.chartdiv).then(function(t){this.$.loader.fireOnChartEvent(t,"select"),this.$.loader.fireOnChartEvent(t,"ready"),this._setDrawn(!1),this._chart=t}.bind(this))},_setSelection:function(){this.drawn&&this.selection&&this.selection!==this._selection&&(this._chart.setSelection&&this._chart.setSelection(this.selection),this._selection=this.selection)},_updateSelection:function(){this.selection=this._selection=this._chart.getSelection()},_onChartReady:function(){this._setDrawn(!0),this._selection=null,this._setSelection()},redraw:function(){this._chart&&this._dataView&&this._draw(this._chart,this._dataView)},_draw:function(t,e){try{this._setDrawn(!1),t.draw(e,this.options||{})}catch(t){this.$.chartdiv.innerHTML=t}},get imageURI(){return this._chart?this._chart.getImageURI():null},_viewChanged:function(t){t&&(this._dataView=t)},_rowsOrColumnsChanged:function(){var t=this.rows,e=this.cols;t&&e&&this.$.loader.dataTable().then(function(i){return e.forEach(function(t){i.addColumn(t)}),i.addRows(t),i}.bind(this)).then(this.$.loader.dataView.bind(this.$.loader)).then(function(t){this._dataView=t}.bind(this)).catch(function(t){this.$.chartdiv.innerHTML=t}.bind(this))},_dataChanged:function(t){var e;if(t){if("string"==typeof t||t instanceof String){var i=document.createElement("iron-request");e=i.send({url:t,handleAs:"json"}).then(function(t){return t.response})}else e=Promise.resolve(t);e.then(this.$.loader.dataTable.bind(this.$.loader)).then(this.$.loader.dataView.bind(this.$.loader)).then(function(t){this._dataView=t}.bind(this))}}})}();</script>
+</body></html>

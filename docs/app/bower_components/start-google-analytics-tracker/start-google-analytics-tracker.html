@@ -1,0 +1,10 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-signals/iron-signals.html">
+
+</head><body><dom-module id="start-google-analytics-tracker">
+    <template>
+        <iron-signals on-iron-signal-track-page="trackPage" on-iron-signal-track-event="trackEvent"></iron-signals>
+    </template>
+</dom-module>
+<script>!function(e,t,a,n,i,c,r){e.GoogleAnalyticsObject=i,e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},e[i].l=1*new Date,c=t.createElement(a),r=t.getElementsByTagName("link")[0],c.async=1,c.src=n,r.parentNode.insertBefore(c,r)}(window,document,"script","scripts/analytics.js","ga"),function(){Polymer({is:"start-google-analytics-tracker",properties:{code:{type:String},userId:{type:String,notify:!0}},listeners:{"track-event":"trackEvent","track-page":"trackPage","user-id-changed":"userIDChanged"},ready:function(){ga("create",this.code,"auto"),this.trackPage()},trackEvent:function(e){ga("send","event",e.detail.category,e.detail.action,e.detail.label,e.detail.value)},trackPage:function(e){void 0!=e&&void 0!==e.detail.path&&ga("set","page",e.detail.path),ga("send","pageview")},userIDChanged:function(e){ga("set","&uid",this.userId)}})}();</script>
+</body></html>

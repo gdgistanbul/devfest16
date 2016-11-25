@@ -1,0 +1,23 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+
+
+
+</head><body><dom-module id="google-analytics-date-selector">
+
+  <style>:host{display:inline-block;}.control{@apply (--google-analytics-date-selector-control);}label{@apply (--google-analytics-date-selector-label);}input{color:inherit;font:inherit;margin:0;@apply (--google-analytics-date-selector-input);}input:focus{@apply (--google-analytics-date-selector-input-focus);}</style>
+
+  <template>
+    <span class="control">
+      <label for="startDate">Start Date</label>
+      <input id="startDate" type="date" value="{{startDate::change}}" min="{{minStartDate}}" max="{{endDate}}">
+    </span>
+    <span class="control">
+      <label for="endDate">End Date</label>
+      <input id="endDate" type="date" value="{{endDate::change}}" min="{{startDate}}" max="{{maxEndDate}}">
+    </span>
+  </template>
+
+</dom-module>
+
+<script>!function(){"use strict";function t(t){if(r.test(t))return t;var n=a.exec(t);if(n)return e(+n[1]);if("today"==t)return e(0);if("yesterday"==t)return e(1);throw new Error("Cannot convert date "+t)}function e(t){var e=new Date;e.setDate(e.getDate()-t);var a=String(e.getMonth()+1);a=1==a.length?"0"+a:a;var r=String(e.getDate());return r=1==r.length?"0"+r:r,e.getFullYear()+"-"+a+"-"+r}var a=/(\d+)daysAgo/,r=/\d{4}\-\d{2}\-\d{2}/;Polymer({is:"google-analytics-date-selector",properties:{startDate:{type:String,value:t("7daysAgo"),observer:"startDateChanged",notify:!0},endDate:{type:String,value:t("yesterday"),observer:"endDateChanged",notify:!0},minStartDate:{type:String,value:"2005-01-01"},maxEndDate:{type:String,value:t("today")}},startDateChanged:function(e,a){this.startDate=t(e),this.$.startDate.value=this.startDate,this.fire("analytics-dashboard-control-change",{startDate:this.startDate})},endDateChanged:function(e,a){this.endDate=t(e),this.$.endDate.value=this.endDate,this.fire("analytics-dashboard-control-change",{endDate:this.endDate})}})}();</script>
+</body></html>

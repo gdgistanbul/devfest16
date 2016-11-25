@@ -1,0 +1,25 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../google-chart/google-chart.html">
+<link rel="import" href="../promise-polyfill/promise-polyfill-lite.html">
+<link rel="import" href="google-analytics-query.html">
+<link rel="import" href="google-analytics-loader.html">
+
+
+
+</head><body><dom-module is="google-analytics-chart">
+
+  <style>:host{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:400px;height:300px;}:host > *{-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;}:host > google-chart{-webkit-flex:1 0 0%;-ms-flex:1 0 0%;flex:1 0 0%;width:auto;}</style>
+
+  <template>
+    <google-analytics-loader all-ready="{{setupReady}}"></google-analytics-loader>
+    <google-analytics-query id="query" loading="{{loading}}" get-data-response-handler="{{_boundResponseHandler}}" data="{{data}}" ids="{{ids}}" start-date="{{startDate}}" end-date="{{endDate}}" metrics="{{metrics}}" dimensions="{{dimensions}}" sort="{{sort}}" filters="{{filters}}" segment="{{segment}}" sampling-level="{{samplingLevel}}" start-index="{{startIndex}}" max-results="{{maxResults}}" output="dataTable" src-param="gwc-ga-chart"></google-analytics-query>
+    <content select="header,h1,h2,h3,h4,h5,h6"></content>
+    <google-chart id="chart" type="{{type}}" data="{{data.dataTable}}">
+    </google-chart>
+    <content select="footer"></content>
+  </template>
+
+</dom-module>
+
+<script>!function(){"use strict";function e(e){var t={base:{fontSize:11,chartArea:{width:"100%"},legend:{position:"top",alignment:"start"}},area:{pointSize:6,lineWidth:4,areaOpacity:.1,colors:["#058dc7","#aadff3"],hAxis:{format:"MMM d",gridlines:{color:"transparent"},baselineColor:"transparent"},vAxis:{gridlines:{color:"#e8e8e8",logScale:!0,count:3},textPosition:"in"}},bar:{colors:["#058dc7","#50b432","#ed561b"],hAxis:{gridlines:{color:"#e8e8e8"}},vAxis:{textPosition:"in",textStyle:{strokeWidth:4}}},column:{colors:["#058dc7","#50b432","#ed561b"],hAxis:{gridlines:{color:"transparent"},baselineColor:"transparent"},vAxis:{gridlines:{color:"#e8e8e8"},textPosition:"in"}},geo:{colorAxis:{minValue:0,colors:["#aadff3","#058dc7"]}},pie:{legend:{position:"right"},pieHole:.4}};return i({},t.base,t[e])}function t(e,t){e.cols.forEach(function(e){e.label=t[e.id]||e.label})}function n(e){for(var t=0;t<e.rows.length;t++)for(var n=e.rows[t],i=0;i<n.c.length;i++)"number"===e.cols[i].type&&(n.c[i].v=Number(n.c[i].v))}function i(e){var t=Array.prototype.slice.call(arguments,1);return t.forEach(function(n){n&&"object"==typeof t&&Object.keys(n).forEach(function(t){"object"==typeof n[t]&&Object.getPrototypeOf(n[t])==Object.prototype?e[t]=null==e[t]?i({},n[t]):i(e[t],n[t]):"undefined"!=typeof n[t]&&(e[t]=n[t])})}),e}Polymer({is:"google-analytics-chart",properties:{type:{type:String,value:"area"},options:{type:Object,value:function(){return null}},rendered:{type:Boolean,value:!1,notify:!0,reflectToAttribute:!0},loading:{type:Boolean,value:!1,notify:!0,reflectToAttribute:!0},setupReady:{type:Boolean,observer:"setupReadyChanged"},startDate:{type:String},endDate:{type:String},data:{type:Object},ids:{type:String},metrics:{type:String},dimensions:{type:String},sort:{type:String},filters:{type:String},segment:{type:String},samplingLevel:{type:String},startIndex:{type:Number},maxResults:{type:Number}},ready:function(){this._boundResponseHandler=this.handleResponse.bind(this),this.$.chart.options=this.$.chart.options||{},i(this.$.chart.options,e(this.type),this.options)},setupReadyChanged:function(e,t){e&&o.get()},handleResponse:function(e){this.rendered=!0,o.get().then(function(i){t(e.dataTable,i),n(e.dataTable),this.$.query.setData(e)}.bind(this))}});var o=function(){function e(){return gapi&&gapi.client&&gapi.client.analytics?new Promise(function(e,t){gapi.client.analytics,gapi.client.analytics.metadata.columns.list({reportType:"ga",_src:"gwc-ga-chart"}).execute(function(n){if(n.error)t(n.error);else{var i={};n.items.forEach(function(e){i[e.id]=e.attributes.uiName}),e(i)}})}):void console.warn("Library not loaded yet!")}var t;return{get:function(){return t=t||e(),t.catch(function(e){console.error(e.stack||e)})}}}()}();</script>
+</body></html>

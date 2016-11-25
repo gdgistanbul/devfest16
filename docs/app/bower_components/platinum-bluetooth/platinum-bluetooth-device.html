@@ -1,0 +1,11 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+
+</head><body><dom-module id="platinum-bluetooth-device">
+  <template>
+    <content id="services" select="platinum-bluetooth-service">
+    </content>
+  </template>
+</dom-module>
+
+<script>!function(){"use strict";var e="bluetooth"in navigator;"BluetoothDevice"in window||(window.BluetoothDevice={}),Polymer({is:"platinum-bluetooth-device",properties:{supported:{readOnly:!0,type:Boolean,value:e},servicesFilter:{type:Array,observer:"_filterChanged"},nameFilter:{type:String,observer:"_filterChanged"},namePrefixFilter:{type:String,observer:"_filterChanged"},optionalServicesFilter:{type:Array,observer:"_filterChanged"},device:{type:BluetoothDevice,readOnly:!0,observer:"_deviceChanged"}},_deviceChanged:function(){this._services=Polymer.dom(this.$.services).getDistributedNodes();for(var e=0;e<this._services.length;e++)this._services[e]._device=this.device},_filterChanged:function(){this._setDevice(null)},created:function(){this._services=[]},reset:function(){this._setDevice(null)},request:function(){if(!this.supported)return Promise.reject(new Error("Your browser does not support Bluetooth"));if(this.device)return this._deviceChanged(),Promise.resolve(this.device);var e={filters:[]};if(this.servicesFilter&&e.filters.push({services:this.servicesFilter}),this.nameFilter&&e.filters.push({name:this.nameFilter}),this.namePrefixFilter&&e.filters.push({namePrefix:this.namePrefixFilter}),this.optionalServicesFilter&&(e.optionalServices=this.optionalServicesFilter),0==e.filters.length)return Promise.reject(new Error("Please set Bluetooth options filters."));var t=this;return navigator.bluetooth.requestDevice(e).then(function(e){return t._setDevice(e),t.device})},disconnect:function(){this._services=Polymer.dom(this.$.services).getDistributedNodes();for(var e=0;e<this._services.length;e++)this._services[e]._disconnectGattServer()}})}();</script>
+</body></html>

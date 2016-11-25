@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head>
+
+  <title>iron-selector attr-for-selected</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../web-component-tester/browser.js"></script>
+  <script src="../../test-fixture/test-fixture-mocha.js"></script>
+
+  <link rel="import" href="../../test-fixture/test-fixture.html">
+  <link rel="import" href="../../iron-test-helpers/iron-test-helpers.html">
+
+  <link rel="import" href="../iron-selector.html">
+  <link rel="import" href="attr-for-selected-elements.html">
+
+  <style>.iron-selected{background:#ccc;}.my-selected{background:red;}</style>
+
+</head>
+<body>
+
+  <test-fixture id="inlineAttributes">
+    <template>
+      <iron-selector attr-for-selected="some-attr">
+        <div some-attr="value0">Item 0</div>
+        <div some-attr="value1">Item 1</div>
+        <div some-attr="value2">Item 2</div>
+      </iron-selector>
+    </template>
+  </test-fixture>
+
+  <test-fixture id="reflectedProperties">
+    <template>
+      <iron-selector attr-for-selected="some-attr">
+        <attr-reflector>Item 0</attr-reflector>
+        <attr-reflector>Item 1</attr-reflector>
+        <attr-reflector>Item 2</attr-reflector>
+      </iron-selector>
+    </template>
+  </test-fixture>
+
+  <test-fixture id="mixedPropertiesAndAttributes">
+    <template>
+      <iron-selector attr-for-selected="some-attr">
+        <attr-reflector>Item 0</attr-reflector>
+        <attr-reflector>Item 1</attr-reflector>
+        <div some-attr="value2">Item 2</div>
+        <div some-attr="value3">Item 3</div>
+        <attr-reflector>Item 4</attr-reflector>
+        <div some-attr="value5">Item 5</div>
+      </iron-selector>
+    </template>
+  </test-fixture>
+
+  <script>suite("inline attributes",function(){var e,t;setup(function(){e=fixture("inlineAttributes"),t=Array.prototype.slice.apply(e.querySelectorAll("div[some-attr]"))}),test("selecting value programatically selects correct item",function(){e.select("value1"),assert.equal(e.selectedItem,t[1])}),test("selecting item sets the correct selected value",function(r){MockInteractions.downAndUp(t[2],function(){assert.equal(e.selected,"value2"),r()})})}),suite("reflected properties as attributes",function(){var e,t;setup(function(){e=fixture("reflectedProperties"),t=Array.prototype.slice.apply(e.querySelectorAll("attr-reflector"));for(var r=0;r<t.length;r++)t[r].someAttr="value"+r}),test("selecting value programatically selects correct item",function(){e.select("value1"),assert.equal(e.selectedItem,t[1])}),test("selecting item sets the correct selected value",function(r){MockInteractions.downAndUp(t[2],function(){assert.equal(e.selected,"value2"),r()})})}),suite("mixed properties and inline attributes",function(){var e,t;setup(function(){e=fixture("mixedPropertiesAndAttributes"),t=Array.prototype.slice.apply(e.querySelectorAll("attr-reflector, div[some-attr]"));for(var r=0;r<t.length;r++)t[r].someAttr="value"+r}),test("selecting value programatically selects correct item",function(){for(var r=0;r<t.length;r++)e.select("value"+r),assert.equal(e.selectedItem,t[r])}),test("selecting item sets the correct selected value",function(r){function s(l){return l>=t.length?void r():void MockInteractions.downAndUp(t[l],function(){assert.equal(e.selected,"value"+l),s(l+1)})}var l=0;s(l)})});</script>
+
+
+
+</body></html>

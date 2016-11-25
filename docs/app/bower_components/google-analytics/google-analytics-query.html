@@ -1,0 +1,15 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="google-analytics-loader.html">
+
+
+
+</head><body><dom-module id="google-analytics-query">
+
+  <template>
+    <google-analytics-loader all-ready="{{setupReady}}"></google-analytics-loader>
+  </template>
+
+</dom-module>
+
+<script>!function(){"use strict";Polymer({is:"google-analytics-query",properties:{data:{type:Object,value:function(){return{}},notify:!0},ids:{type:String,value:""},startDate:{type:String,value:"7daysAgo"},endDate:{type:String,value:"yesterday"},metrics:{type:String,value:""},dimensions:{type:String,value:""},sort:{type:String,value:""},filters:{type:String,value:""},segment:{type:String,value:""},samplingLevel:{type:String,value:""},startIndex:{type:Number,value:0},maxResults:{type:Number,value:0},output:{type:String,value:""},fields:{type:String,value:""},_srcParam:{type:String,value:"gwc-ga-query"},loading:{type:Boolean,value:!1,notify:!0},getDataResponseHandler:{type:Function},setupReady:{type:Boolean,observer:"_setupReadyChanged"}},observers:["getData(ids,startDate,endDate,metrics,dimensions,sort,filters,segment,samplingLevel,startIndex,maxResults,output,fields)"],_setupReadyChanged:function(t){t?this.getData():this.data=null},getData:function(){if(this.setupReady&&this._hasRequiredParams){this.loading=!0;var t={ids:this.ids,"start-date":this.startDate,"end-date":this.endDate,metrics:this.metrics,_src:this._srcParam};return this.dimensions&&(t.dimensions=this.dimensions),this.sort&&(t.sort=this.sort),this.filters&&(t.filters=this.filters),this.segment&&(t.segment=this.segment),this.samplingLevel&&(t.samplingLevel=this.samplingLevel),this.startIndex&&(t["start-index"]=this.startIndex),this.maxResults&&(t["max-results"]=this.maxResults),this.output&&(t.output=this.output),this.fields&&(t.fields=this.fields),gapi.client.analytics.data.ga.get(t).execute(this.handleResponse.bind(this)),!0}},setData:function(t){this.data=t,this.fire("analytics-query-success",t)},handleResponse:function(t){this.loading=!1,t.error?this.fire("analytics-query-error",t.error):this.getDataResponseHandler?this.getDataResponseHandler(t):this.setData(t)},get _hasRequiredParams(){return!!(this.ids&&this.metrics&&this.startDate&&this.endDate)}})}();</script>
+</body></html>

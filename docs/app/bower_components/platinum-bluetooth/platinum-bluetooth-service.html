@@ -1,0 +1,11 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+
+</head><body><dom-module id="platinum-bluetooth-service">
+  <template>
+    <content id="characteristics" select="platinum-bluetooth-characteristic">
+    </content>
+  </template>
+</dom-module>
+
+<script>!function(){"use strict";Polymer({is:"platinum-bluetooth-service",properties:{service:{type:String,observer:"_serviceChanged"},_device:{type:BluetoothDevice,observer:"_deviceChanged"}},_serviceChanged:function(){this._characteristics=Polymer.dom(this.$.characteristics).getDistributedNodes();for(var e=0;e<this._characteristics.length;e++)this._characteristics[e].service=this.service},_deviceChanged:function(){this._characteristics=Polymer.dom(this.$.characteristics).getDistributedNodes();for(var e=0;e<this._characteristics.length;e++)this._characteristics[e]._device=this._device},_disconnectGattServer:function(){this._characteristics=Polymer.dom(this.$.characteristics).getDistributedNodes();for(var e=0;e<this._characteristics.length;e++)this._characteristics[e]._disconnectGattServer()},created:function(){this._characteristics=[]}})}();</script>
+</body></html>

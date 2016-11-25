@@ -1,0 +1,1 @@
+var fixtures=require("../fixtures/columns.json"),namespace=require("mout/object/namespace");Promise=require("native-promise-only"),namespace(global,"gapi.client.analytics.metadata.columns"),gapi.client.analytics.metadata.columns.list=function(){var e={result:fixtures};return{then:function(a){return Promise.resolve(a(e))}}};

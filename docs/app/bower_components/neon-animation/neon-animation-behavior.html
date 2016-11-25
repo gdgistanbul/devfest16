@@ -1,0 +1,5 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-meta/iron-meta.html">
+
+<script>Polymer.NeonAnimationBehavior={properties:{animationTiming:{type:Object,value:function(){return{duration:500,easing:"cubic-bezier(0.4, 0, 0.2, 1)",fill:"both"}}}},registered:function(){new Polymer.IronMeta({type:"animation",key:this.is,value:this.constructor})},timingFromConfig:function(i){if(i.timing)for(var n in i.timing)this.animationTiming[n]=i.timing[n];return this.animationTiming},setPrefixedProperty:function(i,n,t){for(var r,e={transform:["webkitTransform"],transformOrigin:["mozTransformOrigin","webkitTransformOrigin"]},o=e[n],a=0;r=o[a];a++)i.style[r]=t;i.style[n]=t},complete:function(){}};</script>
+</head><body></body></html>

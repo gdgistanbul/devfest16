@@ -1,0 +1,13 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+
+
+</head><body><dom-module name="disqus-comments">
+	<style>:host{display:block;}</style>
+  <template>
+    <div id="disqus">
+      <div id="disqus_thread"></div>
+    </div>
+  </template>
+</dom-module>
+
+<script>!function(){"use strict";Polymer({is:"disqus-comments",properties:{shortname:{type:String,value:"",notify:!0},identifier:{type:String,value:"",notify:!0},title:{type:String,value:"",notify:!0},url:{type:String,value:"",notify:!0},categoryId:{type:String,value:"",notify:!0},https:{type:Boolean,value:!1,notify:!0}},attached:function(){if(window.DISQUS)return void this.reset();if(!this.shortname)return console.error("Required: Please provide a Disqus shortname.");var e=this.shortname,t=this,i=this.root.querySelector("#disqus"),o=document.createTextNode("");i&&(o=i.cloneNode(!0)),window.disqus_config=function(){t.identifier&&(this.page.identifier=t.identifier),t.title&&(this.page.title=t.title),t.url&&(this.page.url=t.url),t.categoryId&&(this.page.category_id=t.categoryId),this.callbacks.onReady=[function(){t.root.appendChild(o)}]};var r=document.createElement("script"),n=this.https?"https":"http";r.type="text/javascript",r.async=!0,r.src=n+"://"+e+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(r)},reset:function(){if(window.DISQUS){var e=this,t=this.root.querySelector("#disqus"),i=document.createTextNode("");t&&(i=t.cloneNode(!0)),DISQUS.reset({reload:!0,config:function(){e.identifier&&(this.page.identifier=e.identifier),e.title&&(this.page.title=e.title),e.url&&(this.page.url=e.url),e.categoryId&&(this.page.category_id=e.categoryId),this.callbacks.onReady=[function(){e.root.appendChild(i)}]}})}}})}();</script></body></html>

@@ -1,0 +1,19 @@
+<html><head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <style>#drop_zone{border:2px dashed #bbb;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;padding:25px;text-align:center;font:20pt bold 'Helvetica';color:#bbb;}</style>
+  </head>
+  <body>
+      <span id="signin">
+        <span class="g-signin" data-callback="signinCallback" data-clientid="692008307570.apps.googleusercontent.com" data-cookiepolicy="single_host_origin" data-scope="https://www.googleapis.com/auth/drive.file">
+        </span>
+      </span>
+
+      <div id="drop_zone" style="display:none">Drop files here</div>
+     
+     <div id="results">
+     <script src="upload.js"></script>
+     <script type="text/javascript">function signinCallback(e){e.access_token&&(accessToken=e.access_token,document.getElementById("signin").style.display="none",document.getElementById("drop_zone").style.display=null)}function handleFileSelect(e){e.stopPropagation(),e.preventDefault();for(var n,t=e.dataTransfer.files,a=0;n=t[a];a++){var o=new MediaUploader({file:n,token:accessToken,onComplete:function(e){var n=document.createElement("pre");n.appendChild(document.createTextNode(e)),document.getElementById("results").appendChild(n)}});o.upload()}}function handleDragOver(e){e.stopPropagation(),e.preventDefault(),e.dataTransfer.dropEffect="copy"}var accessToken=null;document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("drop_zone");e.addEventListener("dragover",handleDragOver,!1),e.addEventListener("drop",handleFileSelect,!1)});</script>
+     <script src="https://apis.google.com/js/client:plusone.js"></script>
+  
+
+</div></body></html>

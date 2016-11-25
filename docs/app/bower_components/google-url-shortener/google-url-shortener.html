@@ -1,0 +1,13 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../google-apis/google-client-loader.html">
+
+
+</head><body><dom-module id="google-url-shortener">
+  <template>
+    <google-client-loader id="urlshortener" name="urlshortener" version="v1" on-google-api-load="_readyForAction" on-google-api-load-error="_apiLoadError">
+    
+  </google-client-loader></template>
+</dom-module>
+
+<script>!function(){"use strict";var r=!1;Polymer({is:"google-url-shortener",properties:{longUrl:{type:String,value:"",observer:"_longUrlChanged"},shortUrl:{type:String,value:"",notify:!0},error:{type:String,value:"",notify:!0},auto:{type:Boolean,value:!1}},_readyForAction:function(){r=!0,this.fire("google-url-shortener-ready")},_apiLoadError:function(r){this.fire("api-error",{error:{message:"Error loading URL Shortener API",innerError:r.detail}})},_longUrlChanged:function(){this.auto&&this.shorten()},shorten:function(){if(r&&this.longUrl){var e=this.$.urlshortener.api.url.insert({resource:{longUrl:this.longUrl}});e.execute(function(r){r&&r.id?(this.shortUrl=r.id,this.error="",this.fire("google-url-shorten",{shortUrl:r.id})):(this.error=r&&r.error?r.error.message:"Unknown error",this.fire("google-url-shorten-error",{error:this.error}))}.bind(this))}}})}();</script>
+</body></html>

@@ -1,0 +1,1 @@
+function requestMetadata(){var t=gapi.client.analytics.metadata.columns.list({reportType:"ga"}).then(function(t){return t});return new t.constructor(function(e,a){t.then(function(t){e(new Metadata(t.result.items))}).then(null,a)})}var Metadata=require("./metadata"),cache;module.exports={get:function(t){return t&&(cache=null),cache||(cache=requestMetadata())}};

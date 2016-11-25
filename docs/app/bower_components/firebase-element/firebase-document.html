@@ -1,0 +1,8 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="firebase.html">
+<link rel="import" href="firebase-query-behavior.html">
+
+
+
+<script>Polymer({is:"firebase-document",behaviors:[Polymer.FirebaseQueryBehavior],properties:{query:{type:Object,notify:!0,computed:"_computeQuery(location)",observer:"_queryChanged"},data:{type:Object,notify:!0}},listeners:{"firebase-value":"_onFirebaseValue"},_localDataChanged:function(e){var t=e.path.split(".");return 1===t.length?void this._updateRemoteDocument():void this._setRemoteDocumentChild(t[1],e.base[t[1]])},_onFirebaseValue:function(e){this._applyRemoteDataChange(function(){this.set("data",e.detail.val())})},_computeQuery:function(e){if(e){var t;try{t=new Firebase(e)}catch(t){this._fireQueryError("Query cannot be instantiated with location "+e+" ("+t.toString()+")")}finally{return t}}},_updateRemoteDocument:function(){return this._log("Updating remote document"),this.query?void this.query.update(this.dataAsObject):void this._fireQueryError("Query does not exist")},_setRemoteDocumentChild:function(e,t){return this.query?void this.debounce("set-"+e,function(){this._log('Setting child "'+e+'" to',t),this.query.child(e).set(t)}):void this._fireQueryError("Query does not exist")},_removeRemoteDocumentChild:function(e){return this._log('Removing child "'+e+'"'),this.query?void this.query.child(e).remove():void this._fireQueryError("Query does not exist")}});</script>
+</head><body></body></html>

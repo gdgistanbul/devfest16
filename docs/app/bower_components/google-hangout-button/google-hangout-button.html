@@ -1,0 +1,14 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+
+<link rel="import" href="../google-apis/google-plusone-api.html">
+
+
+</head><body><dom-module id="google-hangout-button">
+  <style>:host, span{display:inline-block;}</style>
+  <template>
+    <google-plusone-api id="plusone" on-api-load="_load"></google-plusone-api>
+    <span id="container"></span>
+  </template>
+</dom-module>
+<script>Polymer({is:"google-hangout-button",properties:{type:{type:String,value:"normal"},apps:{type:Array,value:function(){return[]}},invites:{type:Array,value:function(){return[]}},topic:{type:String,value:null},width:{type:Number,value:136},_loaded:{type:Boolean,value:!1}},_load:function(){var t=this._pregame();this.$.plusone.api.hangout.render(t,{render:"createhangout",hangout_type:this.type,initial_apps:this.apps,invites:this.invites,topic:this.topic,widget_size:this.width}),this._postgame(t)},_pregame:function(){var t=document.createElement("span");return document.body.appendChild(t),this.fire("google-hangout-button-pregame"),t},_postgame:function(t){var e=t.firstElementChild;e.addEventListener("load",function(){this._loaded||(this.$.container.appendChild(t),this._loaded=!0,this.fire("google-hangout-button-ready"))}.bind(this))},ready:function(){this.apps=this.apps||[],this.invites=this.invites||[]}});</script>
+</body></html>

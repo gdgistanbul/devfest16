@@ -1,0 +1,38 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../google-signin/google-signin-aware.html">
+<link rel="import" href="../google-apis/google-client-loader.html">
+
+
+
+</head><body><dom-module id="google-calendar-list">
+  <style>:host, span{display:inline-block;}ul{list-style:none;padding:0;}li{font-family:Arial, sans-serif;display:block;list-style:none;width:300px;border-radius:.2em;padding:.2em;margin:.2em;overflow:hidden;}li a{color:inherit;display:block;text-decoration:none;}</style>
+  <template>
+    <google-client-loader id="calendar" name="calendar" version="v3" on-google-api-load="displayCalendars"></google-client-loader>
+    <google-signin-aware scopes="https://www.googleapis.com/auth/calendar.readonly" is-authorized="{{_signedIn}}"></google-signin-aware>
+
+    <ul id="calendars">
+      <li>{{title}}</li>
+      <template is="dom-repeat" items="{{calendars}}">
+        <li style$="{{_computeCalStyle(item.backgroundColor)}}">
+          <a href="{{_computeCalHref(item.id, item.timeZone)}}" target="_blank">{{item.summary}}</a>
+        </li>
+      </template>
+    </ul>
+  </template>
+</dom-module>
+
+<script>Polymer({is:"google-calendar-list",properties:{_signedIn:{type:Boolean,value:!1,observer:"_signInChanged"},title:{type:String,value:"My calendars"},calendars:{type:Array,value:function(){return[]},readOnly:!0}},_signInChanged:function(e){e?this.displayCalendars():this._setCalendars([])},_computeCalStyle:function(e){return"background-color:"+(e||"gray")},_computeCalHref:function(e,n){return"https://www.google.com/calendar/embed?src="+e+"&ctz="+n},displayCalendars:function(){if(this._signedIn&&this.$.calendar.api){var e=this.$.calendar.api.calendarList.list({key:""});e.execute(function(e){e.error?console.error("Error with calendarList.list",e.message):this._setCalendars(e.items)}.bind(this))}}});</script>
+
+
+<dom-module id="google-calendar-busy-now">
+  <style>span{font-family:Arial, sans-serif;display:inline-block;border-radius:.2em;padding:.2em;margin:.2em;overflow:hidden;}.busy{background-color:#FA573C;}.free{background-color:#7BD148;}.na{background-color:#999;}</style>
+  <template>
+      <google-client-loader id="calendar" name="calendar" version="v3" on-google-api-load="displayBusy"></google-client-loader>
+      <google-signin-aware scopes="https://www.googleapis.com/auth/calendar.readonly" is-authorized="{{_isAuthorized}}"></google-signin-aware>
+
+    <span class$="{{_labelClass}}">{{_label}}</span>
+  </template>
+
+<script>!function(){var e=6e4,a=30;Polymer({is:"google-calendar-busy-now",properties:{calendarId:{type:String,value:null,observer:"_calendarIdChanged"},apiKey:{type:String,value:null},busyLabel:{type:String,value:"I'm busy"},freeLabel:{type:String,value:"I'm free"},_labelClass:{type:String,value:""},_label:{type:String,value:""},_isAuthorized:{type:Boolean,value:!1,observer:"_isAuthorizedChanged"}},_calendarIdChanged:function(){this.displayBusy()},_isAuthorizedChanged:function(){this.displayBusy()},_setState:function(e){switch(e){case"free":this._label=this.freeLabel,this._labelClass="free";break;case"busy":this._label=this.busyLabel,this._labelClass="busy";break;case"na":this._label="n/a",this._labelClass="na"}},displayBusy:function(){if(!this.calendarId)return void console.log("CalendarId is required for this component");if(!this._isAuthorized)return void this._setState("na");if(this.$.calendar.api){this.apiKey&&gapi.client.setApiKey(this.apiKey);var t=new Date,i={timeMin:t.toISOString(),timeMax:new Date(t.valueOf()+a*e).toISOString(),items:[{id:this.calendarId}]},s=this.$.calendar.api.freebusy.query(i);s.execute(function(e){if(!e.calendars)return void(e.error?this._setState("na"):this._setState("free"));if(e.calendars[this.calendarId].errors)return void this._setState("na");for(var a,t=new Date,i=e.calendars[this.calendarId],s=0;a=i.busy[s];s++){var r=new Date(a.start),n=new Date(a.end),l=r<t&&t<n;if(this._setState(l?"busy":"free"),l)break}}.bind(this))}}})}();</script>
+
+</dom-module></body></html>

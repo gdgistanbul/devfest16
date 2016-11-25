@@ -1,0 +1,20 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-resizable-behavior/iron-resizable-behavior.html">
+<link rel="import" href="../iron-selector/iron-selectable.html">
+<link rel="import" href="neon-animation-runner-behavior.html">
+<link rel="import" href="animations/opaque-animation.html">
+
+
+
+</head><body><dom-module id="neon-animated-pages">
+
+  <style>:host{display:block;position:relative;}:host > ::content > *{position:absolute;top:0;left:0;bottom:0;right:0;height:100%;}:host > ::content > :not(.iron-selected):not(.neon-animating){display:none !important;}:host > ::content > .neon-animating{pointer-events:none;}</style>
+
+  <template>
+    <content id="content"></content>
+  </template>
+
+</dom-module>
+
+<script>!function(){Polymer({is:"neon-animated-pages",behaviors:[Polymer.IronResizableBehavior,Polymer.IronSelectableBehavior,Polymer.NeonAnimationRunnerBehavior],properties:{activateEvent:{type:String,value:""},animateInitialSelection:{type:Boolean,value:!1}},observers:["_selectedChanged(selected)"],listeners:{"neon-animation-finish":"_onNeonAnimationFinish"},_selectedChanged:function(e){var i=this.selectedItem,t=this._valueToItem(this._prevSelected)||!1;return this._prevSelected=e,t||this.animateInitialSelection?(this.animationConfig=[{name:"opaque-animation",node:i}],this.entryAnimation?this.animationConfig.push({name:this.entryAnimation,node:i}):i.getAnimationConfig&&this.animationConfig.push({animatable:i,type:"entry"}),t&&(t.classList.contains("neon-animating")&&(this._squelchNextFinishEvent=!0,this.cancelAnimation(),this._completeSelectedChanged(),this._squelchNextFinishEvent=!1),this.exitAnimation?this.animationConfig.push({name:this.exitAnimation,node:t}):t.getAnimationConfig&&this.animationConfig.push({animatable:t,type:"exit"}),t.classList.add("neon-animating")),i.classList.add("neon-animating"),void(this.animationConfig.length>1?this.isAttached?this.playAnimation(void 0,{fromPage:t,toPage:i}):this.async(function(){this.playAnimation(void 0,{fromPage:null,toPage:i})}):this._completeSelectedChanged(t,i))):void this._completeSelectedChanged()},_completeSelectedChanged:function(e,i){if(i&&i.classList.remove("neon-animating"),e&&e.classList.remove("neon-animating"),!i||!e)for(var t,n=Polymer.dom(this.$.content).getDistributedNodes(),a=0;t=n[a];a++)t.classList&&t.classList.remove("neon-animating");this.async(this._notifyPageResize)},_onNeonAnimationFinish:function(e){return this._squelchNextFinishEvent?void(this._squelchNextFinishEvent=!1):void this._completeSelectedChanged(e.detail.fromPage,e.detail.toPage)},_notifyPageResize:function(){var e=this.selectedItem||this._valueToItem(this.selected);this.resizerShouldNotify=function(i){return i==e},this.notifyResize()}})}();</script>
+</body></html>

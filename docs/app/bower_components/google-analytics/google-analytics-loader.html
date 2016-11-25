@@ -1,0 +1,18 @@
+<html><head><link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../google-signin/google-signin-aware.html">
+<link rel="import" href="../google-apis/google-client-loader.html">
+<link rel="import" href="../promise-polyfill/promise-polyfill-lite.html">
+
+
+
+</head><body><dom-module id="google-analytics-loader">
+
+  <template>
+    <google-client-loader id="api" name="analytics" version="v3" on-google-api-load="handleApiLoad" on-google-api-load-error="handleApiFailedToLoad"></google-client-loader>
+    <google-signin-aware scopes="https://www.googleapis.com/auth/analytics.readonly" on-google-signin-aware-success="handleAuthSuccess" on-google-signin-aware-signed-out="handleAuthSignout"></google-signin-aware>
+  </template>
+
+</dom-module>
+
+<script>!function(){"use strict";Polymer({is:"google-analytics-loader",properties:{allReady:{type:Boolean,computed:"computeAllReady(apiReady, authorized)",notify:!0},apiReady:{type:Boolean,value:!1,notify:!0,readOnly:!0},authorized:{type:Boolean,value:!1,notify:!0,readOnly:!0}},computeAllReady:function(e,t){return e&&t},handleApiLoad:function(){this._setApiReady(!0)},handleApiFailedToLoad:function(e,t){this._setApiReady(!1),console.error("Api failed to load: ",this.$.api.name,this.$.api.version)},handleAuthSuccess:function(){this._setAuthorized(!0)},handleAuthSignout:function(){this._setAuthorized(!1)}})}();</script>
+</body></html>

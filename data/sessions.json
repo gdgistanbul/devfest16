@@ -71,6 +71,19 @@
             "Android"
         ]
     },
+    "130": {
+        "id": 130,
+        "title": "-",
+        "description": "-",
+        "speakers": [
+
+        ],
+        "language": "",
+        "complexity": "",
+        "tags": [
+
+        ]
+    },
     "129": {
         "id": 129,
         "title": "How to Design For Android Wear 2.0",

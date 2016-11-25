@@ -73,103 +73,103 @@
     },
     "129": {
         "id": 129,
-        "title": "Accessibility on Android",
-        "description": "Accessibility is a very important step to make sure that your app reaches everyone in an easy and fun way to use. \nGood accessibility support means much more than just making sure the app supports screen readers, different fonts sizes and good contrast ratios. It is a learning process, and one in which we ourselves still have much to learn and explore. ",
+        "title": "How to Design For Android Wear 2.0",
+        "description": "Wearable devices are one of the most popular things nowadays. Specially, after the Apple Watch, we finally get the whole picture of the entire list of products and their features. Now, we can talk about how we can design an experience for this kind of devices.\n\nOf course, every platform has it's own design principles and approaches. But, in the core, they all need to follow same core rules. So, how we combine this core requirements with Google's Material Design and use them on an Android Wear 2.0 device? Let's learn!",
         "speakers": [
 
         ],
-        "language": "English",
+        "language": "English/Turkish",
         "complexity": "Intermediate",
         "tags": [
-            "Android"
+            "Mobile"
         ]
     },
     "128": {
         "id": 128,
-        "title": "Android Wear 2.0: Great Changes Upcoming this Fall",
-        "description": "Google announced Android Wear 2.0 become available this Fall. This major update brings some revolutionary changes in platform, that should change our approaches in developing wearable apps, including freedom of BLE tethering, system support for complications and activity recognition by GoogleFit, developed mainly for Android Wear 2.0. We will talk deeper about these new features and look at some ways to implement them in the code.",
+        "title": "Java 9 and Beyond",
+        "description": "In this session I will introduce the upcoming Java 9 features and how will it shape the Java platform. Java 9 brings new standard module system called Jigsaw, it will get rid of the monolithic structure of the Java platform. In addition to the Project Jigsaw, we will discuss the other JEPs such as HTTP/2 Client API, jshell and Ahead-of-Time Compilation. This session also will have some of the future  ideas beyond Java 9.",
         "speakers": [
 
         ],
         "language": "English",
         "complexity": "Beginner",
         "tags": [
-            "Android"
+            "Java"
         ]
     },
     "127": {
         "id": 127,
-        "title": "ExoPlayer: Media playback without pain (almost...)",
-        "description": "If you have any experience with Android Media Player, you definitely know how hard it is to prepare it and do not lose your mind. ExoPlayer - is an alternative, which can help you deal with media with much less pain. So lets discuss if it really a \"silver bullet\" or yet another State Machine hell.",
-        "speakers": [
-
-        ],
-        "language": "Ukrainian",
-        "complexity": "Intermediate",
-        "tags": [
-            "Android"
-        ]
-    },
-    "126": {
-        "id": 126,
-        "title": "Android hacking for dummies: \u2018if\u2019 operator demolytion",
-        "description": "Imagine the world where you can get any application, look into its code (even if it is not open sourced) and modify any conditional operator in any way you like. Welcome, you are in the Android applications world! Let's discover how anyone can decompile your app and, for example, hack your 'if' operators. For the beginning, we will play a role of a script kiddie and try to hack some simple app. After this, we will pretend security-conscious Android developers and try to think how we can protect ourselves.",
+        "title": "Make your Polymer web-app Progressive",
+        "description": "Polymer helps you organize your app and make it more meaningful. In this talk, I will show you how to make your app load faster with app shell, lazy loading etc. and another Tip and Tricks in PWA.",
         "speakers": [
 
         ],
         "language": "English",
         "complexity": "Intermediate",
-        "tags": [
-            "Android"
-        ]
-    },
-    "125": {
-        "id": 125,
-        "title": "Kubernetes in a real world",
-        "description": "TBD",
-        "speakers": [
-
-        ],
-        "language": "English",
-        "complexity": "Intermediate",
-        "tags": [
-            "Cloud"
-        ]
-    },
-    "124": {
-        "id": 124,
-        "title": "Continues Integration in Android",
-        "description": "You are tired of building every patch for your QA ? Still deploying to google play manually ? You still think that build server is something that you don't need ? Than I will try to show you how you can make life of your team easier with CI.",
-        "speakers": [
-
-        ],
-        "language": "English",
-        "complexity": "Intermediate",
-        "tags": [
-            "Android"
-        ]
-    },
-    "123": {
-        "id": 123,
-        "title": "TBD",
-        "description": "TBD",
-        "speakers": [
-
-        ],
-        "language": "English",
-        "complexity": "Beginner",
         "tags": [
             "Web"
         ]
     },
-    "122": {
-        "id": 122,
-        "title": "Firebase + Kotlin + RxJava + MVP: Practical Tips",
-        "description": "I would like to talk about architecture of our Settle Up app. It's all based on new Firebase announced on I/O with the help of modern frameworks like Rx, Kotlin and MVP.",
+    "126": {
+        "id": 126,
+        "title": "Kotlin for Android",
+        "description": "Kotlin is very popular in Android Community recently. What features does Kotlin bring to Android world? Why should we try Kotlin? You will have a chance to see simple Kotlin usage for Android in this session.",
+        "speakers": [
+
+        ],
+        "language": "Turkish",
+        "complexity": "Intermediate",
+        "tags": [
+            "Mobile"
+        ]
+    },
+    "125": {
+        "id": 125,
+        "title": "View based apps with Conductor",
+        "description": "Single Activity apps without using Fragments! Get rid of all lifecycle hell and take full advantage of the power that is Android Views. And an extra bonus topic.",
         "speakers": [
 
         ],
         "language": "English",
+        "complexity": "Intermediate",
+        "tags": [
+            "Mobile"
+        ]
+    },
+    "124": {
+        "id": 124,
+        "title": "Building interactive 3D worlds in the browser",
+        "description": "Create interactive 3D worlds in your browser - no plugins needed, just JavaScript.\n\nWe will explore what it takes to get 3D graphics into your browser and how to load and interact with 3D models and get our hands on Three.js, a library to make this a lot easier than vanilla WebGL.",
+        "speakers": [
+
+        ],
+        "language": "English",
+        "complexity": "Intermediate",
+        "tags": [
+            "Web"
+        ]
+    },
+    "123": {
+        "id": 123,
+        "title": "Survival guide for gradle",
+        "description": "This session is all about best practices  on gradle for the developer productivity.",
+        "speakers": [
+
+        ],
+        "language": "Turkish",
+        "complexity": "Beginner",
+        "tags": [
+            "Mobile"
+        ]
+    },
+    "122": {
+        "id": 122,
+        "title": "Gettin Your App Ready for Android N",
+        "description": "Android N Features and how to implement them into our app",
+        "speakers": [
+
+        ],
+        "language": "English/Turkish",
         "complexity": "Intermediate",
         "tags": [
             "Android"

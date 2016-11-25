@@ -636,7 +636,7 @@
      "country": "Turkey",
      "photoUrl": "/images/people/salim_kayabasi.png",
      "shortBio": "Salim is a passionate developer and modern web and mobile technology evangelist.He is also an active member and organizer at GDG...",
-     "bio": "Salim is a passionate developer and modern web and mobile technology evangelist.\nHe is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons. In addition, he is co-founder of Nodejs Turkey - a local nodejs community which is generating Turkish content.",
+     "bio": "Salim is a passionate developer and modern web and mobile technology evangelist.<br/><br/>He is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons. In addition, he is co-founder of Nodejs Turkey - a local nodejs community which is generating Turkish content.",
      "tags": [
          "Web",
          "PWA",
@@ -882,8 +882,8 @@
          "company": "GDG Tekirdağ",
          "country": "Turkey",
          "photoUrl": "/images/people/sercan_yusuf.jpg",
-         "shortBio": "He is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons...",
-         "bio": "He is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons. In addition, he is co-founder of Nodejs Turkey - a local nodejs community which is generating Turkish content.",
+         "shortBio": "I am Studing Computer Engineering at Namık Kemal University.I am Junior Android Developer so I am tryig to built ...",
+         "bio": "I am Studing Computer Engineering at Namık Kemal University.I am Junior Android Developer so I am tryig to built something on Android as possible as I can.<br/><br/>Co-Founder & Organizer at GDG Tekirdağ so its happy to organize technological events, gather with a lot of tech-lovers and waste time for learn someting a lot.",
          "tags": [
              "Mobile",
              "GDG"

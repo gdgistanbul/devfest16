@@ -186,15 +186,15 @@
     },
     "120": {
         "id": 120,
-        "title": "Progressive web apps - prepare your web for 2017",
-        "description": "\"Remember back when AJAX completely changed what was possible in the desktop web? Progressive web apps are that same fundamental shift for the mobile web.\" said Rahul Row-Chowdhury (Google\u2019s product lead for chrome and the web platform) on stage at Google I/O 2016. - Progressive web apps use service workers, app shell, push notifications, RAIL and other capabilities to deliver an app-like user experience.",
+        "title": "How to Build Your Microservices",
+        "description": "There is a lot of buzz about microservices but why are they so important? This talk will briefly discuss the concept of microservices and pros and cons of building your applications with microservices. Than how domain driven design principles can be applied to microservices for solving transactional problems. Bounded contexts are playing an important part for building good architectures. Later CQRS and event sourcing patterns, that will help with achieving evantually consistency within distributed architectures like microservices will be explained.",
         "speakers": [
 
         ],
-        "language": "English",
+        "language": "English/Turkish",
         "complexity": "Beginner",
         "tags": [
-            "Web"
+            "Microservices"
         ]
     },
         "119": {

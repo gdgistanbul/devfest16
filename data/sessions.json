@@ -10,16 +10,15 @@
         "title": "Keynote",
         "description": "Official start of the conference.",
         "language": "English",
-        "image": "/images/backgrounds/opening.jpg",
+        "image": "/images/backgrounds/2015_1.jpg",
         "speakers":[
             1
         ]
     },
     "138": {
         "id": 138,
-        "title": "Conference closing and contest winners announcements",
-        "description": "Make sure you won't miss closing ceremony, all gifts from out sponsors and partners will find their owners during this session.",
-        "image": "/images/backgrounds/closing.jpg"
+        "title": "Unconference",
+        "description": "Unconference"
     },
     "137": {
         "id": 137,
@@ -47,15 +46,14 @@
     },
     "133": {
         "id": 133,
-        "title": "Lunch",
-        "description": "Foooooooood!",
-        "image": "/images/backgrounds/lunch.jpg"
+        "title": "Break",
+        "description": "Foooooooood!"
     },
     "132": {
         "id": 132,
         "title": "Registration & morning Coffee",
         "description": "Get your badge, coffee, enjoy talking with tech edicts around",
-        "image": "/images/backgrounds/registration.jpg"
+        "image": "/images/backgrounds/2015_2.jpg"
     },
     "131": {
         "id": 131,

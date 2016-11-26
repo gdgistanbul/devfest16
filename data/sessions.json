@@ -42,9 +42,8 @@
     },
     "134": {
         "id": 134,
-        "title": "Coffee break",
-        "description": "Coffeeeeeee!",
-        "image": "/images/backgrounds/coffee-break.jpg"
+        "title": "-",
+        "description": "-"
     },
     "133": {
         "id": 133,
@@ -60,28 +59,28 @@
     },
     "131": {
         "id": 131,
-        "title": "Deal with it: Android DataBinding explained",
-        "description": "In this talk, I will reveal you all the deepest secrets of using MVVM architecture in Android. \nWe will discuss on how to organise your application, views, models, how to retrieve data from the model requested from the view via data binding. \nLightweight Activities and Fragments, is it even possible? \n\nYes, and I will show you how to achieve this with MVVM and DataBinding!",
+        "title": "To be announced...",
+        "description": "To be announced...",
         "speakers": [
 
         ],
         "language": "English",
         "complexity": "Intermediate",
         "tags": [
-            "Android"
+            "Web"
         ]
     },
     "130": {
         "id": 130,
-        "title": "-",
-        "description": "-",
+        "title": "To be announced...",
+        "description": "To be announced...",
         "speakers": [
 
         ],
         "language": "",
         "complexity": "",
         "tags": [
-
+            "Mobile"
         ]
     },
     "129": {
@@ -421,7 +420,7 @@
             "Web"
         ],
         "speakers": [
-
+          6
         ]
     }
 }

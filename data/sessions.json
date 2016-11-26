@@ -12,7 +12,7 @@
         "language": "English",
         "image": "/images/backgrounds/opening.jpg",
         "speakers":[
-
+            1
         ]
     },
     "138": {
@@ -62,7 +62,7 @@
         "title": "To be announced...",
         "description": "To be announced...",
         "speakers": [
-
+          18
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -75,7 +75,7 @@
         "title": "To be announced...",
         "description": "To be announced...",
         "speakers": [
-
+            28
         ],
         "language": "",
         "complexity": "",
@@ -88,12 +88,12 @@
         "title": "How to Design For Android Wear 2.0",
         "description": "Wearable devices are one of the most popular things nowadays. Specially, after the Apple Watch, we finally get the whole picture of the entire list of products and their features. Now, we can talk about how we can design an experience for this kind of devices.\n\nOf course, every platform has it's own design principles and approaches. But, in the core, they all need to follow same core rules. So, how we combine this core requirements with Google's Material Design and use them on an Android Wear 2.0 device? Let's learn!",
         "speakers": [
-
+          13
         ],
         "language": "English/Turkish",
         "complexity": "Intermediate",
         "tags": [
-            "Mobile"
+            "Design UX/UI"
         ]
     },
     "128": {
@@ -101,7 +101,7 @@
         "title": "Java 9 and Beyond",
         "description": "In this session I will introduce the upcoming Java 9 features and how will it shape the Java platform. Java 9 brings new standard module system called Jigsaw, it will get rid of the monolithic structure of the Java platform. In addition to the Project Jigsaw, we will discuss the other JEPs such as HTTP/2 Client API, jshell and Ahead-of-Time Compilation. This session also will have some of the future  ideas beyond Java 9.",
         "speakers": [
-
+          20
         ],
         "language": "English",
         "complexity": "Beginner",
@@ -114,7 +114,7 @@
         "title": "Make your Polymer web-app Progressive",
         "description": "Polymer helps you organize your app and make it more meaningful. In this talk, I will show you how to make your app load faster with app shell, lazy loading etc. and another Tip and Tricks in PWA.",
         "speakers": [
-
+          14
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -127,7 +127,7 @@
         "title": "Kotlin for Android",
         "description": "Kotlin is very popular in Android Community recently. What features does Kotlin bring to Android world? Why should we try Kotlin? You will have a chance to see simple Kotlin usage for Android in this session.",
         "speakers": [
-
+          22
         ],
         "language": "Turkish",
         "complexity": "Intermediate",
@@ -140,7 +140,7 @@
         "title": "View based apps with Conductor",
         "description": "Single Activity apps without using Fragments! Get rid of all lifecycle hell and take full advantage of the power that is Android Views. And an extra bonus topic.",
         "speakers": [
-
+          26
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -153,7 +153,7 @@
         "title": "Building interactive 3D worlds in the browser",
         "description": "Create interactive 3D worlds in your browser - no plugins needed, just JavaScript.\n\nWe will explore what it takes to get 3D graphics into your browser and how to load and interact with 3D models and get our hands on Three.js, a library to make this a lot easier than vanilla WebGL.",
         "speakers": [
-
+          17
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -166,7 +166,7 @@
         "title": "Survival guide for gradle",
         "description": "This session is all about best practices  on gradle for the developer productivity.",
         "speakers": [
-
+          21
         ],
         "language": "Turkish",
         "complexity": "Beginner",
@@ -179,7 +179,7 @@
         "title": "Gettin Your App Ready for Android N",
         "description": "Android N Features and how to implement them into our app",
         "speakers": [
-
+          25
         ],
         "language": "English/Turkish",
         "complexity": "Intermediate",
@@ -192,7 +192,7 @@
         "title": "Using Google Design Sprints to create a collaborative environment",
         "description": "As demand for designers continues to grow we must ask ourselves: how do we maintain creative innovation if we reach a point where there aren't enough designers in our industries? Is the answer to share the creative responsibility and if so how do we educate multiple disciplines to be more design literate in order to prepare them for this new obligation? In this presentation we will look at how Google’s Design Sprint methodology helps create a collaborative environment where everyone is responsible for great user experiences.",
         "speakers": [
-
+          2
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -205,7 +205,7 @@
         "title": "How to Build Your Microservices",
         "description": "There is a lot of buzz about microservices but why are they so important? This talk will briefly discuss the concept of microservices and pros and cons of building your applications with microservices. Than how domain driven design principles can be applied to microservices for solving transactional problems. Bounded contexts are playing an important part for building good architectures. Later CQRS and event sourcing patterns, that will help with achieving evantually consistency within distributed architectures like microservices will be explained.",
         "speakers": [
-
+          23
         ],
         "language": "English/Turkish",
         "complexity": "Beginner",
@@ -218,7 +218,7 @@
         "title": "Test Driven Design: Ultimate Development Practice For Fighting Against Legacy Code",
         "description": "TDD is a way of design practice, not a testing practice. That might explain why it’s been mentioned as “a good practice” by huge majority and not used in practice a lot in software development world. People scares from it so much. It's because it pushes you to think about designing high quality software, and designing software is hard. TDD is a highly disciplined way of developing software. In this talk, forget about everything you have learned from rumours. Be ready to hear insights and tips from a passionate TDD practitioner.",
         "speakers": [
-
+          10
         ],
         "language": "Turkish",
         "complexity": "Beginner",
@@ -231,7 +231,7 @@
         "title": "Mobile DevOps - Build, Test and Deploy Your Android App Easily",
         "description": "DevOps is a new trend and there are amazing tools for Mobile too! In this session we'll explore Mobile DevOps tools to make our live easy.\nLearn more about how HockeyApp and Visual Studio Team Services help Xamarin developers deliver high-quality, modern apps for Android, iOS, and Windows. Automate your build pipeline, run unit and integration tests, and control the release management. Ship updates to your customers almost instantly with our continuous delivery process and understand how your apps are used - and crash, then fix those crashes and track progress with new monitoring and analytics capabilities",
         "speakers": [
-
+            4
         ],
         "language": "English/Turkish",
         "complexity": "Intermediate",
@@ -244,7 +244,7 @@
         "title": "Zero Down Time Microservices with Node.js, MongoDB, Docker, and Kibana",
         "description": "Microservices with Node.js dispatched by another Node.js application with service discovery backed by MongoDB. All the requests dispatched by dispatcher will be synchronized to Elasticsearch. By doing this, all the logs will be analyzed on Kibana and will be able to monitor by providing threshold to api requests.",
         "speakers": [
-
+          12
         ],
         "language": "English",
         "complexity": "Beginner",
@@ -257,7 +257,7 @@
         "title": "Girişiminiz için açık kaynak kodlu yazılım modelleri ve stratejileri",
         "description": "Bu sunumda, bir yazılım firmasının ortaya koyduğu ürünlerin açık kaynak kodlu olması halinde ne gibi avantajlardan faydalanabileceği, hangi lisansları kullanması gerektiği ve iş modelini nasıl ayağa kaldırabileceği anlatılacaktır. Sunum sırasında çeşitli firmaların açık kaynak kodlu yazılım stratejilerinden bahsedilecek ve sürecin doğru yönetilmesi, topluluk oluşturulabilmesi ve dış pazarlara açılabilmek için hangi adımların atılması gerektiği tartışılacaktır.",
         "speakers": [
-
+            16
         ],
         "language": "Turkish",
         "complexity": "Beginner",
@@ -270,7 +270,7 @@
         "title": "Hey Java! Virtual Reality is around the corner!",
         "description": "In the workshop, i will begin by shorty explaining what Virtual Reality and Google Cardboard is.\nNext, i will create a VR app from scratch, using a library called \"Rajawali 3D\". The app is going to able to switch from mono to stereo (VR) mode, detect CB clicks, and display spheric pictures and videos.",
         "speakers": [
-
+          24
         ],
         "language": "English",
         "complexity": "Beginner",
@@ -283,7 +283,7 @@
         "title": "Continuous Integration on Android",
         "description": "Sunumda sizlere Gitlab CI kullanılarak, Android projeleriniz için basit bir continuous integration yapısı oluşturma ve Google play'e auto deploy konuları anlatılacaktır.",
         "speakers": [
-
+          19
         ],
         "language": "Turkish",
         "complexity": "Intermediate",
@@ -296,7 +296,7 @@
         "title": "Taking care your UI tests",
         "description": "Most Android UI testing talks focus on how Espresso works and how to start writing simple tests.\nThis is fine for a simple app but maintaining and expanding those tests gets harder as the app grows. This talk will focus on writing complex tests scenarios while making sure we keep them maintainable, expandable and readable.\nI’ll use a released app we developed as an example. This will involve multi-screen scenarios, handling asynchronous operations, providing a fake environment as well as some common and less common Espresso gotchas.",
         "speakers": [
-
+             8
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -309,7 +309,7 @@
         "title": "Accessibility for everyone",
         "description": "Making apps for every user means that you should take care to make your app “accessible”.\nBut what does this mean for an Android developer?\nIn this talk I will go through some best practices and some case studies to make your apps accessible. And try to convince you that it’s not just a useful feature to have an app that can be used by visually impaired users, but that it also might be quite a bit easier than you might imagine.",
         "speakers": [
-
+            27
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -322,7 +322,7 @@
         "title": "Spring Boot ile uygulama geliştirme",
         "description": "Sunumda demo eşliğinde aşağıdaki başlıklarda anlatımlar sağlanacaktır:\nSpring Boot nedir?\nSpringBoot projesi yaratılması.\nSpringBoot Initializr kullanımı. \nSpringBoot starters,\nSpringBoot AutoConfiguration",
         "speakers": [
-
+            15
         ],
         "language": "Turkish",
         "complexity": "Intermediate",
@@ -335,7 +335,7 @@
         "title": "Be part of team that empowers people - Designing Human Centred Services Together",
         "description": "Human Centred Design practices are proven to be effective in empowering people in reaching goals. A human centred thinker is not necessarily a designer, developers, product managers, marketing professionals and all executives are invited! We all look for meaning and consistency in our actions; how would our products provide that meaning and support?\nLet's say you are designing or developing a banking application. This approach could bring your application to become a system that empowers its users in managing their resources smartly, creating more resources for more important needs.\nI will talk about human centred design and ways of approaching it for different roles. I will then end with concrete tips and questions to empower you in communicating human centred design.",
         "speakers": [
-
+            7
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -348,7 +348,7 @@
         "title": "Impress your user's inner child!",
         "description": "Tying up the users to your app is the most important and yet one of the most puzzling parts. Users will already have a strong impression about your app the first 30''; Yes, including splash screens or empty lists and loading indicators, that are pretty much impossible to avoid in most of the apps. So all we need is some stardust, say the \"abracadabra\" 3 times, and the boring splash screen or the empty screen will transform to something entertaining and interesting that will impress our users! Wait... what?! How do I do this? A great place to start is learning to leverage Android's animation SDKs ;-)",
         "speakers": [
-
+            3
         ],
         "language": "English",
         "complexity": "Intermediate",
@@ -363,10 +363,10 @@
         "language": "Turkish",
         "complexity": "Intermediate",
         "tags": [
-            "Mobile"
+            "Android"
         ],
         "speakers": [
-
+            11
         ]
     },
     "104": {
@@ -374,7 +374,7 @@
         "title": "Angular 2 is here, let's get started",
         "description": "It's no longer just about digitizing our environment. It\u2019s rather about pervasive and ubiquitous computing. Almost all everyday things will turn into connected devices soon. This \u201cInternet of Things\u201d will allow the Web to be physically tangible. But what is the value, and how can one prevent IoT applications which just seem to be only more expensive and complicated than conventional solutions. Sascha will discuss the purpose and guide you through this complex topic showing inspiring solutions, tips from practice, and code samples in a variety of technologies from simple Bluetooth Eddystone Beacons to more sophisticated IoT platforms like Eclipse SmartHome.",
         "speakers": [
-
+            9
         ],
         "language": "English/Turkish",
         "complexity": "Beginner",
@@ -393,7 +393,7 @@
             "Mobile"
         ],
         "speakers": [
-
+            5
         ]
     },
     "102": {

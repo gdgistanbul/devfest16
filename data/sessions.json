@@ -70,15 +70,15 @@
     },
     "130": {
         "id": 130,
-        "title": "To be announced...",
-        "description": "To be announced...",
+        "title": "Android Widgets",
+        "description": "Sunumda Android Widgetlarının kullanımı, nasıl tasarlanacağı, yaşam döngüsü ve nerelerde kullanılması gerektiğinden bahsedilecek.",
         "speakers": [
             28
         ],
         "language": "",
         "complexity": "",
         "tags": [
-            "Mobile"
+            "Android"
         ]
     },
     "129": {
@@ -318,7 +318,7 @@
     "111": {
         "id": 111,
         "title": "Spring Boot ile uygulama geliştirme",
-        "description": "Sunumda demo eşliğinde aşağıdaki başlıklarda anlatımlar sağlanacaktır:\nSpring Boot nedir?\nSpringBoot projesi yaratılması.\nSpringBoot Initializr kullanımı. \nSpringBoot starters,\nSpringBoot AutoConfiguration",
+        "description": "Spring platformu, günümüz teknolojileri ve modern kurumsal ihtiyaçlar doğrultusunda kendisini sıklıkla güncellemekte ve bu sayede çok çeşitli alanlarda kullanılacak projeler sağlamaktadır. Spring framework XML, Annotation ve Java tabanlı konfigurasyon yapılabilmesine olanak sağlamasına rağmen, bir uygulamayı çalışır duruma getirebilmek için yine de oldukça fazla konfigurasyon yapmak gerekmektedir. SpringBoot projesi, minimum kodlama ve minimum konfigurasyon ile çalışmaya hazır durumda web uygulamaları geliştirilmesine olanak sağlamaktadır. Bu sunumda, Spring boot projesi yaratılması, projenin bileşenleri, starters, autoconfiguration özellikleri, initializr uygulaması kullanımı demo eşliğinde anlatılacaktır.",
         "speakers": [
             15
         ],

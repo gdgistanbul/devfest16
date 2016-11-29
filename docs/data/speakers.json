@@ -170,11 +170,6 @@
                 "link": "https://plus.google.com/u/1/107161766252148547668"
             },
             {
-                "icon": "github",
-                "name": "Github",
-                "link": "https://github.com/amahdy"
-            },
-            {
                 "icon": "website",
                 "name": "Website",
                 "link": "https://medium.com/@busradeniz"
@@ -636,7 +631,7 @@
      "country": "Turkey",
      "photoUrl": "/images/people/salim_kayabasi.png",
      "shortBio": "Salim is a passionate developer and modern web and mobile technology evangelist.He is also an active member and organizer at GDG...",
-     "bio": "Salim is a passionate developer and modern web and mobile technology evangelist.\nHe is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons. In addition, he is co-founder of Nodejs Turkey - a local nodejs community which is generating Turkish content.",
+     "bio": "Salim is a passionate developer and modern web and mobile technology evangelist.<br/><br/>He is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons. In addition, he is co-founder of Nodejs Turkey - a local nodejs community which is generating Turkish content.",
      "tags": [
          "Web",
          "PWA",
@@ -882,8 +877,8 @@
          "company": "GDG Tekirdağ",
          "country": "Turkey",
          "photoUrl": "/images/people/sercan_yusuf.jpg",
-         "shortBio": "He is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons...",
-         "bio": "He is also an active member and organizer at GDG Istanbul since 2012 and enjoying organizing various conferences and hackathons. In addition, he is co-founder of Nodejs Turkey - a local nodejs community which is generating Turkish content.",
+         "shortBio": "I am Studing Computer Engineering at Namık Kemal University.I am Junior Android Developer so I am tryig to built ...",
+         "bio": "I am Studing Computer Engineering at Namık Kemal University.I am Junior Android Developer so I am tryig to built something on Android as possible as I can.<br/><br/>Co-Founder & Organizer at GDG Tekirdağ so its happy to organize technological events, gather with a lot of tech-lovers and waste time for learn someting a lot.",
          "tags": [
              "Mobile",
              "GDG"
@@ -952,7 +947,7 @@
          "title": "Android Developer",
          "company": "AppFoundry",
          "companyLogo":"/images/logos/appfoundry_logo.png",
-         "country": "Turkey",
+         "country": "Belgium",
          "photoUrl": "/images/people/filip_maelbrancke.jpg",
          "shortBio": "Filip Maelbrancke is an Android developer at AppFoundry in Belgium. Likes clean code...",
          "bio": "Filip Maelbrancke is an Android developer at AppFoundry in Belgium. Likes clean code, tests and finding out how to apply good practices to Android.",
@@ -982,7 +977,7 @@
          "shortBio": "Eren has been working as a Software Engineer at ING Bank for a year. Fan of Android and mobile technologies...",
          "bio": "Eren has been working as a Software Engineer at ING Bank for a year. Fan of Android and mobile technologies. He also has an interest in developing his apps and games. Part of GDG family. He is proud of the degrees he got at the competitions and hackathons. Currently living in Istanbul Turkey.",
          "tags": [
-             "Mobile",
+             "Android",
              "GDG"
          ],
          "badges": [

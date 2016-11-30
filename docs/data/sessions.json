@@ -57,8 +57,8 @@
     },
     "131": {
         "id": 131,
-        "title": "To be announced...",
-        "description": "To be announced...",
+        "title": "&#129300; Whaaatttt??? Another Progressive Web App session?",
+        "description": "Last couple of months we've heard so many things about Progressive Web App. Now it's time to upgrade your project.<br/>With this session, we'll follow the footprints of big journey of PWA.",
         "speakers": [
           18
         ],
@@ -71,7 +71,7 @@
     "130": {
         "id": 130,
         "title": "Android Widgets",
-        "description": "Sunumda Android Widgetlarının kullanımı, nasıl tasarlanacağı, yaşam döngüsü ve nerelerde kullanılması gerektiğinden bahsedilecek.",
+        "description": "Ana ekranda tek bakışta ulaşılabilen, uygulamayı açmadan işlevlerine ulaşmanı sağlayan ve Android'in en sevilen özelliklerinden biri olan widgetlar nasıl oluşturulur merak ediyorsan bu sunumda Android widgetlarının kullanımı, nasıl tasarlanacağı, yaşam döngüsü ve widget tipleri üzerinde durulacak.",
         "speakers": [
             28
         ],

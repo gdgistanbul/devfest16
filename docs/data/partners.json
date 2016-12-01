@@ -13,7 +13,27 @@
         "logoUrl": "../images/logos/gdg-x.svg"
       }
     ]
-  }, 
+  },
+  {
+    "title": "bronz-sponsor",
+    "logos": [
+      {
+        "name": "Microsoft",
+        "url": "https://www.microsoft.com",
+        "logoUrl": "../images/logos/microsoft.png"
+      }
+    ]
+  },
+  {
+    "title": "sponsors",
+    "logos": [
+      {
+        "name": "Robotistan",
+        "url": "http://www.robotistan.com",
+        "logoUrl": "../images/logos/robotistan_logo.png"
+      }
+    ]
+  },
   {
     "title": "supporters",
     "logos": [
@@ -31,6 +51,11 @@
         "name": "BAU Yazılım Bilişim Klubü",
         "url": "https://www.bahcesehir.edu.tr/icerik/8457-yazilim-ve-bilisim-kulubu",
         "logoUrl": "../images/logos/BUYABİ.jpg"
+      },
+      {
+        "name": "CODEMODEON",
+        "url": "http://www.codemodeon.com",
+        "logoUrl": "../images/logos/codemodeon_logo.png"
       },
       {
         "name": "Etkinnlik",

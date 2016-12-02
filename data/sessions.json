@@ -200,15 +200,15 @@
     },
     "120": {
         "id": 120,
-        "title": "How to Build Your Microservices",
-        "description": "There is a lot of buzz about microservices but why are they so important? This talk will briefly discuss the concept of microservices and pros and cons of building your applications with microservices. Than how domain driven design principles can be applied to microservices for solving transactional problems. Bounded contexts are playing an important part for building good architectures. Later CQRS and event sourcing patterns, that will help with achieving evantually consistency within distributed architectures like microservices will be explained.",
+        "title": "Developing scaleable microservices with queues",
+        "description": "Developing secure and scaleable micro-services with RabbitMQ, Node.Js, MongoDB on top of Docker containers on Docker Cloud.",
         "speakers": [
           23
         ],
         "language": "English/Turkish",
         "complexity": "Beginner",
         "tags": [
-            "Microservices"
+            "Cloud"
         ]
     },
         "119": {

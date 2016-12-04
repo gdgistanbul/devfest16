@@ -1,16 +1,11 @@
 [
   {
-    "title": "general-partner",
+    "title": "general-sponsor",
     "logos": [
       {
         "name": "Google",
         "url": "https://www.google.com.tr/intl/en/about/",
         "logoUrl": "../images/logos/google.svg"
-      },
-      {
-        "name": "GDG[x]",
-        "url": "https://github.com/gdg-x",
-        "logoUrl": "../images/logos/gdg-x.svg"
       }
     ]
   },
@@ -31,12 +26,51 @@
         "name": "Robotistan",
         "url": "http://www.robotistan.com",
         "logoUrl": "../images/logos/robotistan_logo.png"
+      },
+      {
+        "name": "CODEMODEON",
+        "url": "http://www.codemodeon.com",
+        "logoUrl": "../images/logos/codemodeon_logo.png"
       }
     ]
   },
   {
     "title": "supporters",
     "logos": [
+      {
+        "name": "GDG[x]",
+        "url": "https://github.com/gdg-x",
+        "logoUrl": "../images/logos/gdg-x.svg"
+      },
+      {
+        "name": "GDG Eskişehir",
+        "url": "https://twitter.com/GdgEskisehir",
+        "logoUrl": "../images/logos/gdgeskişehir.png"
+      },
+      {
+        "name": "GDG Tekirdağ",
+        "url": "https://twitter.com/GdgTekirdag",
+        "logoUrl": "../images/logos/gdgtekirdag.JPG"
+      },
+      {
+        "name": "GDG İzmir",
+        "url": "https://twitter.com/IzmirGDG",
+        "logoUrl": "../images/logos/GDG-Izmir.png"
+      },
+      {
+        "name": "GDG Kocaeli",
+        "url": "https://twitter.com/gdgkocaeli_",
+        "logoUrl": "../images/logos/gdgkocaeli.png"
+      }
+    ]
+  },
+  {
+    "logos": [
+      {
+        "name": "BAU",
+        "url": "bahcesehir.edu.tr",
+        "logoUrl": "../images/logos/bau.jpg"
+      },
       {
         "name": "BAU TTO",
         "url": "https://tto.bahcesehir.edu.tr/",
@@ -51,12 +85,11 @@
         "name": "BAU Yazılım Bilişim Klubü",
         "url": "https://www.bahcesehir.edu.tr/icerik/8457-yazilim-ve-bilisim-kulubu",
         "logoUrl": "../images/logos/BUYABİ.jpg"
-      },
-      {
-        "name": "CODEMODEON",
-        "url": "http://www.codemodeon.com",
-        "logoUrl": "../images/logos/codemodeon_logo.png"
-      },
+      }
+    ]
+  },
+  {
+    "logos": [
       {
         "name": "Etkinnlik",
         "url": "http://etkinnlik.com/",
@@ -64,4 +97,5 @@
       }
     ]
   }
+  
 ]
